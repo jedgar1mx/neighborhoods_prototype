@@ -1,0 +1,89 @@
+/*================== fonts======================*/
+@import url('assets/fonts/dosis/Dosis-Regular.ttf');
+@import url('assets/fonts/opensans/OpenSans-Regular.ttf');
+/*================== variables =================*/
+$top-bar-color: #23a696;
+$top-bar-font-color: #fff;
+$top-bar-height: 8vh;
+$content-height: 92vh;
+/*================== tags ======================*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+} 
+main {
+	width: 100%; 
+	height: 100vh;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Dosis', sans-serif;
+}
+/*======================= top ==================*/
+#top{
+	width: 100%;
+	height: $top-bar-height;
+	background: $top-bar-color;
+	color: $top-bar-font-color;
+}
+#logo{
+	@extend .flex-container;
+}
+#logo > img{
+	max-height: $top-bar-height;
+}
+#site-title{
+	padding: 0 1em;
+	@extend .center-center-innercontent;
+	max-width: 15em;
+	margin: 0;
+}
+#site-title > h3{
+	margin: 0;
+}
+#site-title > h3 > span{
+	@extend .font-minus-40-percent;
+}
+#navigation{
+	flex: 1;
+}
+#navigation > form{
+	width: 100%;
+	text-align: right;
+}
+#top > .flex-container{
+	@extend .full-width-flex-container;
+	height: $top-bar-height;
+}
+/*=================== content ===================*/
+#content{
+	width: 100%;
+	height: $content-height;
+}
+
+/*=================== modules ===================*/
+.full-width-flex-container{
+	width: 100%;
+	display: flex;
+}
+.flex-container{
+	display: flex;
+}
+/*=================== surgical ==================*/
+.center-center-innercontent{
+	margin: auto; 
+}
+.font-minus-50-percent{
+	font-size: 50%;
+}
+.font-minus-40-percent{
+	font-size: 60%;
+}
+.font-minus-30-percent{
+	font-size: 70%;
+}
+.font-minus-25-percent{
+	font-size: 75%;
+}
