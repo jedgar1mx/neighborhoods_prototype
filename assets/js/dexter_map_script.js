@@ -14,7 +14,7 @@ var map = new mapboxgl.Map({
     // style URL
     style: 'mapbox://styles/slusarskiddetroitmi/cixxixdy6002g2rr0e5zaxdte',
     // initial position in [long, lat] format
-    center: [-83.2357, 42.4170],
+    center: [-83.1510047, 42.426127],
     // initial zoom
     zoom: 12.2
 });

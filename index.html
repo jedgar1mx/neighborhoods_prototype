@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap-3.3.7/dist/css/bootstrap.css">
   <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css" />
   <link rel="stylesheet" href="assets/css/map-styles.css" />
+  <link rel="stylesheet" href="assets/css/menu-styles.css" />
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js"></script> 
   <link rel="stylesheet" href="assets/css/neighborhoods-styles-0.1.css">
   <!--[if lt IE 9]>
@@ -21,28 +22,40 @@
 <body>
   <main>
     <section id="top">
-      <div class="flex-container">
+      <div id="top-container">
         <div id="logo">
           <img src="assets/img/Logo-500x500.png" alt="City of Detroit">
         </div>
         <div id="site-title">
           <h3><span>FIND YOUR</span> DETROIT</h3>
         </div>
-        <div id="navigation">
-          <form class="form-inline">
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-              <div class="input-group">
-                <div class="input-group-addon">$</div>
-                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-                <div class="input-group-addon">.00</div>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Transfer cash</button>
-          </form>
+        <div id="spacing-title-search"></div>
+        <div id="search">
+          <input id="address-search" type="text" placeholder="Find your neighborhood" onkeydown="moveToPointAction(this)">
         </div>
-        <!-- <div id="mobile-navigation">
-        </div> -->
+        <div id="search-btn" onclick="moveToPointAction(this)">
+          <span class="glyphicon glyphicon-search"></span>
+        </div>
+        <div id="navigation">
+          <div class="menu-container">
+            <input id="click" name="exit" type="checkbox" />
+            <label for="click"><span class="burger"></span></label>   
+          </div>  
+        </div>
+      </div>
+    </section>
+    <section class="sub-menu-row active">
+      <div></div>
+      <div class="sub-menu-container">
+        <div id="display-hospitals-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-education"></span> HOSPITALS
+        </div>
+        <div id="display-schools-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-education"></span> SCHOOLS
+        </div>
+        <div id="display-bike-routes-btn" class="sub-menu-item active">
+          <span class="glyphicon glyphicon-education"></span> BYCICLE LANES
+        </div>
       </div>
     </section>
     <section id="content">
@@ -50,6 +63,26 @@
     </section>
   </main>
   <script src="assets/js/dexter_map_script.js"></script>
+  <script>
+    var moveToPoint = function moveToPoint(coordinates){
+      map.flyTo({
+        center: coordinates
+      });
+    }
+    var moveToPointAction = function moveToPointAction(triggerObj) {
+        if(triggerObj.id == 'search-btn'){
+          moveToPoint([-83.1510047, 42.426127]);
+        }else{
+          if(event.keyCode == 13) {
+            moveToPoint([-83.1510047, 42.426127]);
+          }
+        }
+        
+        // map.fitBounds([[
+        //       -83.1510047, 42.426127
+        // ]]);
+    };
+  </script>
 </body> 
 </html>
 
