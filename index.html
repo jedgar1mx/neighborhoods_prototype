@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css" />
   <link rel="stylesheet" href="assets/css/map-styles.css" />
   <link rel="stylesheet" href="assets/css/menu-styles.css" />
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js"></script> 
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js"></script>
   <link rel="stylesheet" href="assets/css/neighborhoods-styles-0.1.css">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -31,59 +31,69 @@
         </div>
         <div id="spacing-title-search"></div>
         <div id="search">
-          <input id="address-search" type="text" placeholder="Find your neighborhood" onkeydown="moveToPointAction(this)">
+          <input id="address-search" type="text" placeholder="Find your neighborhood">
         </div>
-        <div id="search-btn" onclick="moveToPointAction(this)">
+        <div id="search-btn">
           <span class="glyphicon glyphicon-search"></span>
         </div>
         <div id="navigation">
           <div class="menu-container">
             <input id="click" name="exit" type="checkbox" />
-            <label for="click"><span class="burger"></span></label>   
-          </div>  
+            <label for="click"><span class="burger"></span></label>
+          </div>
         </div>
       </div>
     </section>
-    <section class="sub-menu-row active">
+    <section class="sub-menu-row hidden">
       <div></div>
       <div class="sub-menu-container">
         <div id="display-hospitals-btn" class="sub-menu-item">
-          <span class="glyphicon glyphicon-education"></span> HOSPITALS
+          <span class="glyphicon glyphicon-heart"></span> HOSPITALS
         </div>
         <div id="display-schools-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-education"></span> SCHOOLS
         </div>
-        <div id="display-bike-routes-btn" class="sub-menu-item active">
-          <span class="glyphicon glyphicon-education"></span> BYCICLE LANES
+        <div id="display-bike-routes-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-road"></span> BYCICLE LANES
         </div>
       </div>
     </section>
     <section id="content">
       <div id="map" class="map"></div>
     </section>
+    <section id="neighborhood-info-container">
+      <div class="info-card-flex-blank-space"></div>
+      <div class="info-card">
+        <div id="info-card-hide-btn">
+        </div>
+        <div class="info-card-row">
+          <h3>BAGLEY</h3>
+        </div>
+        <div class="info-card-row">
+          <div class="video-wrap">
+            <video width="100%" height="200" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
+              <source src="http://www.detroitmi.gov/portals/0/Media/Police/Detroit-Police-Recruiting.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="info-card-row">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis interdum tortor. Ut et rutrum lectus, nec molestie odio. Ut eleifend porttitor massa ut luctus. Nulla accumsan condimentum enim, et consectetur eros eleifend in. Aliquam tristique massa ut tortor accumsan facilisis. Quisque vitae sollicitudin neque. Vivamus dictum ut nisl at congue. Etiam vitae sem et magna pretium gravida.</span>
+        </div>
+        <div class="info-card-row">
+          <div class='metric-box'></div>
+          <div class='metric-box'></div>
+          <div class='metric-box'></div>
+          <div class='metric-box'></div>
+        </div>
+      </div>
+      <div class="info-card-flex-blank-space removable"></div>
+    </section>
   </main>
   <script src="assets/js/dexter_map_script.js"></script>
-  <script>
-    var moveToPoint = function moveToPoint(coordinates){
-      map.flyTo({
-        center: coordinates
-      });
-    }
-    var moveToPointAction = function moveToPointAction(triggerObj) {
-        if(triggerObj.id == 'search-btn'){
-          moveToPoint([-83.1510047, 42.426127]);
-        }else{
-          if(event.keyCode == 13) {
-            moveToPoint([-83.1510047, 42.426127]);
-          }
-        }
-        
-        // map.fitBounds([[
-        //       -83.1510047, 42.426127
-        // ]]);
-    };
-  </script>
-</body> 
+  <script src='assets/js/menu_functionality.js'></script>
+  <script src='assets/js/map_section_click_module.js'></script>
+</body>
 </html>
 
 <!-- sample video -->

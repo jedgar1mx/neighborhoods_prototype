@@ -1,6 +1,6 @@
 /*================== fonts======================*/
-@import url('assets/fonts/dosis/Dosis-Regular.ttf');
-@import url('assets/fonts/opensans/OpenSans-Regular.ttf');
+@import url('../fonts/dosis/Dosis-Regular.ttf');
+@import url('../fonts/opensans/OpenSans-Regular.ttf');
 /*================== variables =================*/
 $detroit-color-1: #23a696;
 $top-bar-color: none;
@@ -8,6 +8,7 @@ $top-bar-font-color: #fff;
 $top-bar-height: 8vh;
 $top-bar-top-spacing: 1em;
 $content-height: 100vh;
+$neighborhood-info-height: 60vh;
 /*================== tags ======================*/
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -15,9 +16,9 @@ body {
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
-} 
+}
 main {
-	width: 100%; 
+	width: 100%;
 	height: 100vh;
 	position: relative;
 }
@@ -121,7 +122,7 @@ h1,h2,h3,h4,h5{
 }
 .sub-menu-row > div:first-child{
 	flex: 1;
-} 
+}
 .sub-menu-container{
 	border-top: solid 1px #E0E0E0;
 	background: #fff;
@@ -154,11 +155,61 @@ h1,h2,h3,h4,h5{
 	width: 100%;
 	height: $content-height;
 }
+#neighborhood-info-container{
+	max-height: $neighborhood-info-height;
+	@extend .full-width-flex-container;
+	position: absolute;
+	bottom: 0;
+}
+.info-card-flex-blank-space{
+	flex:1;
+}
+@media all and (min-width: 800px) {
+	.info-card-flex-blank-space.removable{
+		display: none;
+	}
+}
+.info-card{
+	position: relative;
+	width: 40em;
+	background: #fff;
+	padding: 1em;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+#info-card-hide-btn{
+	cursor: pointer;
+	position: absolute;
+	top: -1em;
+	left: calc((100% - 6em)/2);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3em 3em 0 3em;
+	border-color: #EB002B transparent transparent transparent;
+	transition: all 0.2s ease-in-out;
+}
+#info-card-hide-btn:hover{
+	border-width: 4em 3em 0 3em;
+	transition: all 0.2s ease-in-out;
+}
+.info-card-row{
+	@extend .full-width-flex-container;
+	font-size: 1.5em;
+}
+.info-card-row > h3{
+	text-align: center;
+	width: 100%;
+}
+.info-card-row > .metric-box{
 
+}
 /*=================== modules ===================*/
 .full-width-flex-container{
 	width: 100%;
 	display: flex;
+	margin-bottom: 1em;
 }
 .flex-container{
 	display: flex;
@@ -171,7 +222,7 @@ h1,h2,h3,h4,h5{
 }
 /*=================== surgical ==================*/
 .center-center-innercontent{
-	margin: auto; 
+	margin: auto;
 }
 .font-minus-50-percent{
 	font-size: 50%;
