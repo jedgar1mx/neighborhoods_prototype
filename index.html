@@ -61,13 +61,13 @@
     <section id="content">
       <div id="map" class="map"></div>
     </section>
-    <section id="neighborhood-info-container">
-      <div class="info-card-flex-blank-space"></div>
+    <section id="neighborhood-info-container" class="hidden" data-neighborhood="bagley">
       <div class="info-card">
-        <div id="info-card-hide-btn">
+        <div id="info-card-hide-btn" onclick="card1.changeDisplay(card1)">
+          <span>X</span>
         </div>
         <div class="info-card-row">
-          <h3>BAGLEY</h3>
+          <h3 id="neighborhood-name">BAGLEY</h3>
         </div>
         <div class="info-card-row">
           <div class="video-wrap">
@@ -78,21 +78,41 @@
           </div>
         </div>
         <div class="info-card-row">
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis interdum tortor. Ut et rutrum lectus, nec molestie odio. Ut eleifend porttitor massa ut luctus. Nulla accumsan condimentum enim, et consectetur eros eleifend in. Aliquam tristique massa ut tortor accumsan facilisis. Quisque vitae sollicitudin neque. Vivamus dictum ut nisl at congue. Etiam vitae sem et magna pretium gravida.</span>
+          <span class="neighborhood-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis interdum tortor. Ut et rutrum lectus, nec molestie odio. Ut eleifend porttitor massa ut luctus. Nulla accumsan condimentum enim, et consectetur eros eleifend in. Aliquam tristique massa ut tortor accumsan facilisis. Quisque vitae sollicitudin neque. Vivamus dictum ut nisl at congue. Etiam vitae sem et magna pretium gravida.</span>
         </div>
-        <div class="info-card-row">
-          <div class='metric-box'></div>
-          <div class='metric-box'></div>
-          <div class='metric-box'></div>
-          <div class='metric-box'></div>
+        <div class="info-card-row four-squares">
+          <div class="learn-more-btn-space-mover left"></div>
+          <div class='metric-box'>
+            <h5>WALK SCORE</h5>
+            <img src="assets/img/walk_wht.png" alt="walk score"/>
+            <br><span id="walk-score">63</span>
+          </div>
+          <div class='metric-box'>
+            <h5>TRANSIT SCORE</h5>
+            <img src="assets/img/bus_wht.png" alt="transit score"/>
+            <br><span id="transit-score">41</span>
+          </div>
+          <div class='metric-box'>
+            <h5>BIKE SCORE</h5>
+            <img src="assets/img/bicycle_wht.png" alt="bike score"/>
+            <br><span id="bike-score">54</span>
+          </div>
+          <div class='metric-box'>
+            <h5>RESIDENTS</h5>
+            <img style="margin-top:1em" src="assets/img/people_wht.png" alt="residents"/>
+            <br><span id="residents">16,866</span>
+          </div>
+          <div class="learn-more-btn-space-mover"></div>
+          <div id="learn-more-btn" onclick="card1.openNewPage(card1)">LEARN MORE</div>
         </div>
       </div>
-      <div class="info-card-flex-blank-space removable"></div>
     </section>
   </main>
   <script src="assets/js/dexter_map_script.js"></script>
   <script src='assets/js/menu_functionality.js'></script>
+  <script src='assets/js/information_card_functions.js'></script>
   <script src='assets/js/map_section_click_module.js'></script>
+  <script src='assets/js/event_listeners.js'></script>
 </body>
 </html>
 

@@ -1,6 +1,7 @@
-var mapSectionClickModule = (function(){
+var mapSectionClickModule = (function(informationCard){
   map.on('click', function (e) {
     console.log(e);
+    card1.changeDisplay(card1);
     var features = map.queryRenderedFeatures(e.point, { layers: ['states-layer'] });
     if (!features.length) {
         return;
@@ -13,4 +14,4 @@ var mapSectionClickModule = (function(){
         .setHTML(feature.properties.name)
         .addTo(map);
   });
-})(window);
+})(informationCardModule);
