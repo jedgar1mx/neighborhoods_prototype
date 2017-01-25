@@ -1,28 +1,3 @@
-/*================== fonts======================*/
-@import url('../fonts/dosis/Dosis-Regular.ttf');
-@import url('../fonts/opensans/OpenSans-Regular.ttf');
+/*================== imports ======================*/
+@import url('neighborhoods-styles-0.1.scss');
 /*================== variables =================*/
-$detroit-color-1: #23a696;
-$top-bar-color: none;
-$top-bar-font-color: #fff;
-$top-bar-height: 8vh;
-$top-bar-top-spacing: 1em;
-$content-height: 100vh;
-$neighborhood-info-height: 80vh;
-/*================== tags ======================*/
-body {
-	font-family: 'Open Sans', sans-serif;
-	width: 100%;
-	font-size: 1em;
-	margin: 0;
-	padding: 0;
-}
-main {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-}
-h1,h2,h3,h4,h5{
-	font-family: 'Dosis', sans-serif;
-}
-/*======================= top ==================*/

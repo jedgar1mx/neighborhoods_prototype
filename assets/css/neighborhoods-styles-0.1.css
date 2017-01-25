@@ -186,6 +186,13 @@ h1, h2, h3, h4, h5 {
 .info-card-row {
   font-size: 1.5em; }
 
+.info-card-row.near-neighborhoods > span.near-neighborhoods-list > a {
+  padding: .1em;
+  background: #A1D0F6; }
+
+.info-card-row.near-neighborhoods > span.near-neighborhoods-list > a:hover {
+  background: #93BEE0; }
+
 .info-card-row.four-squares {
   max-width: 30em; }
 
