@@ -1,3 +1,6 @@
+// Author: Edgar Montes
+// Department of Innovation Technology
+// Organization: City of Detroit
 /*================== fonts======================*/
 @import url('../fonts/dosis/Dosis-Regular.ttf');
 @import url('../fonts/opensans/OpenSans-Regular.ttf');
@@ -6,7 +9,7 @@ $detroit-color-1: #23a696;
 $detroit-color-1-light: lighten($detroit-color-1,50%);
 $top-bar-color: none;
 $top-bar-font-color: #fff;
-$top-bar-height: 6vh;
+$top-bar-height: 8vh;
 $top-bar-top-spacing: 1em;
 $content-height: 100vh;
 $neighborhood-info-height: 80vh;
@@ -34,6 +37,12 @@ h1,h2,h3,h4,h5{
 	@extend .flex-stretch-content;
 	background: $top-bar-color;
 }
+#back-top{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+} 
 #logo{
 	background: $detroit-color-1;
 	@extend .flex-container;
@@ -71,6 +80,57 @@ h1,h2,h3,h4,h5{
 	padding: 1em;
 	font-size: 1.25vh;
 }
+#spacing-title-search{
+	flex: 1;
+}
+#navigation{
+	width: $top-bar-height;
+	height: $top-bar-height;
+	background: #fff;
+	margin-right: 2em;
+}
+.sub-menu-row.hidden{
+	display: none;
+}
+.sub-menu-row.active{
+	position: absolute;
+	top: $top-bar-height;
+	margin-top: $top-bar-top-spacing;
+	z-index: 5;
+	width: 100%;
+	@extend .full-width-flex-container;
+}
+.sub-menu-row > div:first-child{
+	flex: 1;
+}
+.sub-menu-container{
+	border-top: solid 1px #E0E0E0;
+	background: #fff;
+	color: #afafaf;
+	@extend .flex-right-justify-items;
+	width: 20em;
+}
+.sub-menu-container > .sub-menu-item{
+	cursor: pointer;
+	padding: 1em 2em;
+	font-size: 1.25em;
+	transition: all 0.2s ease-in-out;
+}
+.sub-menu-container > .sub-menu-item:hover{
+	background: $detroit-color-1;
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+}
+.sub-menu-container > .sub-menu-item.active > span{
+	color: $detroit-color-1;
+}
+.sub-menu-container > .sub-menu-item.active:hover > span{
+	color: #FFD769;
+}
+.sub-menu-container > .sub-menu-item > span{
+	margin-right: .5em;
+}
+// ==================== Content =======================
 #content{
 	padding: 0 2em;
 }
@@ -97,15 +157,56 @@ h1,h2,h3,h4,h5{
 	margin-top: 1em;
 }
 .four-squares-section{
-	background: $detroit-color-1-light;
-	width: 40em;
+	flex: 1;
+}
+.four-squares-section > .single-block, .four-squares-section > .pair{
+	@extend .flex-container;
+	@extend .flex-conteiner-wrap;
+	max-width: 90%;
+	margin: auto;
+}
+.four-squares-section > .pair.first-pair{
+	border-bottom: 1px solid #e7e7e7;
+}
+.four-squares-section > .pair.first-pair > .square-item:first-child{
+	border-right: 1px solid #e7e7e7;
+}
+.four-squares-section > .pair.second-pair > .square-item:first-child{
+	border-right: 1px solid #e7e7e7;
+}
+.four-squares-section > .single-block > .square-item{
+	padding: 2em;
+	margin: auto;
+	width: 100%;
+	max-width: 800px;
+}
+.four-squares-section > .pair > .square-item{
+	padding: 2em;
+	margin: auto;
+	text-align: center;
+	color: $detroit-color-1;
+	width: 50%;
+}
+.four-squares-section > .pair > .square-item > img{
+	float: none;
+	margin: 0;
+	width: 8em;
+}
+.four-squares-section > .pair > .square-item > h5{
+	clear: both;
+}
+.four-squares-section > .pair > .square-item > span{
+	font-size: 2.5em;
 }
 .profile-container{
 	@extend .flex-container;
-	max-width: $left-content-max-width;
+	flex: 1;
+}
+.profile-item{
+	margin-right: 2em;
 }
 .profile-item > .person-info > img{
-	width: 5em;
+	width: 8em;
 }
 .profile-item > .person-info > span{
 	font-size: 2em;
@@ -116,24 +217,78 @@ h1,h2,h3,h4,h5{
 	top: -1em;
 }
 .profile-item > .person-story{
+	max-width: 20em;
 	font-size: 1.5em;
 }
 .associations-clubs-section{
-	max-width: $left-content-max-width;
+	flex: 1;
 	margin-right: 1em;
 }
 .associations-clubs-container{
 	@extend .flex-container;
+	@extend .flex-conteiner-wrap;
 }
 .associations-clubs-container > .association-club-item{
 	font-size: 1.5em;
 	padding-right: 2em;
+	padding-bottom: 2em;
 }
 .association-club-item-social-media{
 	@extend .flex-container;
 }
 .association-club-item-social-media > a > img{
 	width: 3em;
+}
+.event-container{
+	width: 100%;
+}
+.event-container > .event-list{
+	@extend .flex-container;
+	@extend .flex-center-justify-items;
+}
+.event-list > .event-item{
+	margin-right: 2em;
+	width: 35em;
+}
+.event-list > .event-item > .event-banner{
+	width: 100%;
+	height: 20em;
+	overflow: hidden;
+}
+.event-list > .event-item > .event-banner > img{
+	max-width: 100%;
+}
+.event-item > .event-details{
+	@extend .flex-container;
+}
+.event-details > .event-date{
+	padding-right: .5em;
+	font-size: 4em;
+	font-weight: bold;
+	text-align: center;
+}
+.event-details > .event-date > span{
+	position: relative;
+}
+.event-date > span.event-month{
+	@extend .font-minus-50-percent;
+	top: -1.5em;
+}
+.event-date > span.event-year{
+	@extend .font-minus-55-percent;
+	top: -3.5em;
+}
+.event-description{
+	padding-top: 1em;
+}
+.event-description > .event-name{
+	cursor: pointer;
+	color: $detroit-color-1;
+	font-size: 2em;
+	font-weight: bold;
+}
+.event-description > .event-text{
+	font-size: 1.5em;
 }
 /*=================== modules ===================*/
 .full-width-flex-container{
@@ -165,6 +320,18 @@ h1,h2,h3,h4,h5{
 /*=================== surgical ==================*/
 .center-center-innercontent{
 	margin: auto;
+}
+.font-minus-75-percent{
+	font-size: 25%;
+}
+.font-minus-65-percent{
+	font-size: 35%;
+}
+.font-minus-60-percent{
+	font-size: 40%;
+}
+.font-minus-55-percent{
+	font-size: 45%;
 }
 .font-minus-50-percent{
 	font-size: 50%;

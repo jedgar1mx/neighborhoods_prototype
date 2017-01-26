@@ -23,6 +23,12 @@ h1, h2, h3, h4, h5 {
   margin-top: 1em;
   background: none; }
 
+#back-top {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5; }
+
 #logo {
   background: #23a696;
   max-width: 8em; }
@@ -297,4 +303,4 @@ h1, h2, h3, h4, h5 {
 .margin-right-1 {
   margin-right: 1em; }
 
-/*# sourceMappingURL=neighborhoods-more-info-styles-0.1.css.map */
+/*# sourceMappingURL=neighborhoods-more-info-styles.css.map */

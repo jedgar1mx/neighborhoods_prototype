@@ -8,7 +8,7 @@
   <meta name="description" content="Find Your Detroit is an initiative to increase awareness in citizens about their own neighborhoods, as well as to share the beauty that each neighborhood has to offer to visitors.">
   <meta name="author" content="Edgar Montes">
   <link rel="stylesheet" href="../assets/css/bootstrap-3.3.7/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="../assets/css/slider-styles.css">
+  <link rel="stylesheet" href="../assets/css/menu-styles.css" />
   <link rel="stylesheet" href="../assets/css/neighborhoods-more-info-styles-0.1.css">
   <script src="../assets/js/chartsjs.js"></script>
   <!--[if lt IE 9]>
@@ -18,6 +18,7 @@
 
 <body>
   <main>
+    <div id="back-top-btn" style="position: fixed; right:2em; bottom:2em;cursor:pointer;background: rgba(35,166,150,.5); padding: 1em;font-size:1.25em;"><span class="glyphicon glyphicon-triangle-top"></span> TOP</div>
     <section id="top">
       <div id="logo">
         <img src="../assets/img/Logo-500x500.png" alt="City of Detroit">
@@ -29,7 +30,34 @@
         <span>MORE<br>NEIGHBORHOODS</span>
       </div>
       <div class="top-nav-item">
-        <span>FINACIAL INCENTIVES <br>& PROGRAMS</span>
+        <span>FINANCIAL INCENTIVES <br>& PROGRAMS</span>
+      </div>
+      <div id="spacing-title-search"></div>
+      <div id="navigation">
+        <div class="menu-container">
+          <input id="click" name="exit" type="checkbox" />
+          <label for="click">
+            <span class="burger"></span>
+            <span class="menu">Menu</span>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section class="sub-menu-row hidden">
+      <div></div>
+      <div class="sub-menu-container">
+        <div class="sub-menu-item" data-anchor="description-section">
+          DESCRIPTION
+        </div>
+        <div class="sub-menu-item" data-anchor="profiles-section">
+          MEET YOUR NEIGHBORS
+        </div>
+        <div class="sub-menu-item" data-anchor="associations-clubs-section">
+          ASSOCIATIONS & BLOCK CLUBS
+        </div>
+        <div class="sub-menu-item" data-anchor="event-container">
+          EVENTS
+        </div>
       </div>
     </section>
     <section id="content">
@@ -49,17 +77,29 @@
           </div>
         </div>
         <div class='four-squares-section'>
-          <div class='square-item'>
-            1
+          <div class="pair first-pair">
+            <div class='square-item'>
+              <img src="../assets/img/walk.png" alt="walk score"/>
+              <h5>WALK SCORE</h5>
+              <span id="walk-score">63</span>
+            </div>
+            <div class='square-item'>
+              <img src="../assets/img/bus.png" alt="transit score"/>
+              <h5>TRANSIT SCORE</h5>
+              <span id="transit-score">41</span>
+            </div>
           </div>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
+          <div class="pair second-pair">
+            <div class='square-item'>
+              <img src="../assets/img/bicycle.png" alt="bike score"/>
+              <h5>BIKE SCORE</h5>
+              <span id="bike-score">54</span>
+            </div>
+            <div class='square-item'>
+              <img src="../assets/img/population.png" alt="walk score"/>
+              <h5>RESIDENTS</h5>
+              <span id="residents">16,866</span>
+            </div>
           </div>
         </div>
       </div>
@@ -111,17 +151,22 @@
           </div>
         </div>
         <div class='four-squares-section'>
-          <div class='square-item'>
-            1
+          <div class="single-block">
+            <div class='square-item'>
+              <canvas id="myChart" width="800" height="500"></canvas>
+            </div>
           </div>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
+          <div class="pair second-pair">
+            <div class='square-item'>
+              <img src="../assets/img/house.png" alt="number of homes"/>
+              <h5>HOMES</h5>
+              <span id="number-of-homes">11,235</span>
+            </div>
+            <div class='square-item'>
+              <img src="../assets/img/exam.png" alt="home renovation permits"/>
+              <h5>HOME RENOVATION PERMITS</h5>
+              <span id="residents">356</span>
+            </div>
           </div>
         </div>
       </div>
@@ -166,17 +211,22 @@
           </div>
         </div>
         <div class='four-squares-section'>
-          <div class='square-item'>
-            1
+          <div class="single-block">
+            <div class='square-item'>
+              <canvas id="myChart2" width="800" height="500"></canvas>
+            </div>
           </div>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
+          <div class="pair second-pair">
+            <div class='square-item'>
+              <img src="../assets/img/cutlery.png" alt="number of restaurants"/>
+              <h5>RESTAURANTS</h5>
+              <span id="number-of-restaurants">35</span>
+            </div>
+            <div class='square-item'>
+              <img src="../assets/img/exam.png" alt="business renovation permits"/>
+              <h5>BUSINESS RENOVATION PERMITS</h5>
+              <span id="business-renovations">135</span>
+            </div>
           </div>
         </div>
       </div>
@@ -184,57 +234,115 @@
         <div class="event-container">
           <h4>EVENTS</h4>
           <hr>
-          <div class="container">
-            <input type="radio" name="nav" id="first" checked/>
-            <input type="radio" name="nav" id="second" />
-            <input type="radio" name="nav" id="third" />
-
-            <label for="first" class="first"></label>
-            <label for="second"  class="second"></label>
-            <label for="third" class="third"></label>
-
-            <div class="one slide">
-              <blockquote>
-                <img src="../assets/img/car_show.jpg" alt="car show"></img>
-              </blockquote>
-              <img src="http://behance.vo.llnwd.net/profiles14/297668/projects/3041537/f4d6311b432c4804f1c8045459df9647.jpg" width="170" height="130" />
-              <h2>Steve Kruger</h2>
-              <h6>UI/UX Designer at Woof Design Studio</h6>
+          <div class="event-list">
+            <div class="event-item">
+              <div class="event-banner">
+                <img src="../assets/img/car_show.jpg" alt="auto show"></img>
+              </div>
+              <div class="event-details">
+                <div class="event-date">
+                  <span class="event-day">12</span>
+                  <br><span class="event-month">JAN</span>
+                  <br><span class="event-year">2017</span>
+                </div>
+                <div class="event-description">
+                  <span class="event-name">AUTO SHOW</span>
+                  <br><span class="event-text">Something nice about the Auto Show like, they have shinny stuff</span>
+                </div>
+              </div>
             </div>
-            <div class="two slide">
-              <blockquote>
-                <span class="leftq quotes">&ldquo;</span> He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I recommend him to anyone who wants their work done professionally. The project ... <a href="#"> read more</a><span class="rightq quotes">&bdquo; </span>
-              </blockquote>
-              <img src="http://behance.vo.llnwd.net/profiles14/297668/projects/3041537/f4d6311b432c4804f1c8045459df9647.jpg" width="170" height="130" />
-              <h2>John Doe</h2>
-              <h6>Developer Relations at Woof Studios</h6>
+            <div class="event-item">
+              <div class="event-banner">
+                <img src="../assets/img/winter_blast.jpg" alt="winter blast"></img>
+              </div>
+              <div class="event-details">
+                <div class="event-date">
+                  <span class="event-day">20</span>
+                  <br><span class="event-month">JAN</span>
+                  <br><span class="event-year">2017</span>
+                </div>
+                <div class="event-description">
+                  <span class="event-name">WINTER BLAST</span>
+                  <br><span class="event-text">Something nice about the Winter Blast like, they have shinny stuff</span>
+                </div>
+              </div>
             </div>
-            <div class="three slide">
-              <blockquote>
-                <span class="quotes leftq"> &ldquo;</span> He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again. <span class="rightq quotes">&bdquo; </span>
-              </blockquote>
-              <img src="http://media.digitalcameraworld.com/files/2012/10/People_photography_composition_tips_PHG18.chap4_.n_p38_39.jpg" width="170" height="130" />
-              <h2>Steve Stevenson</h2>
-              <h6>CEO Woof Web Design Studios</h6>
+            <div class="event-item">
+              <div class="event-banner">
+                <img src="../assets/img/st_patrik_parade.jpeg" alt="st. patrik's parade"></img>
+              </div>
+              <div class="event-details">
+                <div class="event-date">
+                  <span class="event-day">20</span>
+                  <br><span class="event-month">FEB</span>
+                  <br><span class="event-year">2017</span>
+                </div>
+                <div class="event-description">
+                  <span class="event-name">ST. PATRIK'S PARADE</span>
+                  <br><span class="event-text">Something nice about the St. Patrik's Parade like, they have shinny stuff</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class='four-squares-section'>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
-          </div>
-          <div class='square-item'>
-            1
           </div>
         </div>
       </div>
     </section>
   </main>
+  <script src='../assets/js/menu_functionality.js'></script>
+  <script>
+    var data = {
+        labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+        datasets: [
+            {
+                label: "Avg. Home Prices",
+                fillColor: "#23a696",
+                strokeColor: "#23a696",
+                pointColor: "#23a696",
+                pointStrokeColor: "#23a696",
+                pointHighlightFill: "#23a696",
+                pointHighlightStroke: "#23a696",
+                data: [500, 1000, 3000, 8000, 14000, 24000, 45000]
+            }
+        ]
+    };
+
+    var data2 = {
+        labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+        datasets: [
+            {
+                label: "Avg. Price Per sq/ft",
+                fillColor: "#23a696",
+                strokeColor: "#23a696",
+                pointColor: "#23a696",
+                pointStrokeColor: "#23a696",
+                pointHighlightFill: "#23a696",
+                pointHighlightStroke: "#23a696",
+                data: [35, 55, 75, 130, 230, 500, 1000]
+            }
+        ]
+    };
+
+    var options = {
+        animation: false,
+        scaleLabel:
+        function(label){return  ' $' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
+
+    };
+
+    //Get the context of the canvas element we want to select
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var ctx2 = document.getElementById("myChart2").getContext("2d");
+    /*************************************************************************/
+    var myLineChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+    var myLineChart2 = new Chart(ctx2, {
+        type: 'line',
+        data: data2,
+        options: options
+    });
+  </script>
 </body>
 </html>

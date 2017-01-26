@@ -13,18 +13,40 @@
         subMenuDisplaySelection = 'none';
       }
     }
+    var scrollToSection = function scrollToSection(obj) {
+      let anchor = obj.getAttribute('data-anchor');
+      anchor = document.querySelector('.' + anchor);
+      if(anchor != null){
+        anchor.scrollIntoView();
+        console.log(document.getElementById('click').checked);
+        menuDisplay();
+        document.getElementById('click').checked = false;
+        console.log(document.getElementById('click').checked);
+      }else{
+        console.log('Section does not exist.');
+      }
+    }
     function changeMenuClassSet(newClassList){
       document.querySelector('.sub-menu-row').className = newClassList;
     }
     return {
       changeDisplay: function(obj) {
         checkSubMenuRequest(obj);
+      },
+      goToAnchor: function(obj) {
+        scrollToSection(obj);
       }
     }
   }
   var subMenu = subMenuDisplayProcessing();
   var subMenuAction = function subMenuAction(e) {
-    subMenu.changeDisplay(e);
+    if(e.getAttribute('data-anchor') == null){
+      console.log('calling changeDisplay');
+      subMenu.changeDisplay(e);
+    }else{
+      subMenu.goToAnchor(e);
+    }
+
   }
   var displayMenuProcess = function displayMenuProcess() {
     var subMenuDisplayProcessing = 'false';
@@ -88,12 +110,25 @@
       //       -83.1510047, 42.426127
       // ]]);
   }
-  document.getElementById('search-btn').addEventListener('click', function (e) {
-    moveToPointAction(e.target);
-  });
-  document.getElementById('address-search').addEventListener('keydown', function (e) {
-    moveToPointAction(e);
-  });
+  var moveBackToTop = function moveBackToTop() {
+    document.getElementById('navigation').scrollIntoView();
+  }
+  var backToTopBtn = document.getElementById('back-top-btn');
+  if(backToTopBtn != null){
+    backToTopBtn.addEventListener('click', moveBackToTop);
+  }
+  var searchBtn = document.getElementById('search-btn');
+  if(searchBtn != null){
+    searchBtn.addEventListener('click', function (e) {
+      moveToPointAction(e.target);
+    });
+  }
+  var addresSearch = document.getElementById('address-search');
+  if(addresSearch != null){
+    addresSearch.addEventListener('keydown', function (e) {
+      moveToPointAction(e);
+    });
+  }
   document.getElementById('navigation').addEventListener('click', menuDisplay);
   Array.from(document.getElementsByClassName('sub-menu-item')).forEach(function(item) {
     item.addEventListener('click', function (e) {

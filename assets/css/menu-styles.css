@@ -1,9 +1,7 @@
 span.menu {
 	position: absolute;
-	left: 150%;
-	top: 7px;
-	font-size: 22px;
-	font-family: 'Comfortaa', cursive, sans-serif;
+	top: 28px;
+	font-size: 1.4em;
 	letter-spacing: 1px;
 	color: #23a696;
 }
@@ -12,7 +10,7 @@ span.menu {
 	/*position: absolute;
 	top: 50%;
 	left: 50%;
-	margin: -20px 0 0 -65px;*/ 
+	margin: -20px 0 0 -65px;*/
 	width: 8vh;
 	height: 8vh;
 	display: flex;
@@ -24,9 +22,9 @@ span.menu {
 
 .menu-container label {
 	position: relative;
-	width: 40px;
-	height: 40px;
-	top: calc((100% - 40px)/2);
+	width: 30px;
+	height: 30px;
+	top: calc((100% - 50px)/2);
 	left: calc((100% - 40px)/2);
 	display: block;
 	cursor: pointer;
