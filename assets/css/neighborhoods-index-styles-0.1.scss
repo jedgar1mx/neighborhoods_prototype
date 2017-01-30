@@ -1,0 +1,32 @@
+// Author: Edgar Montes
+// Department of Innovation Technology
+// Organization: City of Detroit
+/*================== imports ======================*/
+@import "neighborhoods-styles-0.1.scss";
+//================== top ==========================
+
+#top{
+  position: relative !important;
+  margin-bottom: 2em;
+}
+#content{
+  padding: 0 2em;
+}
+.point-of-interest{
+  @extend .full-width-flex-container;
+  @extend .flex-stretch-content;
+  background: $detroit-color-1;
+  position: relative;
+}
+.point-of-interest > picture{
+  width: 100%;
+  padding: 1em 0 1em 1em;
+  margin: auto;
+  flex: 1;
+}
+.point-of-interest > .point-of-interest-description{
+  max-width: 20em;
+  font-size: 1.5em;
+  color: $top-bar-font-color;
+  padding: 1em;
+}

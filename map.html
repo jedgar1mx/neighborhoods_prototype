@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Find Your Detroit</title>
+  <meta name="description" content="Find Your Detroit is an initiative to increase awareness in citizens about their own neighborhoods, as well as to share the beauty that each neighborhood has to offer to visitors.">
+  <meta name="author" content="Edgar Montes">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-3.3.7/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css" />
+  <link rel="stylesheet" href="assets/css/map-styles.css" />
+  <link rel="stylesheet" href="assets/css/menu-styles.css" />
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js"></script>
+  <link rel="stylesheet" href="assets/css/neighborhoods-styles-0.1.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <main>
+    <section id="top">
+      <div id="top-container">
+        <div id="logo">
+          <img src="assets/img/Logo-500x500.png" alt="City of Detroit">
+        </div>
+        <div id="site-title">
+          <h3><span>FIND YOUR</span> DETROIT</h3>
+        </div>
+        <div id="spacing-title-search"></div>
+        <div id="search">
+          <input id="address-search" type="text" placeholder="Find your neighborhood">
+        </div>
+        <div id="search-btn">
+          <span class="glyphicon glyphicon-search"></span>
+        </div>
+        <div id="navigation">
+          <div class="menu-container">
+            <input id="click" name="exit" type="checkbox" />
+            <label for="click">
+              <span class="burger"></span>
+              <span class="menu">Menu</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sub-menu-row hidden">
+      <div></div>
+      <div class="sub-menu-container">
+        <div id="display-hospitals-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-heart"></span> HOSPITALS
+        </div>
+        <div id="display-schools-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-education"></span> SCHOOLS
+        </div>
+        <div id="display-bike-routes-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-road"></span> BYCICLE LANES
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <div id="map" class="map"></div>
+    </section>
+    <section id="neighborhood-info-container" class="hidden" data-neighborhood="bagley">
+      <div class="info-card">
+        <div id="info-card-hide-btn" onclick="card1.changeDisplay(card1)">
+          <span>X</span>
+        </div>
+        <div class="info-card-row">
+          <h3 id="neighborhood-name">BAGLEY</h3>
+        </div>
+        <div class="info-card-row">
+          <div class="video-wrap">
+            <video width="100%" height="200" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
+              <source src="http://www.detroitmi.gov/portals/0/Media/Police/Detroit-Police-Recruiting.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="info-card-row">
+          <span class="neighborhood-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis interdum tortor. Ut et rutrum lectus, nec molestie odio. Ut eleifend porttitor massa ut luctus. Nulla accumsan condimentum enim, et consectetur eros eleifend in. Aliquam tristique massa ut tortor accumsan facilisis. Quisque vitae sollicitudin neque. Vivamus dictum ut nisl at congue. Etiam vitae sem et magna pretium gravida.</span>
+        </div>
+        <div class="info-card-row near-neighborhoods">
+          <span><b>Nearby Neighborhoods:</b></span>
+          <span class="near-neighborhoods-list">
+            <a href="#">Blackstone Park</a>, <a href="#">Fitzgerald</a>, <a href="#">Greenwich</a>, <a href="#">Harmony Village</a>, <a href="#">Pembroke</a>.
+          </span>
+        </div>
+        <div class="info-card-row four-squares">
+          <div class="learn-more-btn-space-mover left"></div>
+          <div class='metric-box'>
+            <h5>WALK SCORE</h5>
+            <img src="assets/img/walk_wht.png" alt="walk score"/>
+            <br><span id="walk-score">63</span>
+          </div>
+          <div class='metric-box'>
+            <h5>TRANSIT SCORE</h5>
+            <img src="assets/img/bus_wht.png" alt="transit score"/>
+            <br><span id="transit-score">41</span>
+          </div>
+          <div class='metric-box'>
+            <h5>BIKE SCORE</h5>
+            <img src="assets/img/bicycle_wht.png" alt="bike score"/>
+            <br><span id="bike-score">54</span>
+          </div>
+          <div class='metric-box'>
+            <h5>RESIDENTS</h5>
+            <img style="margin-top:1em" src="assets/img/people_wht.png" alt="residents"/>
+            <br><span id="residents">16,866</span>
+          </div>
+          <div class="learn-more-btn-space-mover"></div>
+          <div id="learn-more-btn" onclick="card1.openNewPage(card1)">LEARN MORE</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/dexter_map_script.js"></script>
+  <script src='assets/js/menu_functionality.js'></script>
+  <script src='assets/js/information_card_functions.js'></script>
+  <script src='assets/js/map_section_click_module.js'></script>
+  <script src='assets/js/event_listeners.js'></script>
+</body>
+</html>
+
+<!-- sample video -->
+<!-- <video class="embed-responsive-item" width="1920" height="1080" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
+    <source src="http://www.detroitmi.gov/portals/0/Media/Police/Detroit-Police-Recruiting.mp4" type="video/mp4">
+  Your browser does not support the video tag. </video> -->

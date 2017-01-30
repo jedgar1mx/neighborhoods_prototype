@@ -1,37 +1,29 @@
 // Author: Edgar Montes
 // Department of Innovation Technology
 // Organization: City of Detroit
+<<<<<<< HEAD
+// =================== imports ==================
+@import "neighborhoods-styles-0.1.scss";
+=======
 /*================== fonts======================*/
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 @import url('../fonts/dosis/Dosis-Regular.ttf');
 @import url('../fonts/opensans/OpenSans-Regular.ttf');
 /*================== variables =================*/
-$detroit-color-1: #23a696;
 $detroit-color-1-light: lighten($detroit-color-1,50%);
+<<<<<<< HEAD
+=======
 $top-bar-color: none;
 $top-bar-font-color: #fff;
 $top-bar-height: 8vh;
 $top-bar-top-spacing: 1em;
 $content-height: 100vh;
 $neighborhood-info-height: 80vh;
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 $left-content-max-width: 72em;
-/*================== tags ======================*/
-body {
-	font-family: 'Open Sans', sans-serif;
-	width: 100%;
-	font-size: 1em;
-	margin: 0;
-	padding: 0;
-}
-main {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-}
-h1,h2,h3,h4,h5{
-	font-family: 'Dosis', sans-serif;
-}
 /*======================= top ==================*/
 #top{
+	position: relative;
 	margin-top: $top-bar-top-spacing;
 	@extend .full-width-flex-container;
 	@extend .flex-stretch-content;
@@ -42,6 +34,8 @@ h1,h2,h3,h4,h5{
 	right: 0;
 	bottom: 0;
 	z-index: 5;
+<<<<<<< HEAD
+=======
 } 
 #logo{
 	background: $detroit-color-1;
@@ -66,10 +60,13 @@ h1,h2,h3,h4,h5{
 }
 #site-title > h3 > span{
 	@extend .font-minus-40-percent;
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 }
 .top-nav-item{
 	@extend .flex-container;
 	cursor: pointer;
+	font-size: 2em;
+	color: #000;
 }
 .top-nav-item:hover{
 	background: $detroit-color-1;
@@ -89,6 +86,8 @@ h1,h2,h3,h4,h5{
 	background: #fff;
 	margin-right: 2em;
 }
+<<<<<<< HEAD
+=======
 .sub-menu-row.hidden{
 	display: none;
 }
@@ -130,6 +129,7 @@ h1,h2,h3,h4,h5{
 .sub-menu-container > .sub-menu-item > span{
 	margin-right: .5em;
 }
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 // ==================== Content =======================
 #content{
 	padding: 0 2em;
@@ -204,19 +204,32 @@ h1,h2,h3,h4,h5{
 }
 .profile-item{
 	margin-right: 2em;
+<<<<<<< HEAD
+}
+.profile-item > .person-info{
+	position: relative;
+=======
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 }
 .profile-item > .person-info > img{
 	width: 8em;
 }
-.profile-item > .person-info > span{
+.profile-item > .person-info > p{
 	font-size: 2em;
+	position: absolute;
+	top: 0;
+	left: 5em;
 }
-.profile-item > .person-info > span > .person-neighborhood{
+.profile-item > .person-info > p > .person-neighborhood{
 	@extend .font-minus-40-percent;
 	position: relative;
 	top: -1em;
 }
 .profile-item > .person-story{
+<<<<<<< HEAD
+	margin-top: .5em;
+=======
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 	max-width: 20em;
 	font-size: 1.5em;
 }
@@ -240,6 +253,8 @@ h1,h2,h3,h4,h5{
 	width: 3em;
 }
 .event-container{
+<<<<<<< HEAD
+=======
 	width: 100%;
 }
 .event-container > .event-list{
@@ -292,31 +307,38 @@ h1,h2,h3,h4,h5{
 }
 /*=================== modules ===================*/
 .full-width-flex-container{
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 	width: 100%;
-	display: flex;
-	margin-bottom: 3em;
 }
-.flex-container{
-	display: flex;
+.event-container > .event-list{
+	@extend .flex-container;
+	@extend .flex-center-justify-items;
 }
-.flex-stretch-content{
-	align-items: stretch;
+.event-list > .event-item{
+	margin-right: 2em;
+	width: 35em;
 }
-.flex-align-items-end{
-	align-items: flex-end;
+.event-list > .event-item > .event-banner{
+	width: 100%;
+	height: 20em;
+	overflow: hidden;
 }
-.flex-right-justify-items{
-	justify-content: flex-end;
+.event-list > .event-item > .event-banner > img{
+	max-width: 100%;
 }
-.flex-center-justify-items{
-	justify-content: center;
+.event-item > .event-details{
+	@extend .flex-container;
 }
-.flex-space-between-justify-items{
-	justify-content: space-between;
+.event-details > .event-date{
+	padding-right: .5em;
+	font-size: 4em;
+	font-weight: bold;
+	text-align: center;
 }
-.flex-conteiner-wrap{
-	flex-wrap: wrap;
-}
+<<<<<<< HEAD
+.event-details > .event-date > span{
+	position: relative;
+=======
 /*=================== surgical ==================*/
 .center-center-innercontent{
 	margin: auto;
@@ -335,19 +357,25 @@ h1,h2,h3,h4,h5{
 }
 .font-minus-50-percent{
 	font-size: 50%;
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 }
-.font-minus-40-percent{
-	font-size: 60%;
+.event-date > span.event-month{
+	@extend .font-minus-50-percent;
+	top: -1.5em;
 }
-.font-minus-30-percent{
-	font-size: 70%;
+.event-date > span.event-year{
+	@extend .font-minus-55-percent;
+	top: -3.5em;
 }
-.font-minus-25-percent{
-	font-size: 75%;
+.event-description{
+	padding-top: 1em;
 }
-.margin-bottom-1{
-	margin-bottom: 1em;
+.event-description > .event-name{
+	cursor: pointer;
+	color: $detroit-color-1;
+	font-size: 2em;
+	font-weight: bold;
 }
-.margin-right-1{
-	margin-right: 1em;
+.event-description > .event-text{
+	font-size: 1.5em;
 }

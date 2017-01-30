@@ -1,4 +1,5 @@
 /*================== imports ======================*/
+/*================== imports ======================*/
 @import url("../fonts/dosis/Dosis-Regular.ttf");
 @import url("../fonts/opensans/OpenSans-Regular.ttf");
 /*================== variables =================*/
@@ -247,7 +248,7 @@ h1, h2, h3, h4, h5 {
   .info-card-row.four-squares {
     max-width: 100%; } }
 /*=================== modules ===================*/
-.full-width-flex-container, #top-container, .sub-menu-row.active, .info-card-row {
+.full-width-flex-container, #top-container, .sub-menu-row.active, .info-card-row, .point-of-interest {
   width: 100%;
   display: flex;
   margin-bottom: 3em; }
@@ -255,7 +256,7 @@ h1, h2, h3, h4, h5 {
 .flex-container, #logo, #site-title, #search-btn, #neighborhood-info-container {
   display: flex; }
 
-.flex-stretch-content, #top-container {
+.flex-stretch-content, #top-container, .point-of-interest {
   align-items: stretch; }
 
 .flex-align-items-end, .info-card-row.four-squares {
@@ -307,4 +308,27 @@ h1, h2, h3, h4, h5 {
 .margin-right-1 {
   margin-right: 1em; }
 
-/*# sourceMappingURL=neighborhoods-styles-0.1.css.map */
+#top {
+  position: relative !important;
+  margin-bottom: 2em; }
+
+#content {
+  padding: 0 2em; }
+
+.point-of-interest {
+  background: #23a696;
+  position: relative; }
+
+.point-of-interest > picture {
+  width: 100%;
+  padding: 1em 0 1em 1em;
+  margin: auto;
+  flex: 1; }
+
+.point-of-interest > .point-of-interest-description {
+  max-width: 20em;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 1em; }
+
+/*# sourceMappingURL=neighborhoods-index-styles-0.1.css.map */

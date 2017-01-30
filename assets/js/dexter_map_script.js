@@ -25,6 +25,7 @@ var map = new mapboxgl.Map({
 
 // add schools
 var schools = 'assets/js/schools.geojson'
+<<<<<<< HEAD
 
 var hospitals = 'assets/js/hospitals.geojson'
 
@@ -32,11 +33,31 @@ var bikes = 'assets/js/bikes.geojson'
 
 // add hospitals
 
+=======
+
+var hospitals = 'assets/js/hospitals.geojson'
+
+var bikes = 'assets/js/bikes.geojson'
+
+// add hospitals
+
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 // load schools
 map.on('load', function (e) {
     map.addSource('hospitals', {
         type: 'geojson',
         data:hospitals
+<<<<<<< HEAD
+    });
+    // map.addLayer({
+    //     'id': 'hospital-marker',
+    //     'type': 'symbol',
+    //     'source': 'hospitals',
+    //     'layout': {
+    //         'icon-image': 'hospital-15'
+    //     }
+    // });
+=======
     });
     map.addLayer({
         'id': 'hospital-marker',
@@ -46,11 +67,23 @@ map.on('load', function (e) {
             'icon-image': 'hospital-15'
         }
     });
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 
     map.addSource('schools', {
         type: 'geojson',
         data:schools
     });
+<<<<<<< HEAD
+    // map.addLayer({
+    //     'id': 'school-marker',
+    //     'type': 'symbol',
+    //     'source': 'schools',
+    //     'layout': {
+    //       'icon-image': 'college-15'
+    //     },
+    //
+    // });
+=======
     map.addLayer({
         'id': 'school-marker',
         'type': 'symbol',
@@ -60,11 +93,29 @@ map.on('load', function (e) {
         },
 
     });
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 
     map.addSource('bikes', {
         type: 'geojson',
         data:bikes
     });
+<<<<<<< HEAD
+    // map.addLayer({
+    //     'id': 'bike-lanes',
+    //     'type': 'line',
+    //     'source': 'bikes',
+    //     'layout': {
+    //         'visibility': 'visible',
+    //         'line-join': 'round',
+    //         'line-cap': 'round'
+    //     },
+    //     'paint': {
+    //         'line-color': '#05E447',
+    //         'line-width': 4
+    //     }
+    //
+    // });
+=======
     map.addLayer({
         'id': 'bike-lanes',
         'type': 'line',
@@ -80,6 +131,7 @@ map.on('load', function (e) {
         }
 
     });
+>>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 });
 
 

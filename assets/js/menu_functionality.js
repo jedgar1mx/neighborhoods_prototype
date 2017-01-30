@@ -1,15 +1,95 @@
 (function(){
   var subMenuDisplayProcessing = function subMenuDisplayProcessing() {
     var subMenuDisplaySelection = 'none';
+    var removeMapLayer = function removeMapLayer() {
+      switch (subMenuDisplaySelection) {
+        case "display-hospitals-btn":
+          map.removeLayer('hospital-marker');
+          break;
+
+        case "display-schools-btn":
+          map.removeLayer('school-marker');
+          break;
+
+        case "display-bike-routes-btn":
+          map.removeLayer('bike-lanes');
+          break;
+        default:
+
+      }
+    }
+    var addMapLayer = function addMapLayer(newDisplayItem) {
+      switch (newDisplayItem) {
+        case "display-hospitals-btn":
+          removeMapLayer();
+          // map.addSource('hospitals', {
+          //     type: 'geojson',
+          //     data:hospitals
+          // });
+          map.addLayer({
+              'id': 'hospital-marker',
+              'type': 'symbol',
+              'source': 'hospitals',
+              'layout': {
+                  'icon-image': 'hospital-15'
+              }
+          });
+          break;
+
+        case "display-schools-btn":
+          removeMapLayer();
+          // map.addSource('schools', {
+          //     type: 'geojson',
+          //     data:schools
+          // });
+          map.addLayer({
+              'id': 'school-marker',
+              'type': 'symbol',
+              'source': 'schools',
+              'layout': {
+                'icon-image': 'college-15'
+              },
+
+          });
+          break;
+
+        case "display-bike-routes-btn":
+          removeMapLayer();
+          // map.addSource('bikes', {
+          //     type: 'geojson',
+          //     data:bikes
+          // });
+          map.addLayer({
+              'id': 'bike-lanes',
+              'type': 'line',
+              'source': 'bikes',
+              'layout': {
+                  'visibility': 'visible',
+                  'line-join': 'round',
+                  'line-cap': 'round'
+              },
+              'paint': {
+                  'line-color': '#05E447',
+                  'line-width': 4
+              }
+
+          });
+          break;
+        default:
+
+      }
+    }
     function checkSubMenuRequest(obj) {
       console.log('current:' + subMenuDisplaySelection);
       if(subMenuDisplaySelection != obj.id){
         (subMenuDisplaySelection == 'none') ? 0:document.querySelector('.sub-menu-item.active').className = 'sub-menu-item';
+        addMapLayer(obj.id);
         subMenuDisplaySelection = obj.id;
         console.log('new:' + subMenuDisplaySelection);
         obj.className = 'sub-menu-item active';
       }else{
         obj.className = 'sub-menu-item';
+        removeMapLayer();
         subMenuDisplaySelection = 'none';
       }
     }

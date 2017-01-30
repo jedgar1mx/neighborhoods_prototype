@@ -1,7 +1,7 @@
 // Author: Edgar Montes
 // Department of Innovation Technology
 // Organization: City of Detroit
-/*================== fonts======================*/
+/*================== imports ======================*/
 @import url('../fonts/dosis/Dosis-Regular.ttf');
 @import url('../fonts/opensans/OpenSans-Regular.ttf');
 /*================== variables =================*/
@@ -287,7 +287,7 @@ h1,h2,h3,h4,h5{
 .full-width-flex-container{
 	width: 100%;
 	display: flex;
-	margin-bottom: 1em;
+	margin-bottom: 3em;
 }
 .flex-container{
 	display: flex;
@@ -304,12 +304,27 @@ h1,h2,h3,h4,h5{
 .flex-center-justify-items{
 	justify-content: center;
 }
+.flex-space-between-justify-items{
+	justify-content: space-between;
+}
 .flex-conteiner-wrap{
 	flex-wrap: wrap;
 }
 /*=================== surgical ==================*/
 .center-center-innercontent{
 	margin: auto;
+}
+.font-minus-75-percent{
+	font-size: 25%;
+}
+.font-minus-65-percent{
+	font-size: 35%;
+}
+.font-minus-60-percent{
+	font-size: 40%;
+}
+.font-minus-55-percent{
+	font-size: 45%;
 }
 .font-minus-50-percent{
 	font-size: 50%;

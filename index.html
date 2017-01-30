@@ -9,11 +9,8 @@
   <meta name="author" content="Edgar Montes">
 
   <link rel="stylesheet" href="assets/css/bootstrap-3.3.7/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css" />
-  <link rel="stylesheet" href="assets/css/map-styles.css" />
   <link rel="stylesheet" href="assets/css/menu-styles.css" />
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js"></script>
-  <link rel="stylesheet" href="assets/css/neighborhoods-styles-0.1.css">
+  <link rel="stylesheet" href="assets/css/neighborhoods-index-styles-0.1.css">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -62,70 +59,29 @@
       </div>
     </section>
     <section id="content">
-      <div id="map" class="map"></div>
-    </section>
-    <section id="neighborhood-info-container" class="hidden" data-neighborhood="bagley">
-      <div class="info-card">
-        <div id="info-card-hide-btn" onclick="card1.changeDisplay(card1)">
-          <span>X</span>
-        </div>
-        <div class="info-card-row">
-          <h3 id="neighborhood-name">BAGLEY</h3>
-        </div>
-        <div class="info-card-row">
-          <div class="video-wrap">
-            <video width="100%" height="200" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
-              <source src="http://www.detroitmi.gov/portals/0/Media/Police/Detroit-Police-Recruiting.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+      <section class="point-of-interest">
+        <picture>
+          <source
+            media="(min-width: 650px)"
+            srcset="assets/img/garden.jpg">
+          <source
+            media="(min-width: 465px)"
+            srcset="assets/img/garden.jpg">
+          <img
+            src="assets/img/garden.jpg"
+            alt="community garden">
+        </picture>
+        <div class="point-of-interest-description">
+          <div class="title">
+            COMMUNITY INVOLMENT
+          </div>
+          <div class="summary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque magna, facilisis eleifend ligula sit amet, sodales convallis elit. Nullam molestie nibh non massa commodo, a lobortis ante convallis. Morbi posuere lectus in diam tincidunt vestibulum. Suspendisse id nunc ornare, porttitor massa eget, rhoncus diam. Phasellus volutpat at dui vel blandit. Quisque condimentum ligula a dolor interdum tempus. Fusce lectus leo, luctus non condimentum in, fermentum nec ipsum. Aliquam erat volutpat. Cras libero massa, consectetur quis suscipit at, rutrum a ex. Proin sed justo ultricies, commodo lectus ac, pretium lorem.
           </div>
         </div>
-        <div class="info-card-row">
-          <span class="neighborhood-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis interdum tortor. Ut et rutrum lectus, nec molestie odio. Ut eleifend porttitor massa ut luctus. Nulla accumsan condimentum enim, et consectetur eros eleifend in. Aliquam tristique massa ut tortor accumsan facilisis. Quisque vitae sollicitudin neque. Vivamus dictum ut nisl at congue. Etiam vitae sem et magna pretium gravida.</span>
-        </div>
-        <div class="info-card-row near-neighborhoods">
-          <span><b>Nearby Neighborhoods:</b></span>
-          <span class="near-neighborhoods-list">
-            <a href="#">Blackstone Park</a>, <a href="#">Fitzgerald</a>, <a href="#">Greenwich</a>, <a href="#">Harmony Village</a>, <a href="#">Pembroke</a>.
-          </span>
-        </div>
-        <div class="info-card-row four-squares">
-          <div class="learn-more-btn-space-mover left"></div>
-          <div class='metric-box'>
-            <h5>WALK SCORE</h5>
-            <img src="assets/img/walk_wht.png" alt="walk score"/>
-            <br><span id="walk-score">63</span>
-          </div>
-          <div class='metric-box'>
-            <h5>TRANSIT SCORE</h5>
-            <img src="assets/img/bus_wht.png" alt="transit score"/>
-            <br><span id="transit-score">41</span>
-          </div>
-          <div class='metric-box'>
-            <h5>BIKE SCORE</h5>
-            <img src="assets/img/bicycle_wht.png" alt="bike score"/>
-            <br><span id="bike-score">54</span>
-          </div>
-          <div class='metric-box'>
-            <h5>RESIDENTS</h5>
-            <img style="margin-top:1em" src="assets/img/people_wht.png" alt="residents"/>
-            <br><span id="residents">16,866</span>
-          </div>
-          <div class="learn-more-btn-space-mover"></div>
-          <div id="learn-more-btn" onclick="card1.openNewPage(card1)">LEARN MORE</div>
-        </div>
-      </div>
+      </section>
     </section>
   </main>
-  <script src="assets/js/dexter_map_script.js"></script>
   <script src='assets/js/menu_functionality.js'></script>
-  <script src='assets/js/information_card_functions.js'></script>
-  <script src='assets/js/map_section_click_module.js'></script>
-  <script src='assets/js/event_listeners.js'></script>
 </body>
 </html>
-
-<!-- sample video -->
-<!-- <video class="embed-responsive-item" width="1920" height="1080" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
-    <source src="http://www.detroitmi.gov/portals/0/Media/Police/Detroit-Police-Recruiting.mp4" type="video/mp4">
-  Your browser does not support the video tag. </video> -->
