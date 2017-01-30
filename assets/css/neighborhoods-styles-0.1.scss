@@ -42,6 +42,10 @@ h1,h2,h3,h4,h5{
 	@extend .full-width-flex-container;
 	@extend .flex-stretch-content;
 }
+#top-container > a:hover, #top-container > a:visited, #top-container > a{
+	color:$top-bar-font-color;
+	text-decoration: none;
+}
 #logo{
 	background: $detroit-color-1;
 	@extend .flex-container;
@@ -215,7 +219,9 @@ h1,h2,h3,h4,h5{
 	transition: all 0.2s ease-in-out;
 }
 .info-card-row{
-	@extend .full-width-flex-container;
+	@extend .flex-container;
+	width: 100%;
+	margin-bottom: 1em;
 	font-size: 1.5em;
 }
 .info-card-row.near-neighborhoods > span.near-neighborhoods-list > a{

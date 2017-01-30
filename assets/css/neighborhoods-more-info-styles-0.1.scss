@@ -1,25 +1,19 @@
 // Author: Edgar Montes
 // Department of Innovation Technology
 // Organization: City of Detroit
-<<<<<<< HEAD
 // =================== imports ==================
 @import "neighborhoods-styles-0.1.scss";
-=======
 /*================== fonts======================*/
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 @import url('../fonts/dosis/Dosis-Regular.ttf');
 @import url('../fonts/opensans/OpenSans-Regular.ttf');
 /*================== variables =================*/
 $detroit-color-1-light: lighten($detroit-color-1,50%);
-<<<<<<< HEAD
-=======
 $top-bar-color: none;
 $top-bar-font-color: #fff;
 $top-bar-height: 8vh;
 $top-bar-top-spacing: 1em;
 $content-height: 100vh;
 $neighborhood-info-height: 80vh;
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 $left-content-max-width: 72em;
 /*======================= top ==================*/
 #top{
@@ -34,9 +28,7 @@ $left-content-max-width: 72em;
 	right: 0;
 	bottom: 0;
 	z-index: 5;
-<<<<<<< HEAD
-=======
-} 
+}
 #logo{
 	background: $detroit-color-1;
 	@extend .flex-container;
@@ -60,7 +52,6 @@ $left-content-max-width: 72em;
 }
 #site-title > h3 > span{
 	@extend .font-minus-40-percent;
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 }
 .top-nav-item{
 	@extend .flex-container;
@@ -86,8 +77,6 @@ $left-content-max-width: 72em;
 	background: #fff;
 	margin-right: 2em;
 }
-<<<<<<< HEAD
-=======
 .sub-menu-row.hidden{
 	display: none;
 }
@@ -129,7 +118,6 @@ $left-content-max-width: 72em;
 .sub-menu-container > .sub-menu-item > span{
 	margin-right: .5em;
 }
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 // ==================== Content =======================
 #content{
 	padding: 0 2em;
@@ -208,8 +196,6 @@ $left-content-max-width: 72em;
 }
 .profile-item > .person-info{
 	position: relative;
-=======
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 }
 .profile-item > .person-info > img{
 	width: 8em;
@@ -226,10 +212,7 @@ $left-content-max-width: 72em;
 	top: -1em;
 }
 .profile-item > .person-story{
-<<<<<<< HEAD
 	margin-top: .5em;
-=======
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 	max-width: 20em;
 	font-size: 1.5em;
 }
@@ -253,8 +236,6 @@ $left-content-max-width: 72em;
 	width: 3em;
 }
 .event-container{
-<<<<<<< HEAD
-=======
 	width: 100%;
 }
 .event-container > .event-list{
@@ -307,7 +288,6 @@ $left-content-max-width: 72em;
 }
 /*=================== modules ===================*/
 .full-width-flex-container{
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 	width: 100%;
 }
 .event-container > .event-list{
@@ -335,10 +315,8 @@ $left-content-max-width: 72em;
 	font-weight: bold;
 	text-align: center;
 }
-<<<<<<< HEAD
 .event-details > .event-date > span{
 	position: relative;
-=======
 /*=================== surgical ==================*/
 .center-center-innercontent{
 	margin: auto;
@@ -357,7 +335,6 @@ $left-content-max-width: 72em;
 }
 .font-minus-50-percent{
 	font-size: 50%;
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 }
 .event-date > span.event-month{
 	@extend .font-minus-50-percent;

@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5 {
   background: none;
   color: #fff; }
 
+#top-container > a:hover, #top-container > a:visited, #top-container > a {
+  color: #fff;
+  text-decoration: none; }
+
 #logo {
   background: #23a696;
   max-width: 8em; }
@@ -184,6 +188,8 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out; }
 
 .info-card-row {
+  width: 100%;
+  margin-bottom: 1em;
   font-size: 1.5em; }
 
 .info-card-row.near-neighborhoods > span.near-neighborhoods-list > a {
@@ -247,12 +253,12 @@ h1, h2, h3, h4, h5 {
   .info-card-row.four-squares {
     max-width: 100%; } }
 /*=================== modules ===================*/
-.full-width-flex-container, #top-container, .sub-menu-row.active, .info-card-row {
+.full-width-flex-container, #top-container, .sub-menu-row.active {
   width: 100%;
   display: flex;
   margin-bottom: 3em; }
 
-.flex-container, #logo, #site-title, #search-btn, #neighborhood-info-container {
+.flex-container, #logo, #site-title, #search-btn, #neighborhood-info-container, .info-card-row {
   display: flex; }
 
 .flex-stretch-content, #top-container {
