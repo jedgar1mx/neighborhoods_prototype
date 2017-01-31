@@ -52,8 +52,13 @@ button{
 #under-fold-content{
   width: 100%;
 }
-#under-fold-content:nth-child(even) > .grid-row > .grid-item.text-conten{
+#under-fold-content > .grid-row:nth-child(even) > .grid-item.text-content{
   background: $detroit-color-1;
+  color: $top-bar-font-color;
+  order: 2;
+}
+#under-fold-content > .grid-row:nth-child(odd) > .grid-item.text-content{
+  background: $top-bar-font-color;
 }
 .grid-row{
   width: 100%;
@@ -63,9 +68,23 @@ button{
 .grid-row > .grid-item{
   width: 50%;
 }
+@media all and (max-width: 850px) {
+  .grid-row{
+    flex-wrap: wrap;
+  }
+  .grid-row > .grid-item{
+    width: 100%;
+  }
+}
 .grid-row > .grid-item.text-content{
+  @extend .flex-container;
+}
+.grid-item.text-content > .content-box{
   padding: 1em 2em;
-  background: $detroit-color-1;
+  margin: auto;
+}
+.grid-item.text-content > .content-box{
+  font-size: 2em;
 }
 .grid-row > .grid-item > img{
   width: 100%;

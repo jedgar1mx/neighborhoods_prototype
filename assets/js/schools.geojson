@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Academy of The Americas",
+        "Name": "Academy of The Americas",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -36,7 +36,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Ann Arbor Trail Magnet School",
+        "Name": "Ann Arbor Trail Magnet School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -68,7 +68,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "ASA Higher Learning Preparatory",
+        "Name": "ASA Higher Learning Preparatory",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -100,7 +100,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Bagley Elementary School",
+        "Name": "Bagley Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -132,7 +132,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Bates Academy",
+        "Name": "Bates Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -164,7 +164,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Carson, Benjamin High School for Science and Medicine",
+        "Name": "Carson, Benjamin High School for Science and Medicine",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -196,7 +196,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Bennett Elementary School",
+        "Name": "Bennett Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -228,7 +228,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Blackwell Institute",
+        "Name": "Blackwell Institute",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -260,7 +260,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Blanche Kelso Bruce Academy - St. Thomas Site",
+        "Name": "Blanche Kelso Bruce Academy - St. Thomas Site",
         "Governance": "Charter",
         "Authorizer": "Wayne RESA",
         "Operator": "Self-managed",
@@ -292,7 +292,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Blanche Kelso Bruce Academy - West (Cecil Site)",
+        "Name": "Blanche Kelso Bruce Academy - West (Cecil Site)",
         "Governance": "Charter",
         "Authorizer": "Wayne RESA",
         "Operator": "Self-managed",
@@ -324,7 +324,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Blanche Kelso Bruce Academy-Connor",
+        "Name": "Blanche Kelso Bruce Academy-Connor",
         "Governance": "Charter",
         "Authorizer": "Wayne RESA",
         "Operator": "Evans Solutions",
@@ -356,7 +356,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Blanche Kelso Bruce Academy-DePaul",
+        "Name": "Blanche Kelso Bruce Academy-DePaul",
         "Governance": "Charter",
         "Authorizer": "Wayne RESA",
         "Operator": "Evans Solutions",
@@ -388,7 +388,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Blanche Kelso Bruce Academy-St. Antoine",
+        "Name": "Blanche Kelso Bruce Academy-St. Antoine",
         "Governance": "Charter",
         "Authorizer": "Wayne RESA",
         "Operator": "Evans Solutions",
@@ -420,7 +420,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Bow Elementary-Middle School",
+        "Name": "Bow Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -452,7 +452,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Breithaupt Career and Technical Center",
+        "Name": "Breithaupt Career and Technical Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -484,7 +484,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Brenda Scott Academy for Theatre Arts",
+        "Name": "Brenda Scott Academy for Theatre Arts",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -516,7 +516,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Brewer Academy",
+        "Name": "Brewer Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -548,7 +548,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Brown, Ronald Academy",
+        "Name": "Brown, Ronald Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -580,7 +580,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Bunche Preparatory Academy",
+        "Name": "Bunche Preparatory Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -612,7 +612,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Burns Elementary-Middle School",
+        "Name": "Burns Elementary-Middle School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -644,7 +644,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Burton International Academy",
+        "Name": "Burton International Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -676,7 +676,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Capstone Academy Charter School (SDA) - North Campus",
+        "Name": "Capstone Academy Charter School (SDA) - North Campus",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "edtec central",
@@ -708,7 +708,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Capstone Academy Charter School (SDA) - South Campus",
+        "Name": "Capstone Academy Charter School (SDA) - South Campus",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "edtec central",
@@ -740,7 +740,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Carleton Elementary School",
+        "Name": "Carleton Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -772,7 +772,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Carstens Academy of Aquatic Science at Remus",
+        "Name": "Carstens Academy of Aquatic Science at Remus",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -804,7 +804,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Carver STEM Academy",
+        "Name": "Carver STEM Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -836,7 +836,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cass Technical High School",
+        "Name": "Cass Technical High School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -868,7 +868,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Central Collegiate Academy",
+        "Name": "Central Collegiate Academy",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -900,7 +900,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cesar Chavez Academy - Elementary East",
+        "Name": "Cesar Chavez Academy - Elementary East",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Leona Group",
@@ -932,7 +932,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cesar Chavez Academy Elementary",
+        "Name": "Cesar Chavez Academy Elementary",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Leona Group",
@@ -964,7 +964,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cesar Chavez Academy Intermediate",
+        "Name": "Cesar Chavez Academy Intermediate",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Leona Group",
@@ -996,7 +996,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cesar Chavez Academy High",
+        "Name": "Cesar Chavez Academy High",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Leona Group",
@@ -1028,7 +1028,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cesar Chavez Academy Middle",
+        "Name": "Cesar Chavez Academy Middle",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Leona Group",
@@ -1060,7 +1060,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Drew Transition Center",
+        "Name": "Drew Transition Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1092,7 +1092,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Charlotte Mason Community School",
+        "Name": "Charlotte Mason Community School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -1124,7 +1124,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Christ the King School",
+        "Name": "Christ the King School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -1156,7 +1156,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Chrysler Elementary School",
+        "Name": "Chrysler Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1188,7 +1188,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Clark, J.E. Preparatory Academy",
+        "Name": "Clark, J.E. Preparatory Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1220,7 +1220,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Clemente, Roberto Academy",
+        "Name": "Clemente, Roberto Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1252,7 +1252,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Clippert Academy",
+        "Name": "Clippert Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1284,7 +1284,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cody - Academy of Public Leadership",
+        "Name": "Cody - Academy of Public Leadership",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1316,7 +1316,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Communication and Media Arts HS",
+        "Name": "Communication and Media Arts HS",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1348,7 +1348,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cooke STEM Academy",
+        "Name": "Cooke STEM Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1380,7 +1380,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cornerstone Health and Technology School",
+        "Name": "Cornerstone Health and Technology School",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Cornerstone Charter Schools",
@@ -1412,7 +1412,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cornerstone Leadership & Business High School",
+        "Name": "Cornerstone Leadership & Business High School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -1444,7 +1444,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cornerstone Nevada Middle",
+        "Name": "Cornerstone Nevada Middle",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -1476,7 +1476,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cornerstone School--Nevada Primary",
+        "Name": "Cornerstone School--Nevada Primary",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -1508,7 +1508,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Covenant House Academy Detroit - East Site",
+        "Name": "Covenant House Academy Detroit - East Site",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Youth Visions Solutions",
@@ -1540,7 +1540,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Covenant House Academy Detroit - Southwest Site",
+        "Name": "Covenant House Academy Detroit - Southwest Site",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Youth Visions Solutions",
@@ -1572,7 +1572,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Covenant House Academy Detroit -Central Site",
+        "Name": "Covenant House Academy Detroit -Central Site",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Youth Visions Solutions",
@@ -1604,7 +1604,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Crockett Career and Technical Center",
+        "Name": "Crockett Career and Technical Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1636,7 +1636,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "David Ellis Academy",
+        "Name": "David Ellis Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Bardwell Group",
@@ -1668,7 +1668,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Davis Aerospace Technical High School at Golightly",
+        "Name": "Davis Aerospace Technical High School at Golightly",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1700,7 +1700,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Davison Elementary-Middle School",
+        "Name": "Davison Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1732,7 +1732,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Denby High School",
+        "Name": "Denby High School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -1764,7 +1764,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Academy of Arts and Sciences",
+        "Name": "Detroit Academy of Arts and Sciences",
         "Governance": "Charter",
         "Authorizer": "Oakland University",
         "Operator": "Self-managed",
@@ -1796,7 +1796,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Academy of Arts and Sciences Middle School",
+        "Name": "Detroit Academy of Arts and Sciences Middle School",
         "Governance": "Charter",
         "Authorizer": "Oakland University",
         "Operator": "Self-managed",
@@ -1828,7 +1828,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Achievement Academy",
+        "Name": "Detroit Achievement Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Expeditionary Learning",
@@ -1860,7 +1860,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Christian Schools of Excellence",
+        "Name": "Detroit Christian Schools of Excellence",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": "Detroit Christian Schools of Excellence",
@@ -1892,7 +1892,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "West Side Academy of Information Technology and Cyber Security",
+        "Name": "West Side Academy of Information Technology and Cyber Security",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1924,7 +1924,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Collegiate Preparatory High School at Northwestern",
+        "Name": "Detroit Collegiate Preparatory High School at Northwestern",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -1956,7 +1956,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Community Schools-Elementary",
+        "Name": "Detroit Community Schools-Elementary",
         "Governance": "Charter",
         "Authorizer": "Bay Mills Community College",
         "Operator": "Midwest Management",
@@ -1988,7 +1988,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Community Schools-High School",
+        "Name": "Detroit Community Schools-High School",
         "Governance": "Charter",
         "Authorizer": "Bay Mills Community College",
         "Operator": "Midwest Management",
@@ -2020,7 +2020,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Cristo Rey High School",
+        "Name": "Detroit Cristo Rey High School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -2052,7 +2052,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Delta Preparatory Academy for Social Justice",
+        "Name": "Detroit Delta Preparatory Academy for Social Justice",
         "Governance": "Charter",
         "Authorizer": "Ferris State University",
         "Operator": "Equity Education Management Solutions",
@@ -2084,7 +2084,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Edison Public School Academy",
+        "Name": "Detroit Edison Public School Academy",
         "Governance": "Charter",
         "Authorizer": "Oakland University",
         "Operator": "New Paradigm for Education",
@@ -2116,7 +2116,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Enterprise Academy",
+        "Name": "Detroit Enterprise Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "National Heritage Academies",
@@ -2148,7 +2148,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Innovation Academy",
+        "Name": "Detroit Innovation Academy",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "YMCA Education Services",
@@ -2180,7 +2180,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cody - Detroit Institute of Technology College Prep High School",
+        "Name": "Cody - Detroit Institute of Technology College Prep High School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2212,7 +2212,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit International Academy for Young Women",
+        "Name": "Detroit International Academy for Young Women",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2244,7 +2244,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Leadership Academy Elementary",
+        "Name": "Detroit Leadership Academy Elementary",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "Y Educational Services",
@@ -2276,7 +2276,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Leadership Academy Middle/High",
+        "Name": "Detroit Leadership Academy Middle/High",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "Y Educational Services",
@@ -2308,7 +2308,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Merit Charter Academy",
+        "Name": "Detroit Merit Charter Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "National Heritage Academies",
@@ -2340,7 +2340,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Premier Academy",
+        "Name": "Detroit Premier Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "National Heritage Academies",
@@ -2372,7 +2372,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Public Safety Academy",
+        "Name": "Detroit Public Safety Academy",
         "Governance": "Charter",
         "Authorizer": "Eastern Michigan University",
         "Operator": "Leona Group",
@@ -2404,7 +2404,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit School of Arts",
+        "Name": "Detroit School of Arts",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2436,7 +2436,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Service Learning Academy",
+        "Name": "Detroit Service Learning Academy",
         "Governance": "Charter",
         "Authorizer": "Lake Superior State University",
         "Operator": "Elite School Management",
@@ -2468,7 +2468,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Banks, Diann Williamson Center",
+        "Name": "Banks, Diann Williamson Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2500,7 +2500,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Dixon Educational Learning Academy",
+        "Name": "Dixon Educational Learning Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2532,7 +2532,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Dossin Elementary-Middle School",
+        "Name": "Dossin Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2564,7 +2564,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Douglass Academy for Young Men",
+        "Name": "Douglass Academy for Young Men",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2596,7 +2596,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Dove Academy of Detroit",
+        "Name": "Dove Academy of Detroit",
         "Governance": "Charter",
         "Authorizer": "Oakland University",
         "Operator": "Choice Schools",
@@ -2628,7 +2628,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Durfee Elementary-Middle School",
+        "Name": "Durfee Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2660,7 +2660,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Earhart Elementary-Middle School",
+        "Name": "Earhart Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2692,7 +2692,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "East English Village Preparatory Academy",
+        "Name": "East English Village Preparatory Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2724,7 +2724,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Lions Academy",
+        "Name": "Detroit Lions Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2756,7 +2756,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Edison Elementary School",
+        "Name": "Edison Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2788,7 +2788,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Ellington Conservatory of Music & Art at Beckham Academy",
+        "Name": "Ellington Conservatory of Music & Art at Beckham Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2820,7 +2820,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Emerson Elementary-Middle School",
+        "Name": "Emerson Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2852,7 +2852,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Escuela Avancemos",
+        "Name": "Escuela Avancemos",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Sanga Consulting, Inc.",
@@ -2884,7 +2884,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Evergreen Lutheran School",
+        "Name": "Evergreen Lutheran School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -2916,7 +2916,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Field, Moses",
+        "Name": "Field, Moses",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2948,7 +2948,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Fisher Magnet Lower Academy",
+        "Name": "Fisher Magnet Lower Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -2980,7 +2980,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Fisher Magnet Upper Academy",
+        "Name": "Fisher Magnet Upper Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3012,7 +3012,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Flagship Charter Academy",
+        "Name": "Flagship Charter Academy",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "National Heritage Academies",
@@ -3044,7 +3044,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Ford High School",
+        "Name": "Ford High School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -3076,7 +3076,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Foreign Language Immersion and Cultural Studies",
+        "Name": "Foreign Language Immersion and Cultural Studies",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3108,7 +3108,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Friends School in Detroit",
+        "Name": "Friends School in Detroit",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -3140,7 +3140,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Frontier International Academy",
+        "Name": "Frontier International Academy",
         "Governance": "Charter",
         "Authorizer": "Bay Mills Community College",
         "Operator": "Global Education Excellence",
@@ -3172,7 +3172,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Gardner Elementary School",
+        "Name": "Gardner Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3204,7 +3204,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Garvey Academy",
+        "Name": "Garvey Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3236,7 +3236,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "GEE Edmonson Academy",
+        "Name": "GEE Edmonson Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Global Educational Excellence",
@@ -3268,7 +3268,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "GEE White Academy",
+        "Name": "GEE White Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Global Educational Excellence",
@@ -3300,7 +3300,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "George Crockett Academy",
+        "Name": "George Crockett Academy",
         "Governance": "Charter",
         "Authorizer": "Northern Michigan University",
         "Operator": "Leona Group",
@@ -3332,7 +3332,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Gesu Elementary School",
+        "Name": "Gesu Elementary School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -3364,7 +3364,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Giving Tree Montessori School",
+        "Name": "Giving Tree Montessori School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -3396,7 +3396,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Golightly Career and Technical Center",
+        "Name": "Golightly Career and Technical Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3428,7 +3428,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Golightly Education Center",
+        "Name": "Golightly Education Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3460,7 +3460,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Gompers Elementary-Middle School",
+        "Name": "Gompers Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3492,7 +3492,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Grandmont Rosedale Park Christian School",
+        "Name": "Grandmont Rosedale Park Christian School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -3524,7 +3524,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Greenfield Union Elementary-Middle School",
+        "Name": "Greenfield Union Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3556,7 +3556,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Hamilton Academy",
+        "Name": "Hamilton Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Educational Partnerships, Inc.",
@@ -3588,7 +3588,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Harms Elementary School",
+        "Name": "Harms Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3620,7 +3620,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Hazel Park Empowerment Eastside Alternative School",
+        "Name": "Hazel Park Empowerment Eastside Alternative School",
         "Governance": "Hazel Park, School District of the City of",
         "Authorizer": null,
         "Operator": null,
@@ -3652,7 +3652,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Hazel Park Empowerment Impact Alternative School",
+        "Name": "Hazel Park Empowerment Impact Alternative School",
         "Governance": "Hazel Park, School District of the City of",
         "Authorizer": null,
         "Operator": null,
@@ -3684,7 +3684,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Hazel Park Empowerment Ser Metro Alternative School",
+        "Name": "Hazel Park Empowerment Ser Metro Alternative School",
         "Governance": "Hazel Park, School District of the City of",
         "Authorizer": null,
         "Operator": null,
@@ -3716,7 +3716,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Hazel Park Empowerment West Alternative School",
+        "Name": "Hazel Park Empowerment West Alternative School",
         "Governance": "Hazel Park, School District of the City of",
         "Authorizer": null,
         "Operator": null,
@@ -3748,7 +3748,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Henderson Academy",
+        "Name": "Henderson Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3780,7 +3780,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Henry Ford Academy: School for Creative Studies (PSAD)",
+        "Name": "Henry Ford Academy: School for Creative Studies (PSAD)",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Creative Urban Education, Inc.",
@@ -3812,7 +3812,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Henry Ford Academy:School for Creative Studies-Elementary",
+        "Name": "Henry Ford Academy:School for Creative Studies-Elementary",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Henry Ford Learning Institute",
@@ -3844,7 +3844,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Holmes, A.L. Elementary-Middle School",
+        "Name": "Holmes, A.L. Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -3876,7 +3876,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Holy Redeemer Elementary School",
+        "Name": "Holy Redeemer Elementary School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -3908,7 +3908,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Hope Academy",
+        "Name": "Hope Academy",
         "Governance": "Charter",
         "Authorizer": "Eastern Michigan University",
         "Operator": "Self-managed",
@@ -3940,7 +3940,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Hope of Detroit Academy",
+        "Name": "Hope of Detroit Academy",
         "Governance": "Charter",
         "Authorizer": "Ferris State University",
         "Operator": "Leona Group",
@@ -3972,7 +3972,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Hutchinson Elementary-Middle School at Howe",
+        "Name": "Hutchinson Elementary-Middle School at Howe",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4004,7 +4004,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "MacDowell Preparatory Academy",
+        "Name": "MacDowell Preparatory Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "SABIS",
@@ -4036,7 +4036,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Jalen Rose Leadership Academy",
+        "Name": "Jalen Rose Leadership Academy",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "American Promise Schools",
@@ -4068,7 +4068,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "White, Jerry L. Center",
+        "Name": "White, Jerry L. Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4100,7 +4100,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Joy Preparatory Academy",
+        "Name": "Joy Preparatory Academy",
         "Governance": "Charter",
         "Authorizer": "Ferris State University",
         "Operator": "Leona Group",
@@ -4132,7 +4132,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Keidan Special Education School",
+        "Name": "Keidan Special Education School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4164,7 +4164,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "King High School",
+        "Name": "King High School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4196,7 +4196,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "King, John R. Academic and Performing Arts Academy",
+        "Name": "King, John R. Academic and Performing Arts Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4228,7 +4228,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Law Elementary School",
+        "Name": "Law Elementary School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -4260,7 +4260,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Legacy Charter Academy",
+        "Name": "Legacy Charter Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "National Heritage Academies",
@@ -4292,7 +4292,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Lincoln-King Academy",
+        "Name": "Lincoln-King Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Cornerstone Charter Schools",
@@ -4324,7 +4324,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Loyola High School",
+        "Name": "Loyola High School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -4356,7 +4356,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Ludington Magnet Middle School",
+        "Name": "Ludington Magnet Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4388,7 +4388,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Mackenzie Elementary-Middle School",
+        "Name": "Mackenzie Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4420,7 +4420,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Madison-Carver Academy",
+        "Name": "Madison-Carver Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Cornerstone Charter Schools",
@@ -4452,7 +4452,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Mann Learning Community",
+        "Name": "Mann Learning Community",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4484,7 +4484,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Twain School for Scholars",
+        "Name": "Twain School for Scholars",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4516,7 +4516,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Marquette Elementary-Middle School",
+        "Name": "Marquette Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4548,7 +4548,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Marshall, Thurgood Elementary School",
+        "Name": "Marshall, Thurgood Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4580,7 +4580,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Martin Luther King, Jr. Education Center Academy",
+        "Name": "Martin Luther King, Jr. Education Center Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Self-managed",
@@ -4612,7 +4612,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Marvin L. Winans Academy of Performing Arts",
+        "Name": "Marvin L. Winans Academy of Performing Arts",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Solid Rock",
@@ -4644,7 +4644,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Mary McLeod Bethune Elementary-Middle School",
+        "Name": "Mary McLeod Bethune Elementary-Middle School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -4676,7 +4676,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Mason Elementary School",
+        "Name": "Mason Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4708,7 +4708,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Maybury Elementary School",
+        "Name": "Maybury Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4740,7 +4740,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Cody - Medicine and Community Health Academy",
+        "Name": "Cody - Medicine and Community Health Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4772,7 +4772,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Michigan Technical Academy Elementary",
+        "Name": "Michigan Technical Academy Elementary",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "Midwest Management Group Inc.",
@@ -4804,7 +4804,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Most Holy Trinity School",
+        "Name": "Most Holy Trinity School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -4836,7 +4836,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Mumford High School",
+        "Name": "Mumford High School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -4868,7 +4868,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Munger Elementary-Middle School",
+        "Name": "Munger Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4900,7 +4900,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Murphy Performance Academy",
+        "Name": "Murphy Performance Academy",
         "Governance": "EAA Charter",
         "Authorizer": "Education Achievement System-EAS",
         "Operator": "Performance Academies",
@@ -4932,7 +4932,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Neinas Dual Language Learning Academy",
+        "Name": "Neinas Dual Language Learning Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -4964,7 +4964,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "New Paradigm Glazer Academy",
+        "Name": "New Paradigm Glazer Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "New Paradigm for Education",
@@ -4996,7 +4996,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "New Paradigm Loving Academy",
+        "Name": "New Paradigm Loving Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "New Paradigm for Education",
@@ -5028,7 +5028,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Nichols Elementary-Middle School",
+        "Name": "Nichols Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5060,7 +5060,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Noble Elementary-Middle School",
+        "Name": "Noble Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5092,7 +5092,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Nolan Elementary-Middle School",
+        "Name": "Nolan Elementary-Middle School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -5124,7 +5124,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Oakland International Academy - Elementary",
+        "Name": "Oakland International Academy - Elementary",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Education Management and Networks, Inc.",
@@ -5156,7 +5156,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Oakland International Academy",
+        "Name": "Oakland International Academy",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Education Management and Networks, Inc.",
@@ -5188,7 +5188,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Oakland International Academy-Middle",
+        "Name": "Oakland International Academy-Middle",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Education Management and Networks, Inc.",
@@ -5220,7 +5220,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Old Redford Academy - Elementary",
+        "Name": "Old Redford Academy - Elementary",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "Innovative Teaching Solutions",
@@ -5252,7 +5252,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Old Redford Academy - High",
+        "Name": "Old Redford Academy - High",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "Innovative Teaching Solutions",
@@ -5284,7 +5284,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Old Redford Academy - Middle",
+        "Name": "Old Redford Academy - Middle",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "Innovative Teaching Solutions",
@@ -5316,7 +5316,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Osborn Collegiate Academy of Mathematics, Science and Technology",
+        "Name": "Osborn Collegiate Academy of Mathematics, Science and Technology",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5348,7 +5348,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Osborn College Preparatory Academy",
+        "Name": "Osborn College Preparatory Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5380,7 +5380,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Osborn Evergreen Academy of Design and Alternative Energy",
+        "Name": "Osborn Evergreen Academy of Design and Alternative Energy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5412,7 +5412,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Palmer Park Preparatory Academy",
+        "Name": "Palmer Park Preparatory Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5444,7 +5444,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Pasteur Elementary School",
+        "Name": "Pasteur Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5476,7 +5476,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Pathways Academy Charter",
+        "Name": "Pathways Academy Charter",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Innovation Educational Programs",
@@ -5508,7 +5508,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Pershing High School",
+        "Name": "Pershing High School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -5540,7 +5540,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Plymouth Educational Center",
+        "Name": "Plymouth Educational Center",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "HRE/Employees Only, Inc.",
@@ -5572,7 +5572,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Priest Elementary-Middle School",
+        "Name": "Priest Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5604,7 +5604,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Pulaski Elementary-Middle School",
+        "Name": "Pulaski Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5636,7 +5636,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Randolph Career and Technical Center",
+        "Name": "Randolph Career and Technical Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5668,7 +5668,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Regent Park Scholars Charter Academy",
+        "Name": "Regent Park Scholars Charter Academy",
         "Governance": "Charter",
         "Authorizer": "Lake Superior State University",
         "Operator": "National Heritage Academies",
@@ -5700,7 +5700,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Renaissance High School",
+        "Name": "Renaissance High School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5732,7 +5732,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Robeson / Malcolm X Academy",
+        "Name": "Robeson / Malcolm X Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5764,7 +5764,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Rosa Parks Academy",
+        "Name": "Rosa Parks Academy",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -5796,7 +5796,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Ross-Hill Academy-Elementary",
+        "Name": "Ross-Hill Academy-Elementary",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "777 Management Company",
@@ -5828,7 +5828,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Rutherford Winans Academy",
+        "Name": "Rutherford Winans Academy",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Solid Rock",
@@ -5860,7 +5860,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Ryan Correctional Facility",
+        "Name": "Ryan Correctional Facility",
         "Governance": "MDOC",
         "Authorizer": null,
         "Operator": null,
@@ -5892,7 +5892,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Sampson-Webber Academy",
+        "Name": "Sampson-Webber Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5924,7 +5924,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Schulze Academy of Technology and Arts",
+        "Name": "Schulze Academy of Technology and Arts",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -5956,7 +5956,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Southeastern High School",
+        "Name": "Southeastern High School",
         "Governance": "EAA",
         "Authorizer": null,
         "Operator": null,
@@ -5988,7 +5988,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Southwest Detroit Community School",
+        "Name": "Southwest Detroit Community School",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Lighthouse Academies, Inc",
@@ -6020,7 +6020,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Spain Elementary-Middle School",
+        "Name": "Spain Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -6052,7 +6052,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Stewart Elementary",
+        "Name": "Stewart Elementary",
         "Governance": "EAA Charter",
         "Authorizer": "Education Achievement System-EAS",
         "Operator": "Performance Academies",
@@ -6084,7 +6084,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Tawheed Center of Detroit School",
+        "Name": "Tawheed Center of Detroit School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -6116,7 +6116,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Temple of Faith Baptist School",
+        "Name": "Temple of Faith Baptist School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -6148,7 +6148,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "The James and Grace Lee Boggs School",
+        "Name": "The James and Grace Lee Boggs School",
         "Governance": "Charter",
         "Authorizer": "Eastern Michigan University",
         "Operator": "Nataki Educaitonal Services",
@@ -6180,7 +6180,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Thirkell Elementary-Middle School",
+        "Name": "Thirkell Elementary-Middle School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -6212,7 +6212,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Timbuktu Academy of Science and Technology",
+        "Name": "Timbuktu Academy of Science and Technology",
         "Governance": "DPSCD Charter",
         "Authorizer": "Detroit City School District",
         "Operator": "Self-managed",
@@ -6244,7 +6244,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Trix Elementary",
+        "Name": "Trix Elementary",
         "Governance": "EAA Charter",
         "Authorizer": "Education Achievement System-EAS",
         "Operator": "Performance Academies",
@@ -6276,7 +6276,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Turning Point Academy",
+        "Name": "Turning Point Academy",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -6308,7 +6308,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Universal Academy",
+        "Name": "Universal Academy",
         "Governance": "Charter",
         "Authorizer": "Oakland University",
         "Operator": "Hamadeh Educational Services, Inc.",
@@ -6340,7 +6340,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University of Detroit Jesuit High School Academy",
+        "Name": "University of Detroit Jesuit High School Academy",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -6372,7 +6372,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University Preparatory Academy (PSAD) - Elementary",
+        "Name": "University Preparatory Academy (PSAD) - Elementary",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Detroit 90/90",
@@ -6404,7 +6404,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University Preparatory Academy (PSAD) - Middle",
+        "Name": "University Preparatory Academy (PSAD) - Middle",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Detroit 90/90",
@@ -6436,7 +6436,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University Preparatory Academy (PSAD) Elementary",
+        "Name": "University Preparatory Academy (PSAD) Elementary",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Detroit 90/90",
@@ -6468,7 +6468,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University Preparatory Academy (PSAD)-High School",
+        "Name": "University Preparatory Academy (PSAD)-High School",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Detroit 90/90",
@@ -6500,7 +6500,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University Preparatory Science and Math - Elementary",
+        "Name": "University Preparatory Science and Math - Elementary",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Detroit 90/90",
@@ -6532,7 +6532,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University Preparatory Science and Math (PSAD) High School",
+        "Name": "University Preparatory Science and Math (PSAD) High School",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Detroit 90/90",
@@ -6564,7 +6564,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University Preparatory Science and Math (PSAD) Middle School",
+        "Name": "University Preparatory Science and Math (PSAD) Middle School",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Detroit 90/90",
@@ -6596,7 +6596,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "University Yes Academy",
+        "Name": "University Yes Academy",
         "Governance": "Charter",
         "Authorizer": "Bay Mills Community College",
         "Operator": "New Paradigm for Education",
@@ -6628,7 +6628,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Vernor Elementary School",
+        "Name": "Vernor Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -6660,7 +6660,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Voyageur Academy",
+        "Name": "Voyageur Academy",
         "Governance": "Charter",
         "Authorizer": "Ferris State University",
         "Operator": "American Promise Schools",
@@ -6692,7 +6692,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Voyageur College Prep",
+        "Name": "Voyageur College Prep",
         "Governance": "Charter",
         "Authorizer": "Ferris State University",
         "Operator": "American Promise Schools",
@@ -6724,7 +6724,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Waldorf School",
+        "Name": "Detroit Waldorf School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -6756,7 +6756,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Warrendale Charter Academy",
+        "Name": "Warrendale Charter Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "National Heritage Academies",
@@ -6788,7 +6788,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "W-A-Y Academy - Chicago Site",
+        "Name": "W-A-Y Academy - Chicago Site",
         "Governance": "Charter",
         "Authorizer": "Lake Superior State University",
         "Operator": "WAY - Widening Advancement for Youth",
@@ -6820,7 +6820,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "W-A-Y Academy - Vernor Site",
+        "Name": "W-A-Y Academy - Vernor Site",
         "Governance": "Charter",
         "Authorizer": "Lake Superior State University",
         "Operator": "WAY - Widening Advancement for Youth",
@@ -6852,7 +6852,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Wayne Elementary School",
+        "Name": "Wayne Elementary School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -6884,7 +6884,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Western International High School",
+        "Name": "Western International High School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -6916,7 +6916,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Weston Preparatory Academy",
+        "Name": "Weston Preparatory Academy",
         "Governance": "Charter",
         "Authorizer": "Oakland University",
         "Operator": "CS Partners",
@@ -6948,7 +6948,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Westside Christian Academy",
+        "Name": "Westside Christian Academy",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -6980,7 +6980,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Winans Academy Middle School",
+        "Name": "Winans Academy Middle School",
         "Governance": "Charter",
         "Authorizer": "Saginaw Valley State University",
         "Operator": "Solid Rock",
@@ -7012,7 +7012,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Woodward Academy",
+        "Name": "Woodward Academy",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "Midwest Management Group, Inc. / Renaissance School Services, LLC",
@@ -7044,7 +7044,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Wright Academy of Arts and Science",
+        "Name": "Wright Academy of Arts and Science",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7076,7 +7076,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Young, Coleman A. Elementary",
+        "Name": "Young, Coleman A. Elementary",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7108,7 +7108,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Fleming Early Learning Neighborhood Center",
+        "Name": "Fleming Early Learning Neighborhood Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7140,7 +7140,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Adult Ed - East",
+        "Name": "Adult Ed - East",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7172,7 +7172,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Adult Ed - West",
+        "Name": "Adult Ed - West",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7204,7 +7204,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "New Paradigm College Prep",
+        "Name": "New Paradigm College Prep",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "New Paradigm for Education",
@@ -7236,7 +7236,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Pathways Global Leadership Academy",
+        "Name": "Pathways Global Leadership Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Pathways Global Institutes",
@@ -7268,7 +7268,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Blanche Kelso Bruce Academy - Bowman House",
+        "Name": "Blanche Kelso Bruce Academy - Bowman House",
         "Governance": "Charter",
         "Authorizer": "Wayne RESA",
         "Operator": "Evans Solutions",
@@ -7300,7 +7300,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Joy Preparatory Academy",
+        "Name": "Joy Preparatory Academy",
         "Governance": "Charter",
         "Authorizer": "Ferris State University",
         "Operator": "Leona Group",
@@ -7332,7 +7332,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Detroit Prep Academy",
+        "Name": "Detroit Prep Academy",
         "Governance": "Charter",
         "Authorizer": "Grand Valley State University",
         "Operator": "Self-managed",
@@ -7364,7 +7364,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "A. Phillip Randolph Technical High School",
+        "Name": "A. Phillip Randolph Technical High School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7396,7 +7396,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Academy of the Americas High School",
+        "Name": "Academy of the Americas High School",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7428,7 +7428,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Beard Early Learning Neighborhood Center",
+        "Name": "Beard Early Learning Neighborhood Center",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7460,7 +7460,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Edmonson - DPSCD Foundation for Early Learners PK",
+        "Name": "Edmonson - DPSCD Foundation for Early Learners PK",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7492,7 +7492,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Rutherford - DPSCD Foundation for Early Learners PK",
+        "Name": "Rutherford - DPSCD Foundation for Early Learners PK",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7524,7 +7524,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Loving - DPSCD Foundation for Early Learners PK",
+        "Name": "Loving - DPSCD Foundation for Early Learners PK",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7556,7 +7556,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "White - DPSCD Foundation for Early Learners PK",
+        "Name": "White - DPSCD Foundation for Early Learners PK",
         "Governance": "DPSCD",
         "Authorizer": null,
         "Operator": null,
@@ -7588,7 +7588,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Allen Baptist School",
+        "Name": "Allen Baptist School",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -7620,7 +7620,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Benjamin E. Mays Male Academy",
+        "Name": "Benjamin E. Mays Male Academy",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -7652,7 +7652,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Children's Village",
+        "Name": "Children's Village",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -7684,7 +7684,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "First Step Academy",
+        "Name": "First Step Academy",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -7716,7 +7716,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "Muhammad University of Islam",
+        "Name": "Muhammad University of Islam",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -7748,7 +7748,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "People's Missionary Baptist",
+        "Name": "People's Missionary Baptist",
         "Governance": "Independent",
         "Authorizer": null,
         "Operator": null,
@@ -7780,7 +7780,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School_Nam": "WAY Michigan",
+        "Name": "WAY Michigan",
         "Governance": "Charter",
         "Authorizer": "Central Michigan University",
         "Operator": "WAY - Widening Advancement for Youth",

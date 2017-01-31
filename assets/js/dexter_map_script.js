@@ -27,6 +27,8 @@ var map = new mapboxgl.Map({
 var schools = 'assets/js/schools.geojson'
 
 var hospitals = 'assets/js/hospitals.geojson'
+//"http://gis.detroitmi.gov/arcgis/rest/services/Parks/ParksAndRec/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson"
+//'assets/js/hospitals.geojson'
 
 var bikes = 'assets/js/bikes.geojson'
 

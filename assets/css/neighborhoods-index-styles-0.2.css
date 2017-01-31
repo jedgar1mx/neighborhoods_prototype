@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   margin-bottom: 3em; }
 
-.flex-container, #logo, #site-title, #search-btn, #neighborhood-info-container, .info-card-row, #center-content, .grid-row {
+.flex-container, #logo, #site-title, #search-btn, #neighborhood-info-container, .info-card-row, #center-content, .grid-row, .grid-row > .grid-item.text-content {
   display: flex; }
 
 .flex-stretch-content, #top-container, .grid-row {
@@ -361,8 +361,13 @@ button {
 #under-fold-content {
   width: 100%; }
 
-#under-fold-content:nth-child(even) > .grid-row > .grid-item.text-conten {
-  background: #23a696; }
+#under-fold-content > .grid-row:nth-child(even) > .grid-item.text-content {
+  background: #23a696;
+  color: #fff;
+  order: 2; }
+
+#under-fold-content > .grid-row:nth-child(odd) > .grid-item.text-content {
+  background: #fff; }
 
 .grid-row {
   width: 100%; }
@@ -370,9 +375,18 @@ button {
 .grid-row > .grid-item {
   width: 50%; }
 
-.grid-row > .grid-item.text-content {
+@media all and (max-width: 850px) {
+  .grid-row {
+    flex-wrap: wrap; }
+
+  .grid-row > .grid-item {
+    width: 100%; } }
+.grid-item.text-content > .content-box {
   padding: 1em 2em;
-  background: #23a696; }
+  margin: auto; }
+
+.grid-item.text-content > .content-box {
+  font-size: 2em; }
 
 .grid-row > .grid-item > img {
   width: 100%; }
