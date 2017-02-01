@@ -3,9 +3,6 @@
 // Organization: City of Detroit
 // =================== imports ==================
 @import "neighborhoods-styles-0.1.scss";
-/*================== fonts======================*/
-@import url('../fonts/dosis/Dosis-Regular.ttf');
-@import url('../fonts/opensans/OpenSans-Regular.ttf');
 /*================== variables =================*/
 $detroit-color-1-light: lighten($detroit-color-1,50%);
 $top-bar-color: none;
@@ -192,13 +189,13 @@ $left-content-max-width: 72em;
 }
 .profile-item{
 	margin-right: 2em;
-<<<<<<< HEAD
 }
 .profile-item > .person-info{
 	position: relative;
 }
 .profile-item > .person-info > img{
 	width: 8em;
+	float: none;
 }
 .profile-item > .person-info > p{
 	font-size: 2em;
@@ -317,6 +314,7 @@ $left-content-max-width: 72em;
 }
 .event-details > .event-date > span{
 	position: relative;
+}
 /*=================== surgical ==================*/
 .center-center-innercontent{
 	margin: auto;

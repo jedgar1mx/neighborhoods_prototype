@@ -5,7 +5,7 @@
 @import url('../fonts/dosis/Dosis-Regular.ttf');
 @import url('../fonts/opensans/OpenSans-Regular.ttf');
 /*================== variables =================*/
-$detroit-color-1: #23a696;
+$detroit-color-1: #000;
 $top-bar-color: none;
 $top-bar-font-color: #fff;
 $top-bar-height: 8vh;
@@ -52,7 +52,9 @@ h1,h2,h3,h4,h5{
 	max-width: 8em;
 }
 #logo > img{
+	padding: .5em 0;
 	max-height: $top-bar-height;
+	max-width: 100%;
 }
 #site-title{
 	background: $detroit-color-1;

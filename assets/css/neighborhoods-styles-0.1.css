@@ -33,14 +33,16 @@ h1, h2, h3, h4, h5 {
   text-decoration: none; }
 
 #logo {
-  background: #23a696;
+  background: #000;
   max-width: 8em; }
 
 #logo > img {
-  max-height: 8vh; }
+  padding: .5em 0;
+  max-height: 8vh;
+  max-width: 100%; }
 
 #site-title {
-  background: #23a696;
+  background: #000;
   height: 8vh;
   padding: 0 1em 0 0;
   max-width: 15em;
@@ -64,7 +66,7 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out; }
 
 #search-btn:hover {
-  color: #23a696;
+  color: #000;
   font-size: 2.5em;
   transition: all 0.2s ease-in-out; }
 
@@ -117,12 +119,12 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out; }
 
 .sub-menu-container > .sub-menu-item:hover {
-  background: #23a696;
+  background: #000;
   color: #fff;
   transition: all 0.2s ease-in-out; }
 
 .sub-menu-container > .sub-menu-item.active > span {
-  color: #23a696; }
+  color: #000; }
 
 .sub-menu-container > .sub-menu-item.active:hover > span {
   color: #FFD769; }
@@ -218,7 +220,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   width: 6em;
   max-height: 8em;
-  background: #23a696;
+  background: #000;
   padding: .25em;
   margin-right: .2em; }
 

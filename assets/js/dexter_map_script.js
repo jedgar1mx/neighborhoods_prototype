@@ -10,13 +10,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2x1c2Fyc2tpZGRldHJvaXRtaSIsImEiOiJjaXZsNXlwc
 // This adds the map to your page
 var map = new mapboxgl.Map({
     // container id specified in the HTML
-    container: 'map',
-    // style URL
-    style: 'mapbox://styles/slusarskiddetroitmi/cixxixdy6002g2rr0e5zaxdte',
-    // initial position in [long, lat] format
-    center: [-83.1510047, 42.426127],
-    // initial zoom
-    zoom: 12.2
+    container: 'map', // style URL
+    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
+    center: [-83.1, 42.4], // starting position
+    zoom: 10 // starting zoom
 });
 
 
@@ -24,15 +21,19 @@ var map = new mapboxgl.Map({
 //13/42.4170/-83.2357
 
 // add schools
-var schools = 'assets/js/schools.geojson'
-
-var hospitals = 'assets/js/hospitals.geojson'
-//"http://gis.detroitmi.gov/arcgis/rest/services/Parks/ParksAndRec/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson"
-//'assets/js/hospitals.geojson'
-
-var bikes = 'assets/js/bikes.geojson'
+var schools = "http://gis.detroitmi.gov/arcgis/rest/services/WebDev/Schools/MapServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
 
 // add hospitals
+var hospitals = "http://gis.detroitmi.gov/arcgis/rest/services/Parks/ParksAndRec/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
+
+//add bikes
+var bikes = "http://gis.detroitmi.gov/arcgis/rest/services/WebDev/Bike_Lanes/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
+
+//add neighborhoods
+var neighborhoods = "http://gis.detroitmi.gov/arcgis/rest/services/WebDev/Neighborhoods/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
+
+//add parks
+var parks = "http://gis.detroitmi.gov/arcgis/rest/services/Parks/ParksAndRec/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
 
 // load schools
 map.on('load', function (e) {
@@ -40,50 +41,163 @@ map.on('load', function (e) {
         type: 'geojson',
         data:hospitals
     });
-    // map.addLayer({
-    //     'id': 'hospital-marker',
-    //     'type': 'symbol',
-    //     'source': 'hospitals',
-    //     'layout': {
-    //         'icon-image': 'hospital-15'
-    //     }
-    // });
 
     map.addSource('schools', {
         type: 'geojson',
         data:schools
     });
-    // map.addLayer({
-    //     'id': 'school-marker',
-    //     'type': 'symbol',
-    //     'source': 'schools',
-    //     'layout': {
-    //       'icon-image': 'college-15'
-    //     },
-    //
-    // });
 
     map.addSource('bikes', {
         type: 'geojson',
         data:bikes
     });
-    // map.addLayer({
-    //     'id': 'bike-lanes',
-    //     'type': 'line',
-    //     'source': 'bikes',
-    //     'layout': {
-    //         'visibility': 'visible',
-    //         'line-join': 'round',
-    //         'line-cap': 'round'
-    //     },
-    //     'paint': {
-    //         'line-color': '#05E447',
-    //         'line-width': 4
-    //     }
-    //
-    // });
+
+    map.addSource('parks', {
+        type: 'geojson',
+        data:parks
+    });
+
+  // use council districts
+    map.addSource('council', {
+      type: 'geojson',
+      data: 'https://gis.detroitmi.gov/arcgis/rest/services/WebDev/Council_Districts/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson'
+    });
+
+    // add a fill layer
+    map.addLayer({
+      "id": "council-fill",
+      "type": "fill",
+      "source": "council", maxzoom: 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#55899e",
+        "fill-opacity": 0.9,
+      }
+    });
+
+    map.addLayer({
+      "id": "council-borders",
+      "type": "line",
+      "source": "council", maxzoom: 12,
+      "layout": {},
+      "paint": {
+        "line-color": "white",
+        "line-width": 1
+      }
+    });
+
+    map.addLayer({
+      "id": "council-fills-hover",
+      "type": "fill",
+      "source": "council", maxzoom: 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#269AEF",
+        "fill-opacity": 1
+      },
+      "filter": ["==", "name", ""]
+    });
+
+// ================== neighborhoods =========================
+    map.addSource('neighborhoods', {
+      type: 'geojson',
+      data: neighborhoods
+    });
+
+    map.addLayer({
+      "id": "neighborhoods-fill",
+      "type": "fill",
+      "source": "neighborhoods", minzoom: 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#55899e",
+        "fill-opacity": 0.9,
+      }
+    });
+
+    map.addLayer({
+      "id": "neighborhoods-borders",
+      "type": "line",
+      "source": "neighborhoods",  minzoom: 12,
+      "layout": {},
+      "paint": {
+        "line-color": "white",
+        "line-width": 1
+      }
+    });
+
+    map.addLayer({
+      "id": "neighborhoods-fills-hover",
+      "type": "fill",
+      "source": "neighborhoods",  minzoom: 12,
+      "layout": {},
+      "paint": {
+        "fill-color": "#269AEF",
+        "fill-opacity": 1
+      },
+      "filter": ["==", "name", ""]
+    });
+
+    map.addLayer({
+    'id': 'neighborhoods-labels',
+    'type': 'symbol',
+    'source': 'neighborhoods',
+            'minzoom': 12,
+    'layout': {
+      'text-field': '{name}'
+    },
+    'paint': {
+      'text-color': 'black'
+
+    }
+  });
+
+// When the user moves their mouse over the page, we look for features
+// at the mouse position (e.point) and within the states layer (states-fill).
+// If a feature is found, then we'll update the filter in the state-fills-hover
+// layer to only show that state, thus making a hover effect.
+
 });
 
+var districtPopup = new mapboxgl.Popup({
+    closeButton: true,
+    closeOnClick: false
+});
+
+map.on("mousemove", function(e) {
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ["council-fill"]
+  });
+  map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+  if (features.length) {
+    map.setFilter("council-fills-hover", ["==", "name", features[0].properties.name]);
+    var feature = features[0];
+
+    // Populate the popup and set its coordinates
+    // based on the feature found.
+    console.log(feature);
+    districtPopup.setLngLat(map.unproject(e.point))
+        .setHTML(feature.properties.name)
+        .addTo(map);
+  } else {
+    features = map.queryRenderedFeatures(e.point, {
+      layers: ["neighborhoods-fill"]
+    });
+    if(features.length){
+      map.setFilter("neighborhoods-fills-hover", ["==", "name", features[0].properties.name]);
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+    }else{
+      map.setFilter("council-fills-hover", ["==", "name", ""]);
+      districtPopup.remove();
+    }
+  }
+});
+
+// Reset the state-fills-hover layer's filter when the mouse leaves the map
+map.on("mouseout", function() {
+  map.setFilter("council-fills-hover", ["==", "name", ""]);
+  map.setFilter("hoods-fills-hover", ["==", "name", ""]);
+});
 
 //create function
 function flyToStore(currentFeature) {
@@ -112,83 +226,9 @@ function createPopUp(currentFeature) {
 map.on('click', function(e) {
     // Query all the rendered points in the view
     var features = map.queryRenderedFeatures(e.point, {
-        layers: ['locations']
+        layers: ['council-fills-hover']
     });
     if (features.length) {
-        var clickedPoint = features[0];
-        // 1. Fly to the point
-        flyToStore(clickedPoint);
-        // 2. Close all other popups and display popup for clicked property
-        createPopUp(clickedPoint);
-        // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-        var activeItem = document.getElementsByClassName('active');
-        if (activeItem[0]) {
-            activeItem[0].classList.remove('active');
-        }
-        // Find the index of the property.features that corresponds to the clickedPoint that fired the event listener
-        var selectedFeature = clickedPoint.properties.address;
-
-        for (var i = 0; i < schools.features.length; i++) {
-            if (schools.features[i].properties.address === selectedFeature) {
-                selectedFeatureIndex = i;
-            }
-        }
-        // Select the correct list item using the found index and add the active class
-        var listing = document.getElementById('listing-' + selectedFeatureIndex);
-        listing.classList.add('active');
+      districtPopup.remove();
     }
 });
-
-
-
-function buildLocationList(data) {
-    // Iterate through the list of properties
-    for (i = 0; i < data.features.length; i++) {
-        var currentFeature = data.features[i];
-        // Shorten data.feature.properties to just `prop` so we're not
-        // writing this long form over and over again.
-        var prop = currentFeature.properties;
-        // Select the listing container in the HTML and append a div
-        // with the class 'item' for each property
-        var listings = document.getElementById('listings');
-        var listing = listings.appendChild(document.createElement('div'));
-        listing.className = 'item';
-        listing.id = 'listing-' + i;
-
-        // Create a new link with the class 'title' for each property
-        // and fill it with the property address
-        var link = listing.appendChild(document.createElement('a'));
-        link.href = '#';
-        link.className = 'title';
-        link.dataPosition = i;
-        link.innerHTML = prop.address;
-
-        // Create a new div with the class 'details' for each property
-        // and fill it with the city and phone number
-        var details = listing.appendChild(document.createElement('div'));
-        details.innerHTML = prop.estimated_cost;
-        if (prop.bld_permit_desc) {
-            details.innerHTML += ' &middot; ' + prop.bld_permit_desc;
-        }
-
-        link.addEventListener('click', function(e) {
-            // Update the currentFeature to the property associated with the clicked link
-            var clickedListing = data.features[this.dataPosition];
-
-            // 1. Fly to the point associated with the clicked link
-            flyToStore(clickedListing);
-
-            // 2. Close all other popups and display popup for clicked property
-            createPopUp(clickedListing);
-
-            // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-            var activeItem = document.getElementsByClassName('active');
-
-            if (activeItem[0]) {
-                activeItem[0].classList.remove('active');
-            }
-            this.parentNode.classList.add('active');
-
-        });
-    }
-}

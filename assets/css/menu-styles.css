@@ -3,7 +3,7 @@ span.menu {
 	top: 28px;
 	font-size: 1.4em;
 	letter-spacing: 1px;
-	color: #23a696;
+	color: #000;
 }
 
 .menu-container {
@@ -42,7 +42,7 @@ span.menu {
 	width: 40px;
 	height: 4px;
 	border-radius: 2px;
-	background: #23a696;
+	background: #000;
 }
 
 .menu-container label:before {
@@ -86,7 +86,7 @@ span.menu {
 	width: 40px;
 	height: 4px;
 	border-radius: 2px;
-	background: #23a696;
+	background: #000;
 }
 
 .menu-container label:after {
@@ -130,7 +130,7 @@ span.menu {
 	width: 40px;
 	height: 4px;
 	border-radius: 2px;
-	background: #23a696;
+	background: #000;
 	-webkit-animation: animationBurgerTopReverse 1s ease forwards;
 	animation: animationBurgerTopReverse 1s ease forwards;
 }
@@ -169,7 +169,7 @@ span.menu {
 	width: 40px;
 	height: 4px;
 	border-radius: 2px;
-	background: #23a696;
+	background: #000;
 	-webkit-animation: animationBurgerBottomReverse 1s ease forwards;
 	animation: animationBurgerBottomReverse 1s ease forwards;
 }

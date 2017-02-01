@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="assets/css/bootstrap-3.3.7/dist/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/menu-styles.css" />
-  <link rel="stylesheet" href="assets/css/neighborhoods-index-styles-0.1.css">
+  <link rel="stylesheet" href="assets/css/neighborhoods-index-styles-0.2.css">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -18,17 +18,18 @@
 
 <body>
   <main>
+    <div id="back-top-btn" style="position: fixed; right:2em; bottom:2em;cursor:pointer;background: rgba(255,255,255,.5); padding: 1em;font-size:1.25em;"><span class="glyphicon glyphicon-triangle-top"></span> TOP</div>
     <section id="top">
       <div id="top-container">
         <a href="#"><div id="logo">
-          <img src="assets/img/Logo-500x500.png" alt="City of Detroit">
+          <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit">
         </div></a>
         <a href="#"><div id="site-title">
           <h3><span>FIND YOUR</span> DETROIT</h3>
         </div></a>
         <div id="spacing-title-search"></div>
         <div id="search">
-          <input id="address-search" type="text" placeholder="Find your neighborhood">
+          <input id="address-search" type="text" placeholder="Find more information">
         </div>
         <div id="search-btn">
           <span class="glyphicon glyphicon-search"></span>
@@ -47,94 +48,132 @@
     <section class="sub-menu-row hidden">
       <div></div>
       <div class="sub-menu-container">
-        <div class="sub-menu-item">
-          ITEM 1
+        <div class="sub-menu-item" data-anchor="community-program">
+          COMMUNITY
         </div>
-        <div class="sub-menu-item">
-          ITEM 2
+        <div class="sub-menu-item" data-anchor="night-out">
+          NIGHT OUT
         </div>
-        <div class="sub-menu-item">
-          ITEM 3
+        <div class="sub-menu-item" data-anchor="shopping">
+          SHOPPING
         </div>
-        <div class="sub-menu-item">
-          ITEM 4
+        <div class="sub-menu-item" data-anchor="rent">
+          RENT
         </div>
       </div>
     </section>
     <section id="content">
-      <section class="point-of-interest">
-        <div class="img-container">
-          <img
-            src="assets/img/garden2.jpg"
-            alt="community garden"></img>
-        </div>
-        <div class="point-of-interest-description">
-          <div class="title">
-            COMMUNITY INVOLMENT
-          </div>
-          <div class="summary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque magna, facilisis eleifend ligula sit amet, sodales convallis elit. Nullam molestie nibh non massa commodo, a lobortis ante convallis. Morbi posuere lectus in diam tincidunt vestibulum. Suspendisse id nunc ornare, porttitor massa eget, rhoncus diam. Phasellus volutpat at dui vel blandit. Quisque condimentum ligula a dolor interdum tempus. Fusce lectus leo, luctus non condimentum in, fermentum nec ipsum. Aliquam erat volutpat. Cras libero massa, consectetur quis suscipit at, rutrum a ex. Proin sed justo ultricies, commodo lectus ac, pretium lorem.
-          </div>
+      <section id="center-content">
+        <div class="content-box">
+          <h3>GO AND PLAY</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque magna, facilisis eleifend ligula sit amet, sodales convallis elit.</p>
+          <a href="neighborhoods/bagley.html" target="_blank"><div class="btn btn-danger">LEARN MORE</div></a>
+          <a href="map.html"><section id="go-to-map">
+              <img src="assets/img/MCM_DistMap.png" alt="find the detroit is right for you">
+              <span class="btn btn-info message">
+                <img src="assets/img/compass.png" alt="compass"> GO EXPLORE
+              </span>
+          </section></a>
         </div>
       </section>
-      <section class="find-detroit-map">
-        <img src="assets/img/detroit_map.png" alt="City of Detroit Districts"></img>
-        <div class="find-text">
-          <a href="map.html"><H1>FIND YOUR <br>DETROIT</H1></a>
-        </div>
-      </section>
-      <footer>
-        <section id="footer-container">
-          <div class="footer-section-item">
-            <span class="section-title">
-              Mayor's Office
-            </span>
-            <ul>
-              <li>Administration</li>
-              <li>Correspondence</li>
-              <li>Office of Immigrant Affairs</li>
-            </ul>
-          </div>
-          <div class="footer-section-item">
-            <span class="section-title">
-              City Council
-            </span>
-            <ul>
-              <li>Brenda Jones</li>
-              <li>Jane&eacute; L Ayers</li>
-              <li>George Cushinberry</li>
-              <li>James Tate</li>
-              <li>Scott Benson</li>
-              <li>Andre Spivey</li>
-              <li>Mary Sheffield</li>
-              <li>Raquel Castañeda-López</li>
-              <li>Gabe Leland</li>
-            </ul>
-          </div>
-          <div class="footer-section-item">
-            <span class="section-title">
-              Departments
-            </span>
-            <ul>
-              <li>Administrative Hearings</li>
-              <li>Airport</li>
-              <li>Buildings, Safety Engineering and Environmental</li>
-              <li>Civil Rights, Inclusion & Opportunity</li>
-              <li>Elections</li>
-              <li>Film Office</li>
-              <li>Fire</li>
-              <li>General Service</li>
-              <li>Health</li>
-              <li>Homeland Security & Emergency Management</li>
-            </ul>
-          </div>
-          <div class="footer-section-item logo">
-            <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit"></img>
-          </div>
-        </section>
-      </footer>
     </section>
   </main>
+  <section id="under-fold-content">
+    <div class="grid-row community-program">
+      <div class="grid-item">
+        <img src="assets/img/garden_sq.png" alt="community gardens">
+      </div>
+      <div class="grid-item text-content">
+        <div class="content-box">
+          <h3>Great Community Programs</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque magna, facilisis eleifend ligula sit amet, sodales convallis elit. Nullam molestie nibh non massa commodo, a lobortis ante convallis. Morbi posuere lectus in diam tincidunt vestibulum. Suspendisse id nunc ornare, porttitor massa eget, rhoncus diam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-row night-out">
+      <div class="grid-item text-content">
+        <div class="content-box">
+          <h3>Perfect Night Out</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque magna, facilisis eleifend ligula sit amet, sodales convallis elit. Nullam molestie nibh non massa commodo, a lobortis ante convallis. Morbi posuere lectus in diam tincidunt vestibulum. Suspendisse id nunc ornare, porttitor massa eget, rhoncus diam.</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/img/riverwalk.png" alt="riverwalk">
+      </div>
+    </div>
+    <div class="grid-row shopping">
+      <div class="grid-item">
+        <img src="assets/img/eastern_market.png" alt="eastern market">
+      </div>
+      <div class="grid-item text-content">
+        <div class="content-box">
+          <h3>OUT SHOPPING</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque magna, facilisis eleifend ligula sit amet, sodales convallis elit. Nullam molestie nibh non massa commodo, a lobortis ante convallis. Morbi posuere lectus in diam tincidunt vestibulum. Suspendisse id nunc ornare, porttitor massa eget, rhoncus diam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-row rent">
+      <div class="grid-item text-content">
+        <div class="content-box">
+          <h3>RENT IN DETROIT</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque magna, facilisis eleifend ligula sit amet, sodales convallis elit. Nullam molestie nibh non massa commodo, a lobortis ante convallis. Morbi posuere lectus in diam tincidunt vestibulum. Suspendisse id nunc ornare, porttitor massa eget, rhoncus diam.</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/img/midtown.png" alt="housing">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <section id="footer-container">
+      <div class="footer-section-item">
+        <span class="section-title">
+          Mayor's Office
+        </span>
+        <ul>
+          <li>Administration</li>
+          <li>Correspondence</li>
+          <li>Office of Immigrant Affairs</li>
+        </ul>
+      </div>
+      <div class="footer-section-item">
+        <span class="section-title">
+          City Council
+        </span>
+        <ul>
+          <li>Brenda Jones</li>
+          <li>Jane&eacute; L Ayers</li>
+          <li>George Cushinberry</li>
+          <li>James Tate</li>
+          <li>Scott Benson</li>
+          <li>Andre Spivey</li>
+          <li>Mary Sheffield</li>
+          <li>Raquel Castañeda-López</li>
+          <li>Gabe Leland</li>
+        </ul>
+      </div>
+      <div class="footer-section-item">
+        <span class="section-title">
+          Departments
+        </span>
+        <ul>
+          <li>Administrative Hearings</li>
+          <li>Airport</li>
+          <li>Buildings, Safety Engineering and Environmental</li>
+          <li>Civil Rights, Inclusion & Opportunity</li>
+          <li>Elections</li>
+          <li>Film Office</li>
+          <li>Fire</li>
+          <li>General Service</li>
+          <li>Health</li>
+          <li>Homeland Security & Emergency Management</li>
+        </ul>
+      </div>
+      <div class="footer-section-item logo">
+        <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit"></img>
+      </div>
+    </section>
+  </footer>
   <script src='assets/js/menu_functionality.js'></script>
 </body>
 </html>

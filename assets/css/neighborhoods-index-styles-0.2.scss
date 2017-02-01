@@ -10,11 +10,34 @@
   @extend .flex-container;
 }
 #center-content > .content-box{
+  position: relative;
   padding: 2em;
   background: rgba(255, 255, 255, .7);
-  font-size: 2em;
+  font-size: 1.5em;
   max-width: 30em;
   margin: auto;
+}
+#center-content > .content-box > h3{
+  margin: 0;
+}
+#go-to-map{
+  cursor: pointer;
+  position: absolute;
+  bottom: -8em;
+  left: 20em;
+  width: 30em;
+}
+#go-to-map > img{
+  width: 60%;
+}
+#go-to-map > .message{
+  position: relative;
+  left: -10em;
+  padding: .5em;
+}
+#content{
+  background: url(../img/cover.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 video#bgvid {
     position: fixed;
@@ -53,12 +76,12 @@ button{
   width: 100%;
 }
 #under-fold-content > .grid-row:nth-child(even) > .grid-item.text-content{
-  background: $detroit-color-1;
-  color: $top-bar-font-color;
+  background: $top-bar-font-color;
   order: 2;
 }
 #under-fold-content > .grid-row:nth-child(odd) > .grid-item.text-content{
-  background: $top-bar-font-color;
+  background: $detroit-color-1;
+  color: $top-bar-font-color;
 }
 .grid-row{
   width: 100%;
@@ -88,4 +111,31 @@ button{
 }
 .grid-row > .grid-item > img{
   width: 100%;
+}
+footer{
+  font-size: 1.25em;
+  color: $top-bar-font-color;
+  background: $detroit-color-1;
+  width: 100%;
+}
+#footer-container{
+  @extend .flex-container;
+}
+.footer-section-item{
+  flex: 1;
+  padding: 1em;
+}
+.footer-section-item > .section-title{
+  font-weight: bold;
+}
+.footer-section-item > ul{
+  list-style-type: none;
+  padding-top: 1em;
+  padding-left: 0;
+}
+#footer-container > .footer-section-item.logo{
+  width: 5em;
+}
+#footer-container > .footer-section-item.logo > img{
+  max-width: 100%;
 }

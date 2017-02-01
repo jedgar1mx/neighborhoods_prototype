@@ -3,8 +3,6 @@
 @import url("../fonts/opensans/OpenSans-Regular.ttf");
 /*================== variables =================*/
 /*================== tags ======================*/
-@import url("../fonts/dosis/Dosis-Regular.ttf");
-@import url("../fonts/opensans/OpenSans-Regular.ttf");
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
@@ -30,15 +28,19 @@ h1, h2, h3, h4, h5 {
   background: none;
   color: #fff; }
 
+#top-container > a:hover, #top-container > a:visited, #top-container > a {
+  color: #fff;
+  text-decoration: none; }
+
 #logo {
-  background: #23a696;
+  background: #000;
   max-width: 8em; }
 
 #logo > img {
   max-height: 8vh; }
 
 #site-title {
-  background: #23a696;
+  background: #000;
   height: 8vh;
   padding: 0 1em 0 0;
   max-width: 15em;
@@ -62,7 +64,7 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out; }
 
 #search-btn:hover {
-  color: #23a696;
+  color: #000;
   font-size: 2.5em;
   transition: all 0.2s ease-in-out; }
 
@@ -115,12 +117,12 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out; }
 
 .sub-menu-container > .sub-menu-item:hover {
-  background: #23a696;
+  background: #000;
   color: #fff;
   transition: all 0.2s ease-in-out; }
 
 .sub-menu-container > .sub-menu-item.active > span {
-  color: #23a696; }
+  color: #000; }
 
 .sub-menu-container > .sub-menu-item.active:hover > span {
   color: #FFD769; }
@@ -186,6 +188,8 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out; }
 
 .info-card-row {
+  width: 100%;
+  margin-bottom: 1em;
   font-size: 1.5em; }
 
 .info-card-row.near-neighborhoods > span.near-neighborhoods-list > a {
@@ -214,7 +218,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   width: 6em;
   max-height: 8em;
-  background: #23a696;
+  background: #000;
   padding: .25em;
   margin-right: .2em; }
 
@@ -249,12 +253,12 @@ h1, h2, h3, h4, h5 {
   .info-card-row.four-squares {
     max-width: 100%; } }
 /*=================== modules ===================*/
-.full-width-flex-container, #top-container, .sub-menu-row.active, .info-card-row, #top, .content-row {
+.full-width-flex-container, #top-container, .sub-menu-row.active, #top, .content-row {
   width: 100%;
   display: flex;
   margin-bottom: 3em; }
 
-.flex-container, #logo, #site-title, #search-btn, #neighborhood-info-container, .top-nav-item, .four-squares-section > .single-block, .four-squares-section > .pair, .profile-container, .associations-clubs-container, .association-club-item-social-media, .event-container > .event-list, .event-item > .event-details {
+.flex-container, #logo, #site-title, #search-btn, #neighborhood-info-container, .info-card-row, .top-nav-item, .four-squares-section > .single-block, .four-squares-section > .pair, .profile-container, .associations-clubs-container, .association-club-item-social-media, .event-container > .event-list, .event-item > .event-details {
   display: flex; }
 
 .flex-stretch-content, #top-container, #top, .content-row {
@@ -322,13 +326,31 @@ h1, h2, h3, h4, h5 {
   bottom: 0;
   z-index: 5; }
 
+#logo {
+  background: #000;
+  max-width: 8em; }
+
+#logo > img {
+  max-height: 8vh; }
+
+#site-title {
+  color: #fff;
+  background: #000;
+  height: 8vh;
+  padding: 0 1em 0 0;
+  max-width: 15em;
+  margin: 0; }
+
+#site-title > h3 {
+  font-size: 2.5vh; }
+
 .top-nav-item {
   cursor: pointer;
   font-size: 2em;
   color: #000; }
 
 .top-nav-item:hover {
-  background: #23a696;
+  background: #000;
   color: #fff; }
 
 .top-nav-item > span {
@@ -345,8 +367,6 @@ h1, h2, h3, h4, h5 {
   background: #fff;
   margin-right: 2em; }
 
-<<<<<<< HEAD
-=======
 .sub-menu-row.hidden {
   display: none; }
 
@@ -373,12 +393,12 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out; }
 
 .sub-menu-container > .sub-menu-item:hover {
-  background: #23a696;
+  background: #000;
   color: #fff;
   transition: all 0.2s ease-in-out; }
 
 .sub-menu-container > .sub-menu-item.active > span {
-  color: #23a696; }
+  color: #000; }
 
 .sub-menu-container > .sub-menu-item.active:hover > span {
   color: #FFD769; }
@@ -386,7 +406,6 @@ h1, h2, h3, h4, h5 {
 .sub-menu-container > .sub-menu-item > span {
   margin-right: .5em; }
 
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 #content {
   padding: 0 2em; }
 
@@ -434,7 +453,7 @@ h1, h2, h3, h4, h5 {
   padding: 2em;
   margin: auto;
   text-align: center;
-  color: #23a696;
+  color: #000;
   width: 50%; }
 
 .four-squares-section > .pair > .square-item > img {
@@ -453,15 +472,13 @@ h1, h2, h3, h4, h5 {
 
 .profile-item {
   margin-right: 2em; }
-<<<<<<< HEAD
 
 .profile-item > .person-info {
   position: relative; }
-=======
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 
 .profile-item > .person-info > img {
-  width: 8em; }
+  width: 8em;
+  float: none; }
 
 .profile-item > .person-info > p {
   font-size: 2em;
@@ -474,10 +491,7 @@ h1, h2, h3, h4, h5 {
   top: -1em; }
 
 .profile-item > .person-story {
-<<<<<<< HEAD
   margin-top: .5em;
-=======
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
   max-width: 20em;
   font-size: 1.5em; }
 
@@ -495,12 +509,6 @@ h1, h2, h3, h4, h5 {
 
 .event-container {
   width: 100%; }
-<<<<<<< HEAD
-
-.event-list > .event-item {
-  margin-right: 2em;
-  width: 35em; }
-=======
 
 .event-list > .event-item {
   margin-right: 2em;
@@ -534,7 +542,7 @@ h1, h2, h3, h4, h5 {
 
 .event-description > .event-name {
   cursor: pointer;
-  color: #23a696;
+  color: #000;
   font-size: 2em;
   font-weight: bold; }
 
@@ -542,39 +550,20 @@ h1, h2, h3, h4, h5 {
   font-size: 1.5em; }
 
 /*=================== modules ===================*/
-.full-width-flex-container, #top, .sub-menu-row.active, .content-row {
-  width: 100%;
-  display: flex;
-  margin-bottom: 3em; }
+.full-width-flex-container, #top-container, .sub-menu-row.active, #top, .content-row {
+  width: 100%; }
 
-.flex-container, #logo, #site-title, .top-nav-item, .four-squares-section > .single-block, .four-squares-section > .pair, .profile-container, .associations-clubs-container, .association-club-item-social-media, .event-container > .event-list, .event-item > .event-details {
-  display: flex; }
-
-.flex-stretch-content, #top, .content-row {
-  align-items: stretch; }
-
-.flex-align-items-end {
-  align-items: flex-end; }
-
-.flex-right-justify-items, .sub-menu-container {
-  justify-content: flex-end; }
-
-.flex-center-justify-items, .event-container > .event-list {
-  justify-content: center; }
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
+.event-list > .event-item {
+  margin-right: 2em;
+  width: 35em; }
 
 .event-list > .event-item > .event-banner {
   width: 100%;
   height: 20em;
   overflow: hidden; }
 
-<<<<<<< HEAD
 .event-list > .event-item > .event-banner > img {
   max-width: 100%; }
-=======
-.flex-conteiner-wrap, .four-squares-section > .single-block, .four-squares-section > .pair, .associations-clubs-container {
-  flex-wrap: wrap; }
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 
 .event-details > .event-date {
   padding-right: .5em;
@@ -582,10 +571,13 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
   text-align: center; }
 
-<<<<<<< HEAD
 .event-details > .event-date > span {
   position: relative; }
-=======
+
+/*=================== surgical ==================*/
+.center-center-innercontent, #site-title > h3, #search-btn > span {
+  margin: auto; }
+
 .font-minus-75-percent {
   font-size: 25%; }
 
@@ -600,7 +592,6 @@ h1, h2, h3, h4, h5 {
 
 .font-minus-50-percent, .event-date > span.event-month {
   font-size: 50%; }
->>>>>>> 9dab189897de384ee8837d88c57ab9b663f31fc4
 
 .event-date > span.event-month {
   top: -1.5em; }
@@ -613,7 +604,7 @@ h1, h2, h3, h4, h5 {
 
 .event-description > .event-name {
   cursor: pointer;
-  color: #23a696;
+  color: #000;
   font-size: 2em;
   font-weight: bold; }
 
