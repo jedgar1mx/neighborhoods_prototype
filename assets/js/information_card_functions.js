@@ -1,12 +1,16 @@
 var informationCardModule = (function(){
   var informationCard = {
     title: '',
+    type: '',
     active: '',
     info: '',
     openNewPage: function() {
-      let selectedNeighborhood = document.getElementById('neighborhood-info-container').getAttribute('data-neighborhood');
       console.log(this.title);
-      var win = window.open('neighborhoods/' + this.title + '.html', '_blank');
+      if(this.type === 'neighborhood'){
+        var win = window.open('neighborhoods/' + this.title + '.html', '_blank');
+      }else{
+        var win = window.open('districts/' + this.title + '.html', '_blank');
+      }
       if (win) {
           //Browser has allowed it to be opened
           win.focus();

@@ -26,8 +26,14 @@
   bottom: -8em;
   left: 20em;
   width: 30em;
+  transition: all 0.2s ease-in-out;
+}
+#go-to-map:hover > img{
+  transition: all 0.2s ease-in-out;
+  width: 62%;
 }
 #go-to-map > img{
+  transition: all 0.2s ease-in-out;
   width: 60%;
 }
 #go-to-map > .message{
@@ -77,7 +83,6 @@ button{
 }
 #under-fold-content > .grid-row:nth-child(even) > .grid-item.text-content{
   background: $top-bar-font-color;
-  order: 2;
 }
 #under-fold-content > .grid-row:nth-child(odd) > .grid-item.text-content{
   background: $detroit-color-1;
@@ -97,6 +102,9 @@ button{
   }
   .grid-row > .grid-item{
     width: 100%;
+  }
+  #under-fold-content > .grid-row:nth-child(even) > .grid-item.text-content{
+    order: 2;
   }
 }
 .grid-row > .grid-item.text-content{

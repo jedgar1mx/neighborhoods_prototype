@@ -121,7 +121,7 @@ a:hover {
 }
 /* Marker tweaks */
 .mapboxgl-popup-close-button {
-    
+
 }
 
 .mapboxgl-popup-content {
@@ -140,6 +140,7 @@ a:hover {
 }
 .mapboxgl-popup-content > h1, .mapboxgl-popup-content > h2, .mapboxgl-popup-content > h3, .mapboxgl-popup-content > h4, .mapboxgl-popup-content > h5{
   color: rgb(231, 21, 40);
+  font-weight: bold;
 }
 .mapboxgl-popup-content h3 {
     text-align: center;

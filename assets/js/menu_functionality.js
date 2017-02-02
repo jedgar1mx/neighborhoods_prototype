@@ -3,10 +3,6 @@
     var subMenuDisplaySelection = 'none';
     var removeMapLayer = function removeMapLayer() {
       switch (subMenuDisplaySelection) {
-        case "display-hospitals-btn":
-          map.removeLayer('hospital-marker');
-          break;
-
         case "display-schools-btn":
           map.removeLayer('school-marker');
           break;
@@ -14,34 +10,23 @@
         case "display-bike-routes-btn":
           map.removeLayer('bike-lanes');
           break;
+
+        case "display-parks-btn":
+          map.removeLayer('parks-marker');
+          break;
+
+        case "display-historic-btn":
+          map.removeLayer('historic-fill');
+          map.removeLayer('historic-borders');
+          break;
         default:
 
       }
     };
     var addMapLayer = function addMapLayer(newDisplayItem) {
       switch (newDisplayItem) {
-        case "display-hospitals-btn":
-          removeMapLayer();
-          // map.addSource('hospitals', {
-          //     type: 'geojson',
-          //     data:hospitals
-          // });
-          map.addLayer({
-              'id': 'hospital-marker',
-              'type': 'symbol',
-              'source': 'hospitals',
-              'layout': {
-                  'icon-image': 'hospital-15'
-              }
-          });
-          break;
-
         case "display-schools-btn":
           removeMapLayer();
-          // map.addSource('schools', {
-          //     type: 'geojson',
-          //     data:schools
-          // });
           map.addLayer({
               'id': 'school-marker',
               'type': 'symbol',
@@ -55,16 +40,12 @@
 
         case "display-parks-btn":
           removeMapLayer();
-          // map.addSource('schools', {
-          //     type: 'geojson',
-          //     data:schools
-          // });
           map.addLayer({
               'id': 'parks-marker',
               'type': 'symbol',
               'source': 'parks',
               'layout': {
-                'icon-image': 'tree-15'
+                'icon-image': 'park-15'
               },
 
           });
@@ -72,10 +53,6 @@
 
         case "display-bike-routes-btn":
           removeMapLayer();
-          // map.addSource('bikes', {
-          //     type: 'geojson',
-          //     data:bikes
-          // });
           map.addLayer({
               'id': 'bike-lanes',
               'type': 'line',
@@ -90,6 +67,30 @@
                   'line-width': 4
               }
 
+          });
+          break;
+
+        case "display-historic-btn":
+          removeMapLayer();
+          map.addLayer({
+            "id": "historic-fill",
+            "type": "fill",
+            "source": "historic",
+            "layout": {},
+            "paint": {
+              "fill-color": "rgb(246, 136, 7)"
+            }
+          });
+
+          map.addLayer({
+            "id": "historic-borders",
+            "type": "line",
+            "source": "historic",
+            "layout": {},
+            "paint": {
+              "line-color": "white",
+              "line-width": 1
+            }
           });
           break;
         default:
@@ -156,10 +157,12 @@
         subMenuClasses.forEach(function(item){
           if(item == 'active'){
             changeMenuClassSet('sub-menu-row hidden');
+            document.getElementById('click').checked = true;
             --firstTime;
             return 0;
           }else{
             changeMenuClassSet('sub-menu-row active');
+            document.getElementById('click').checked = false;
             --firstTime;
             return 0;
           }

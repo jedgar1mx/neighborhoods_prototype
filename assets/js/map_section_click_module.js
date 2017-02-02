@@ -1,24 +1,33 @@
 var mapSectionClickModule = (function(informationCard){
   map.on('click', function (e) {
     console.log(e);
-    //card1.changeDisplay(card1);
     var features = map.queryRenderedFeatures(e.point, { layers: ['council-fill'] });
     if (features.length) {
-      console.log(features);
       //stuff to do with zooming into neighborhoods
-      map.flyTo({
-          center: [-83.1510047, 42.426127],
-          zoom: 14
-      });
+      let feature = features[0];
+      if(feature.properties.name == 'District 2'){
+        map.flyTo({
+            center: [-83.1510047, 42.426127],
+            zoom: 12
+        });
+        card2.changeDisplay(card2);
+      }
     }else {
       features = map.queryRenderedFeatures(e.point, { layers: ['school-marker'] });
       if (!features.length) {
           features = map.queryRenderedFeatures(e.point, { layers: ['bike-lanes'] });
           if (!features.length) {
-            features = map.queryRenderedFeatures(e.point, { layers: ['hospital-marker'] });
+            features = map.queryRenderedFeatures(e.point, { layers: ['parks-marker'] });
             if (!features.length) {
-              card1.changeDisplay(card1);
-              return;
+              features = map.queryRenderedFeatures(e.point, { layers: ['historic-fill'] });
+              if (!features.length) {
+                features = map.queryRenderedFeatures(e.point, { layers: ['neighborhoods-fill'] });
+                let feature = features[0];
+                if(feature.properties.name === 'Bagley'){
+                  card1.changeDisplay(card1);
+                }
+                return;
+              }
             }
           }
       }
@@ -28,7 +37,7 @@ var mapSectionClickModule = (function(informationCard){
       var popup = new mapboxgl.Popup()
           .setLngLat(map.unproject(e.point))
           .setHTML(
-            '<h5>' + feature.properties.name + '</h5><p><b>Address:</b> ' + feature.properties.address + '</p>'
+            '<h5>' + feature.properties.name + '</h5>'
           )
           .addTo(map);
     }

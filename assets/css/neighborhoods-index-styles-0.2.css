@@ -336,9 +336,15 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   bottom: -8em;
   left: 20em;
-  width: 30em; }
+  width: 30em;
+  transition: all 0.2s ease-in-out; }
+
+#go-to-map:hover > img {
+  transition: all 0.2s ease-in-out;
+  width: 62%; }
 
 #go-to-map > img {
+  transition: all 0.2s ease-in-out;
   width: 60%; }
 
 #go-to-map > .message {
@@ -387,8 +393,7 @@ button {
   width: 100%; }
 
 #under-fold-content > .grid-row:nth-child(even) > .grid-item.text-content {
-  background: #fff;
-  order: 2; }
+  background: #fff; }
 
 #under-fold-content > .grid-row:nth-child(odd) > .grid-item.text-content {
   background: #000;
@@ -405,7 +410,10 @@ button {
     flex-wrap: wrap; }
 
   .grid-row > .grid-item {
-    width: 100%; } }
+    width: 100%; }
+
+  #under-fold-content > .grid-row:nth-child(even) > .grid-item.text-content {
+    order: 2; } }
 .grid-item.text-content > .content-box {
   padding: 1em 2em;
   margin: auto; }

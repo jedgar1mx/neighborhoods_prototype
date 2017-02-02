@@ -12,8 +12,8 @@ var map = new mapboxgl.Map({
     // container id specified in the HTML
     container: 'map', // style URL
     style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-    center: [-83.1, 42.4], // starting position
-    zoom: 10 // starting zoom
+    center: [-83.1, 42.375], // starting position
+    zoom: 10.5 // starting zoom
 });
 
 
@@ -22,9 +22,6 @@ var map = new mapboxgl.Map({
 
 // add schools
 var schools = "http://gis.detroitmi.gov/arcgis/rest/services/WebDev/Schools/MapServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
-
-// add hospitals
-var hospitals = "http://gis.detroitmi.gov/arcgis/rest/services/Parks/ParksAndRec/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
 
 //add bikes
 var bikes = "http://gis.detroitmi.gov/arcgis/rest/services/WebDev/Bike_Lanes/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
@@ -35,13 +32,12 @@ var neighborhoods = "http://gis.detroitmi.gov/arcgis/rest/services/WebDev/Neighb
 //add parks
 var parks = "http://gis.detroitmi.gov/arcgis/rest/services/Parks/ParksAndRec/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson";
 
+var councils = 'https://gis.detroitmi.gov/arcgis/rest/services/WebDev/Council_Districts/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson';
+
+var historic = 'https://gis.detroitmi.gov/arcgis/rest/services/WebDev/local_historic_districts/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson';
+
 // load schools
 map.on('load', function (e) {
-    map.addSource('hospitals', {
-        type: 'geojson',
-        data:hospitals
-    });
-
     map.addSource('schools', {
         type: 'geojson',
         data:schools
@@ -60,7 +56,12 @@ map.on('load', function (e) {
   // use council districts
     map.addSource('council', {
       type: 'geojson',
-      data: 'https://gis.detroitmi.gov/arcgis/rest/services/WebDev/Council_Districts/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson'
+      data: councils
+    });
+
+    map.addSource('historic', {
+      type: 'geojson',
+      data: historic
     });
 
     // add a fill layer
@@ -72,17 +73,6 @@ map.on('load', function (e) {
       "paint": {
         "fill-color": "#55899e",
         "fill-opacity": 0.9,
-      }
-    });
-
-    map.addLayer({
-      "id": "council-borders",
-      "type": "line",
-      "source": "council", maxzoom: 12,
-      "layout": {},
-      "paint": {
-        "line-color": "white",
-        "line-width": 1
       }
     });
 
@@ -121,7 +111,7 @@ map.on('load', function (e) {
       "source": "neighborhoods",  minzoom: 12,
       "layout": {},
       "paint": {
-        "line-color": "white",
+        "line-color": "#EAE472",
         "line-width": 1
       }
     });
@@ -139,18 +129,29 @@ map.on('load', function (e) {
     });
 
     map.addLayer({
-    'id': 'neighborhoods-labels',
-    'type': 'symbol',
-    'source': 'neighborhoods',
-            'minzoom': 12,
-    'layout': {
-      'text-field': '{name}'
-    },
-    'paint': {
-      'text-color': 'black'
+      'id': 'neighborhoods-labels',
+      'type': 'symbol',
+      'source': 'neighborhoods',
+              'minzoom': 12,
+      'layout': {
+        'text-field': '{name}'
+      },
+      'paint': {
+        'text-color': 'black'
 
-    }
-  });
+      }
+    });
+
+    map.addLayer({
+      "id": "council-borders",
+      "type": "line",
+      "source": "council",
+      "layout": {},
+      "paint": {
+        "line-color": "white",
+        "line-width": 3
+      }
+    });
 
 // When the user moves their mouse over the page, we look for features
 // at the mouse position (e.point) and within the states layer (states-fill).

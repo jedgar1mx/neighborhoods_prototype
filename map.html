@@ -54,9 +54,6 @@
     <section class="sub-menu-row hidden">
       <div></div>
       <div class="sub-menu-container">
-        <div id="display-hospitals-btn" class="sub-menu-item">
-          <span class="glyphicon glyphicon-plus"></span> HOSPITALS
-        </div>
         <div id="display-schools-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-education"></span> SCHOOLS
         </div>
@@ -66,12 +63,15 @@
         <div id="display-parks-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-tree-deciduous"></span> PARKS
         </div>
+        <div id="display-historic-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-time"></span> HISTORIC DISTRICTS
+        </div>
       </div>
     </section>
     <section id="content">
       <div id="map" class="map"></div>
     </section>
-    <section id="neighborhood-info-container" class="hidden" data-neighborhood="bagley">
+    <section id="neighborhood-info-container" class="hidden" data-neighborhood="bagley" data-district="">
       <div class="info-card">
         <div id="info-card-hide-btn" onclick="card1.changeDisplay(card1)">
           <span>X</span>
