@@ -10,7 +10,9 @@ var mapSectionClickModule = (function(informationCard){
             center: [-83.1510047, 42.426127],
             zoom: 12
         });
-        card2.changeDisplay(card2);
+        card1.setCard(district2Obj);
+        console.log(card1);
+        card1.changeDisplay(card1);
       }
     }else {
       features = map.queryRenderedFeatures(e.point, { layers: ['school-marker'] });
@@ -24,6 +26,8 @@ var mapSectionClickModule = (function(informationCard){
                 features = map.queryRenderedFeatures(e.point, { layers: ['neighborhoods-fill'] });
                 let feature = features[0];
                 if(feature.properties.name === 'Bagley'){
+                  card1.setCard(bagleObj);
+                  console.log(card1);
                   card1.changeDisplay(card1);
                 }
                 return;

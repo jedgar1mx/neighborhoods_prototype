@@ -1,15 +1,18 @@
 var informationCardModule = (function(){
   var informationCard = {
-    title: '',
-    type: '',
-    active: '',
-    info: '',
+    name          : '',
+    type          : '',
+    active        : '',
+    info          : '',
+    summary       : '',
+    neighborhoods : '',
     openNewPage: function() {
-      console.log(this.title);
+      console.log(this.name);
+      var win;
       if(this.type === 'neighborhood'){
-        var win = window.open('neighborhoods/' + this.title + '.html', '_blank');
+         win = window.open('neighborhoods/' + this.name + '.html', '_blank');
       }else{
-        var win = window.open('districts/' + this.title + '.html', '_blank');
+        win = window.open('districts/' + this.name + '.html', '_blank');
       }
       if (win) {
           //Browser has allowed it to be opened
@@ -23,6 +26,7 @@ var informationCardModule = (function(){
       (this.active) ? this.hideCard(): this.displayCard();
     },
     displayCard: function() {
+      this.loadCardData();
       console.log('will display card');
       document.getElementById('neighborhood-info-container').className = '';
       this.active = true;
@@ -32,11 +36,37 @@ var informationCardModule = (function(){
       document.getElementById('neighborhood-info-container').className = 'hidden';
       this.active = false;
     },
-    setCard: function(title, active, info){
-      this.title = title;
-      this.active = active;
-      this.info = info;
+    setCard: function(infoObj){
+      if(Object.keys(infoObj.properties).length !== 0){
+        this.name = infoObj.properties.name;
+        this.type = infoObj.properties.type;
+        this.active = false;
+        this.url = infoObj.properties.url;
+        this.summary = infoObj.properties.summary;
+        this.neighborhoods = infoObj.properties.neighborhoods;
+      }
+    },
+    loadCardData: function() {
+      console.log('will load data to card');
+      document.getElementById('neighborhood-name').innerHTML = this.name;
+      document.querySelector('.info-card-row > .neighborhood-summary').innerHTML = this.summary;
+      (this.type === 'district') ? document.getElementById('card-type').innerHTML = 'District' : document.getElementById('card-type').innerHTML = 'Nerby';
+      this.createNeighborhoodsList();
+    },
+    createNeighborhoodsList: function () {
+      let tempHtml = '';
+      let tracker = 0;
+      this.neighborhoods.forEach(function(item){
+        tempHtml += '<a href="#">' + item + '</a>';
+        (tracker < (this.neighborhoods.length)) ? tempHtml += ', ': 0;
+        tracker++;
+      });
+      (this.type === 'district') ? this.createDistrictNeighborhoodsMoreBtn(tempHtml): document.querySelector('.near-neighborhoods-list').innerHTML = tempHtml;
+    },
+    createDistrictNeighborhoodsMoreBtn: function (tempHtml) {
+      tempHtml += '<a class="more-neighborhoods-btn" href="#">MORE</a>';
+      document.querySelector('.near-neighborhoods-list').innerHTML = tempHtml;
     }
-  }
+  };
   return informationCard;
 })(window);

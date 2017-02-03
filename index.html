@@ -18,61 +18,61 @@
 
 <body>
   <main>
-    <div id="back-top-btn" style="position: fixed; right:2em; bottom:2em;cursor:pointer;background: rgba(255,255,255,.5); padding: 1em;font-size:1.25em;"><span class="glyphicon glyphicon-triangle-top"></span> TOP</div>
+    <article id="back-top-btn" style="position: fixed; right:2em; bottom:2em;cursor:pointer;background: rgba(255,255,255,.5); padding: 1em;font-size:1.25em;"><span class="glyphicon glyphicon-triangle-top"></span> TOP</article>
     <section id="top">
-      <div id="top-container">
-        <a href="#"><div id="logo">
+      <section id="top-container">
+        <a href="#"><article id="logo">
           <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit">
-        </div></a>
-        <a href="#"><div id="site-title">
-          <h3><span>FIND YOUR</span> DETROIT</h3>
-        </div></a>
+        </article></a>
+        <a href="#"><article id="site-title">
+          <h1><span>FIND YOUR</span> DETROIT</h1>
+        </article></a>
         <div id="spacing-title-search"></div>
-        <div id="search">
+        <article id="search">
           <input id="address-search" type="text" placeholder="Find more information">
-        </div>
-        <div id="search-btn">
+          <label for="address-search">Find more information</label>
+        </article>
+        <article id="search-btn">
           <span class="glyphicon glyphicon-search"></span>
-        </div>
-        <div id="navigation">
-          <div class="menu-container">
+        </article>
+        <article id="navigation">
+          <nav class="menu-container">
             <input id="click" name="exit" type="checkbox" />
             <label for="click">
               <span class="burger"></span>
               <span class="menu">Menu</span>
             </label>
-          </div>
-        </div>
-      </div>
+          </nav>
+        </article>
+      </section>
     </section>
-    <section class="sub-menu-row hidden">
-      <div></div>
-      <div class="sub-menu-container">
-        <div class="sub-menu-item" data-anchor="community-program">
-          COMMUNITY
-        </div>
-        <div class="sub-menu-item" data-anchor="night-out">
-          NIGHT OUT
-        </div>
-        <div class="sub-menu-item" data-anchor="shopping">
-          SHOPPING
-        </div>
-        <div class="sub-menu-item" data-anchor="rent">
-          RENT
-        </div>
-      </div>
+    <section class="sub-menu-row">
+      <nav class="sub-menu-container">
+        <article id="display-schools-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-education"></span> SCHOOLS
+        </article>
+        <article id="display-bike-routes-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-road"></span> BYCICLE LANES
+        </article>
+        <article id="display-parks-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-tree-deciduous"></span> PARKS
+        </article>
+        <article id="display-historic-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-time"></span> HISTORIC DISTRICTS
+        </article>
+      </nav>
     </section>
     <section id="content">
       <section id="center-content">
         <div class="content-box">
           <h3>FEATURED NEIGHBORHOOD</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque magna, facilisis eleifend ligula sit amet, sodales convallis elit.</p>
-          <a href="neighborhoods/bagley.html" target="_blank"><div class="btn btn-danger">LEARN MORE</div></a>
+          <a href="neighborhoods/bagley.html" target="_blank"><button class="btn btn-danger">LEARN MORE</button></a>
           <a href="map.html"><section id="go-to-map">
-              <img src="assets/img/MCM_DistMap.png" alt="find the detroit is right for you">
-              <span class="btn btn-info message">
+              <img src="assets/img/D-map.png" alt="find the detroit is right for you">
+              <button class="btn btn-info message">
                 <img src="assets/img/compass.png" alt="compass"> GO EXPLORE
-              </span>
+              </button>
           </section></a>
         </div>
       </section>

@@ -14,7 +14,8 @@ body {
 main {
   width: 100%;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Dosis', sans-serif; }
@@ -49,8 +50,9 @@ h1, h2, h3, h4, h5 {
   max-width: 15em;
   margin: 0; }
 
-#site-title > h3 {
-  font-size: 3vh; }
+#site-title > h1 {
+  font-size: 3vh;
+  padding: 0; }
 
 #spacing-title-search {
   flex: 1; }
@@ -81,6 +83,9 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   text-align: right; }
 
+#search > label {
+  display: none; }
+
 #address-search {
   color: #000;
   border: none;
@@ -94,18 +99,21 @@ h1, h2, h3, h4, h5 {
   height: 8vh;
   background: #fff; }
 
-.sub-menu-row.hidden {
-  display: none; }
-
-.sub-menu-row.active {
+.sub-menu-row {
   position: absolute;
+  right: -20em;
   top: 8vh;
   margin-top: 1em;
   z-index: 5;
-  width: 100%; }
+  transition: all 0.2s ease-in-out; }
 
-.sub-menu-row > div:first-child {
-  flex: 1; }
+.sub-menu-row.active {
+  position: absolute;
+  right: 0;
+  top: 8vh;
+  margin-top: 1em;
+  z-index: 5;
+  transition: all 0.2s ease-in-out; }
 
 .sub-menu-container {
   border-top: solid 1px #E0E0E0;
@@ -176,10 +184,10 @@ h1, h2, h3, h4, h5 {
 
 #info-card-hide-btn > span {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.25em;
   position: relative;
-  top: -1.85em;
-  left: -.29em;
+  top: -2.15em;
+  left: -.45em;
   transition: all 0.2s ease-in-out; }
 
 #info-card-hide-btn:hover {
@@ -187,7 +195,7 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out; }
 
 #info-card-hide-btn:hover > span {
-  top: -2.3em;
+  top: -2.6em;
   transition: all 0.2s ease-in-out; }
 
 .info-card-row {
@@ -205,7 +213,7 @@ h1, h2, h3, h4, h5 {
 .info-card-row.four-squares {
   max-width: 30em; }
 
-.info-card-row > h3 {
+.info-card-row > h4 {
   text-align: center;
   width: 100%; }
 
@@ -238,7 +246,8 @@ h1, h2, h3, h4, h5 {
   padding: .5em;
   background: #EB002B;
   color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 0; }
 
 .learn-more-btn-space-mover {
   width: calc((30em - 24em)/2); }
@@ -256,12 +265,12 @@ h1, h2, h3, h4, h5 {
   .info-card-row.four-squares {
     max-width: 100%; } }
 /*=================== modules ===================*/
-.full-width-flex-container, #top-container, .sub-menu-row.active {
+.full-width-flex-container, #top-container {
   width: 100%;
   display: flex;
   margin-bottom: 3em; }
 
-.flex-container, #logo, #site-title, #search-btn, #neighborhood-info-container, .info-card-row, #center-content, .grid-row, .grid-row > .grid-item.text-content, #footer-container {
+.flex-container, #logo, #site-title, #search-btn, .sub-menu-row, .sub-menu-row.active, #neighborhood-info-container, .info-card-row, #center-content, .grid-row, .grid-row > .grid-item.text-content, #footer-container {
   display: flex; }
 
 .flex-stretch-content, #top-container, .grid-row {
@@ -283,7 +292,7 @@ h1, h2, h3, h4, h5 {
   flex-wrap: wrap; }
 
 /*=================== surgical ==================*/
-.center-center-innercontent, #site-title > h3, #search-btn > span {
+.center-center-innercontent, #site-title > h1, #search-btn > span {
   margin: auto; }
 
 .font-minus-75-percent {
@@ -301,7 +310,7 @@ h1, h2, h3, h4, h5 {
 .font-minus-50-percent {
   font-size: 50%; }
 
-.font-minus-40-percent, #site-title > h3 > span {
+.font-minus-40-percent, #site-title > h1 > span {
   font-size: 60%; }
 
 .font-minus-30-percent {
@@ -334,22 +343,23 @@ h1, h2, h3, h4, h5 {
 #go-to-map {
   cursor: pointer;
   position: absolute;
-  bottom: -8em;
-  left: 20em;
-  width: 30em;
+  bottom: -16em;
+  left: 15em;
+  width: 25em;
   transition: all 0.2s ease-in-out; }
 
 #go-to-map:hover > img {
   transition: all 0.2s ease-in-out;
-  width: 62%; }
+  width: 105%; }
 
 #go-to-map > img {
   transition: all 0.2s ease-in-out;
-  width: 60%; }
+  width: 100%; }
 
 #go-to-map > .message {
   position: relative;
-  left: -10em;
+  left: 2em;
+  top: -10em;
   padding: .5em; }
 
 #content {
@@ -380,11 +390,6 @@ video#bgvid {
     display: none; } }
 video#bgvid {
   transition: 1s opacity; }
-
-button {
-  position: absolute;
-  bottom: 3em;
-  left: 3em; }
 
 .stopfade {
   opacity: .5; }

@@ -156,7 +156,7 @@
         let firstTime = 1;
         subMenuClasses.forEach(function(item){
           if(item == 'active'){
-            changeMenuClassSet('sub-menu-row hidden');
+            changeMenuClassSet('sub-menu-row');
             document.getElementById('click').checked = true;
             --firstTime;
             return 0;

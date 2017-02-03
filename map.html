@@ -22,106 +22,106 @@
 <body>
   <main>
     <section id="top">
-      <div id="top-container">
+      <section id="top-container">
         <a href="index.html">
-          <div id="logo">
+          <article id="logo">
             <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit">
-          </div>
+          </article>
         </a>
         <a href="index.html">
-          <div id="site-title">
-            <h3><span>FIND YOUR</span> DETROIT</h3>
-          </div>
+          <article id="site-title">
+            <h1><span>FIND YOUR</span> DETROIT</h1>
+          </article>
         </a>
         <div id="spacing-title-search"></div>
-        <div id="search">
+        <article id="search">
           <input id="address-search" type="text" placeholder="Find your neighborhood">
-        </div>
-        <div id="search-btn">
+          <label for="address-search">Find your neighborhood</label>
+        </article>
+        <article id="search-btn">
           <span class="glyphicon glyphicon-search"></span>
-        </div>
-        <div id="navigation">
-          <div class="menu-container">
+        </article>
+        <article id="navigation">
+          <nav class="menu-container">
             <input id="click" name="exit" type="checkbox" />
             <label for="click">
               <span class="burger"></span>
               <span class="menu">Menu</span>
             </label>
-          </div>
-        </div>
-      </div>
+          </nav>
+        </article>
+      </section>
     </section>
-    <section class="sub-menu-row hidden">
-      <div></div>
-      <div class="sub-menu-container">
-        <div id="display-schools-btn" class="sub-menu-item">
+    <section class="sub-menu-row">
+      <nav class="sub-menu-container">
+        <article id="display-schools-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-education"></span> SCHOOLS
-        </div>
-        <div id="display-bike-routes-btn" class="sub-menu-item">
+        </article>
+        <article id="display-bike-routes-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-road"></span> BYCICLE LANES
-        </div>
-        <div id="display-parks-btn" class="sub-menu-item">
+        </article>
+        <article id="display-parks-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-tree-deciduous"></span> PARKS
-        </div>
-        <div id="display-historic-btn" class="sub-menu-item">
+        </article>
+        <article id="display-historic-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-time"></span> HISTORIC DISTRICTS
-        </div>
-      </div>
+        </article>
+      </nav>
     </section>
     <section id="content">
       <div id="map" class="map"></div>
     </section>
     <section id="neighborhood-info-container" class="hidden" data-neighborhood="bagley" data-district="">
-      <div class="info-card">
-        <div id="info-card-hide-btn" onclick="card1.changeDisplay(card1)">
-          <span>X</span>
-        </div>
-        <div class="info-card-row">
-          <h3 id="neighborhood-name">BAGLEY</h3>
-        </div>
-        <div class="info-card-row">
+      <section class="info-card">
+        <article id="info-card-hide-btn" onclick="card1.changeDisplay(card1)">
+          <span class="glyphicon glyphicon-remove"></span>
+        </article>
+        <article class="info-card-row">
+          <h4 id="neighborhood-name">BAGLEY</h4>
+        </article>
+        <article class="info-card-row">
           <div class="video-wrap">
             <video width="100%" height="200" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
               <source src="http://www.detroitmi.gov/portals/0/Media/Police/Detroit-Police-Recruiting.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
-        </div>
-        <div class="info-card-row">
-          <span class="neighborhood-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis interdum tortor. Ut et rutrum lectus, nec molestie odio. Ut eleifend porttitor massa ut luctus. Nulla accumsan condimentum enim, et consectetur eros eleifend in. Aliquam tristique massa ut tortor accumsan facilisis. Quisque vitae sollicitudin neque. Vivamus dictum ut nisl at congue. Etiam vitae sem et magna pretium gravida.</span>
-        </div>
-        <div class="info-card-row near-neighborhoods">
-          <span><b>Nearby Neighborhoods:</b></span>
+        </article>
+        <article class="info-card-row">
+          <span class="neighborhood-summary"></span>
+        </article>
+        <article class="info-card-row near-neighborhoods">
+          <span><strong><span id="card-type"></span> Neighborhoods:</strong> </span>
           <span class="near-neighborhoods-list">
             <a href="#">Blackstone Park</a>, <a href="#">Fitzgerald</a>, <a href="#">Greenwich</a>, <a href="#">Harmony Village</a>, <a href="#">Pembroke</a>.
           </span>
-        </div>
-        <div class="info-card-row four-squares">
-          <div class="learn-more-btn-space-mover left"></div>
-          <div class='metric-box'>
+        </article>
+        <section class="info-card-row four-squares">
+          <article class="learn-more-btn-space-mover left"></article>
+          <article class='metric-box'>
             <h5>WALK SCORE</h5>
             <img src="assets/img/walk_wht.png" alt="walk score"/>
             <br><span id="walk-score">63</span>
-          </div>
-          <div class='metric-box'>
+          </article>
+          <article class='metric-box'>
             <h5>TRANSIT SCORE</h5>
             <img src="assets/img/bus_wht.png" alt="transit score"/>
             <br><span id="transit-score">41</span>
-          </div>
-          <div class='metric-box'>
+          </article>
+          <article class='metric-box'>
             <h5>BIKE SCORE</h5>
             <img src="assets/img/bicycle_wht.png" alt="bike score"/>
             <br><span id="bike-score">54</span>
-          </div>
-          <div class='metric-box'>
+          </article>
+          <article class='metric-box'>
             <h5>RESIDENTS</h5>
             <img style="margin-top:1em" src="assets/img/people_wht.png" alt="residents"/>
             <br><span id="residents">16,866</span>
-          </div>
+          </article>
           <div class="learn-more-btn-space-mover"></div>
-          <div id="learn-more-btn" onclick="card1.openNewPage(card1)">LEARN MORE</div>
-        </div>
-      </div>
+          <button id="learn-more-btn" onclick="card1.openNewPage(card1)">LEARN MORE</button>
+        </section>
+      </section>
     </section>
   </main>
   <script src="assets/js/dexter_map_script.js"></script>

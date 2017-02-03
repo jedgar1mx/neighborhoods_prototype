@@ -24,6 +24,7 @@ main {
 	width: 100%;
 	height: 100vh;
 	position: relative;
+	overflow: hidden;
 }
 h1,h2,h3,h4,h5{
 	font-family: 'Dosis', sans-serif;
@@ -64,11 +65,12 @@ h1,h2,h3,h4,h5{
 	max-width: 15em;
 	margin: 0;
 }
-#site-title > h3{
+#site-title > h1{
 	font-size: 3vh;
 	@extend .center-center-innercontent;
+	padding: 0;
 }
-#site-title > h3 > span{
+#site-title > h1 > span{
 	@extend .font-minus-40-percent;
 }
 #spacing-title-search{
@@ -106,6 +108,9 @@ h1,h2,h3,h4,h5{
 	width: 100%;
 	text-align: right;
 }
+#search > label{
+	display: none;
+}
 #address-search{
 	color: #000;
 	border: none;
@@ -119,19 +124,23 @@ h1,h2,h3,h4,h5{
 	height: $top-bar-height;
 	background: #fff;
 }
-.sub-menu-row.hidden{
-	display: none;
-}
-.sub-menu-row.active{
+.sub-menu-row{
 	position: absolute;
+	right: -20em;
 	top: $top-bar-height;
 	margin-top: $top-bar-top-spacing;
 	z-index: 5;
-	width: 100%;
-	@extend .full-width-flex-container;
+	@extend .flex-container;
+	transition: all 0.2s ease-in-out;
 }
-.sub-menu-row > div:first-child{
-	flex: 1;
+.sub-menu-row.active{
+	position: absolute;
+	right: 0;
+	top: $top-bar-height;
+	margin-top: $top-bar-top-spacing;
+	z-index: 5;
+	@extend .flex-container;
+	transition: all 0.2s ease-in-out;
 }
 .sub-menu-container{
 	border-top: solid 1px #E0E0E0;
@@ -206,10 +215,10 @@ h1,h2,h3,h4,h5{
 }
 #info-card-hide-btn > span{
 	color: #fff;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	position: relative;
-	top: -1.85em;
-	left: -.29em;
+	top: -2.15em;
+	left: -.45em;
 	transition: all 0.2s ease-in-out;
 }
 #info-card-hide-btn:hover{
@@ -217,7 +226,7 @@ h1,h2,h3,h4,h5{
 	transition: all 0.2s ease-in-out;
 }
 #info-card-hide-btn:hover > span{
-	top: -2.3em;
+	top: -2.6em;
 	transition: all 0.2s ease-in-out;
 }
 .info-card-row{
@@ -227,11 +236,25 @@ h1,h2,h3,h4,h5{
 	font-size: 1.5em;
 }
 .info-card-row.near-neighborhoods > span.near-neighborhoods-list > a{
-	padding: .1em;
+	text-decoration: none;
+	padding: .2em;
 	background: #A1D0F6;
+	transition: all 0.2s ease-in-out;
+}
+.info-card-row.near-neighborhoods > span.near-neighborhoods-list > a.more-neighborhoods-btn{
+	background: #EB002B;
+	color: #fff;
+	transition: all 0.2s ease-in-out;
 }
 .info-card-row.near-neighborhoods > span.near-neighborhoods-list > a:hover{
+	transition: all 0.2s ease-in-out;
 	background: #93BEE0;
+}
+.info-card-row.near-neighborhoods > span.near-neighborhoods-list > a.more-neighborhoods-btn:hover{
+	transition: all 0.2s ease-in-out;
+	border: 1px solid #EB002B;
+	background: #fff;
+	color: #EB002B;
 }
 .info-card-row.four-squares{
 	max-width: 30em;
@@ -239,7 +262,7 @@ h1,h2,h3,h4,h5{
 	@extend .flex-center-justify-items;
 	@extend .flex-align-items-end;
 }
-.info-card-row > h3{
+.info-card-row > h4{
 	text-align: center;
 	width: 100%;
 }
@@ -267,12 +290,20 @@ h1,h2,h3,h4,h5{
 	font-size: 1.25em;
 }
 #learn-more-btn{
+	transition: all 0.2s ease-in-out;
 	margin-top: 1em;
 	height: 2.5em;
 	padding: .5em;
 	background: #EB002B;
 	color: #fff;
 	cursor: pointer;
+	border: 0;
+}
+#learn-more-btn:hover{
+	transition: all 0.2s ease-in-out;
+	border: 1px solid #EB002B;
+	background: #fff;
+	color: #EB002B;
 }
 .learn-more-btn-space-mover{
 	width: calc((30em - 24em)/2);
