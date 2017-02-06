@@ -71,7 +71,7 @@
     <section id="content">
       <div id="map" class="map"></div>
     </section>
-    <section id="neighborhood-info-container" class="hidden" data-neighborhood="bagley" data-district="">
+    <section id="neighborhood-info-container" class="hidden">
       <section class="info-card">
         <article id="info-card-hide-btn" onclick="card1.changeDisplay(card1)">
           <span class="glyphicon glyphicon-remove"></span>
@@ -81,7 +81,7 @@
         </article>
         <article class="info-card-row">
           <div class="video-wrap">
-            <video width="100%" height="200" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
+            <video width="100%" height="150" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
               <source src="http://www.detroitmi.gov/portals/0/Media/Police/Detroit-Police-Recruiting.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -99,24 +99,24 @@
         <section class="info-card-row four-squares">
           <article class="learn-more-btn-space-mover left"></article>
           <article class='metric-box'>
-            <h5>WALK SCORE</h5>
-            <img src="assets/img/walk_wht.png" alt="walk score"/>
-            <br><span id="walk-score">63</span>
+            <h5>AVG. HOUSEHOLD INCOME</h5>
+            <img src="assets/img/money-wht.png" alt="household income"/>
+            <br><span id="household-income"></span>
           </article>
           <article class='metric-box'>
-            <h5>TRANSIT SCORE</h5>
-            <img src="assets/img/bus_wht.png" alt="transit score"/>
-            <br><span id="transit-score">41</span>
+            <h5>GARBAGE PICK UP DAY</h5>
+            <img src="assets/img/garbage-wht.png" alt="garbage pick up day"/>
+            <br><span id="garbage-pickup-day"></span>
           </article>
           <article class='metric-box'>
-            <h5>BIKE SCORE</h5>
-            <img src="assets/img/bicycle_wht.png" alt="bike score"/>
-            <br><span id="bike-score">54</span>
+            <h5>ASSOCIATIONS & BLOCK CLUBS</h5>
+            <img src="assets/img/club-wht.png" alt="block clubs"/>
+            <br><span id="block-clubs"></span>
           </article>
           <article class='metric-box'>
-            <h5>RESIDENTS</h5>
-            <img style="margin-top:1em" src="assets/img/people_wht.png" alt="residents"/>
-            <br><span id="residents">16,866</span>
+            <h5>CURRENT RESIDENTS</h5>
+            <img src="assets/img/people_wht.png" alt="residents"/>
+            <br><span id="residents"></span>
           </article>
           <div class="learn-more-btn-space-mover"></div>
           <button id="learn-more-btn" onclick="card1.openNewPage(card1)">LEARN MORE</button>

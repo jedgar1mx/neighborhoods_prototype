@@ -29,6 +29,7 @@
   transition: all 0.2s ease-in-out;
 }
 #go-to-map:hover > img{
+  transform: rotate(5deg);
   transition: all 0.2s ease-in-out;
   width: 105%;
 }

@@ -11,14 +11,16 @@ $top-bar-height: 8vh;
 $top-bar-top-spacing: 1em;
 $content-height: 100vh;
 $neighborhood-info-height: 80vh;
-$left-content-max-width: 72em;
+$width-break-point-1: 799;
+$width-break-point-2: 1024px;
+$width-break-point-3: 1680px;
+// ==================== tags ====================
+main{
+	overflow-y: scroll;
+}
 /*======================= top ==================*/
 #top{
 	position: relative;
-	margin-top: $top-bar-top-spacing;
-	@extend .full-width-flex-container;
-	@extend .flex-stretch-content;
-	background: $top-bar-color;
 }
 #back-top{
 	position: absolute;
@@ -74,47 +76,6 @@ $left-content-max-width: 72em;
 	background: #fff;
 	margin-right: 2em;
 }
-.sub-menu-row.hidden{
-	display: none;
-}
-.sub-menu-row.active{
-	position: absolute;
-	top: $top-bar-height;
-	margin-top: $top-bar-top-spacing;
-	z-index: 5;
-	width: 100%;
-	@extend .full-width-flex-container;
-}
-.sub-menu-row > div:first-child{
-	flex: 1;
-}
-.sub-menu-container{
-	border-top: solid 1px #E0E0E0;
-	background: #fff;
-	color: #afafaf;
-	@extend .flex-right-justify-items;
-	width: 20em;
-}
-.sub-menu-container > .sub-menu-item{
-	cursor: pointer;
-	padding: 1em 2em;
-	font-size: 1.25em;
-	transition: all 0.2s ease-in-out;
-}
-.sub-menu-container > .sub-menu-item:hover{
-	background: $detroit-color-1;
-	color: #fff;
-	transition: all 0.2s ease-in-out;
-}
-.sub-menu-container > .sub-menu-item.active > span{
-	color: $detroit-color-1;
-}
-.sub-menu-container > .sub-menu-item.active:hover > span{
-	color: #FFD769;
-}
-.sub-menu-container > .sub-menu-item > span{
-	margin-right: .5em;
-}
 // ==================== Content =======================
 #content{
 	padding: 0 2em;
@@ -123,14 +84,39 @@ $left-content-max-width: 72em;
 	@extend .full-width-flex-container;
 	@extend .flex-stretch-content;
 }
+.left-content{
+	flex: 1;
+	padding-right: 1em;
+}
+.section-headers{
+	background: $detroit-color-1;
+	color: $top-bar-font-color;
+	padding: 1em .5em;
+}
 .description-section{
 	flex: 1;
 	padding-right: 1em;
-	max-width: $left-content-max-width;
 }
-.description-section > img{
-	max-width: 100%;
+.description-section > .description-images{
 	margin-bottom: 1em;
+}
+.description-section > .description-images > img:first-child{
+	max-width: 100%;
+}
+.description-section > .description-images > img:nth-child(2), .description-section > .description-images > img:nth-child(3){
+	display: none;
+}
+@media all and (min-width: $width-break-point-2) {
+	.description-section > .description-images > img:first-child, .description-section > .description-images > img:nth-child(2){
+		width: 49%;
+		display: inline;
+	}
+}
+@media all and (min-width: $width-break-point-3) {
+	.description-section > .description-images > img:first-child, .description-section > .description-images > img:nth-child(2), .description-section > .description-images > img:nth-child(3){
+		width: 33%;
+		display: inline;
+	}
 }
 .description-section > .description-text{
 	clear: both;
@@ -142,12 +128,11 @@ $left-content-max-width: 72em;
 	margin-top: 1em;
 }
 .four-squares-section{
-	flex: 1;
+	width: 35em;
 }
 .four-squares-section > .single-block, .four-squares-section > .pair{
 	@extend .flex-container;
 	@extend .flex-conteiner-wrap;
-	max-width: 90%;
 	margin: auto;
 }
 .four-squares-section > .pair.first-pair{
@@ -185,7 +170,14 @@ $left-content-max-width: 72em;
 }
 .profile-container{
 	@extend .flex-container;
-	flex: 1;
+	width: 100%;
+	overflow-x: hidden;
+}
+.profile-container > .profile-item:first-child{
+	width: 100%;
+}
+.profile-container > .profile-item:not(:first-child){
+	display: none;
 }
 .profile-item{
 	margin-right: 2em;
@@ -195,6 +187,7 @@ $left-content-max-width: 72em;
 }
 .profile-item > .person-info > img{
 	width: 8em;
+	border-radius: 50%;
 	float: none;
 }
 .profile-item > .person-info > p{
@@ -210,7 +203,6 @@ $left-content-max-width: 72em;
 }
 .profile-item > .person-story{
 	margin-top: .5em;
-	max-width: 20em;
 	font-size: 1.5em;
 }
 .associations-clubs-section{

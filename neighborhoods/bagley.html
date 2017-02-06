@@ -20,121 +20,131 @@
   <main>
     <div id="back-top-btn" style="position: fixed; right:2em; bottom:2em;cursor:pointer;background: rgba(255,255,255,.5); padding: 1em;font-size:1.25em;"><span class="glyphicon glyphicon-triangle-top"></span> TOP</div>
     <section id="top">
-      <div id="logo">
-        <img src="../assets/img/Logo-Transparent-White.png" alt="City of Detroit">
-      </div>
-      <div id="site-title">
-        <h3><span>FIND YOUR</span> <br>DETROIT</h3>
-      </div>
-      <div class="top-nav-item">
-        <span>MORE<br>NEIGHBORHOODS</span>
-      </div>
-      <div class="top-nav-item">
-        <span>FINANCIAL INCENTIVES <br>& PROGRAMS</span>
-      </div>
-      <div id="spacing-title-search"></div>
-      <div id="navigation">
-        <div class="menu-container">
-          <input id="click" name="exit" type="checkbox" />
-          <label for="click">
-            <span class="burger"></span>
-            <span class="menu">Menu</span>
-          </label>
-        </div>
-      </div>
+      <section id="top-container">
+        <a href="index.html"><article id="logo">
+          <img src="../assets/img/Logo-Transparent-White.png" alt="City of Detroit">
+        </article></a>
+        <a href="index.html"><article id="site-title">
+          <h1><span>FIND YOUR</span> DETROIT</h1>
+        </article></a>
+        <article class="top-nav-item">
+          <span>MORE<br>NEIGHBORHOODS</span>
+        </article>
+        <article class="top-nav-item">
+          <span>FINANCIAL INCENTIVES <br>& PROGRAMS</span>
+        </article>
+        <div id="spacing-title-search"></div>
+        <article id="search">
+          <input id="address-search" type="text" placeholder="Find more information">
+          <label for="address-search">Find more information</label>
+        </article>
+        <article id="search-btn">
+          <span class="glyphicon glyphicon-search"></span>
+        </article>
+        <article id="navigation">
+          <nav class="menu-container">
+            <input id="click" name="exit" type="checkbox" />
+            <label for="click">
+              <span class="burger"></span>
+              <span class="menu">Menu</span>
+            </label>
+          </nav>
+        </article>
+      </section>
     </section>
-    <section class="sub-menu-row hidden">
-      <div></div>
-      <div class="sub-menu-container">
-        <div class="sub-menu-item" data-anchor="description-section">
+    <section class="sub-menu-row">
+      <nav class="sub-menu-container">
+        <article class="sub-menu-item" data-anchor="description-section">
           DESCRIPTION
-        </div>
-        <div class="sub-menu-item" data-anchor="profiles-section">
+        </article>
+        <article class="sub-menu-item" data-anchor="profiles-section">
           MEET YOUR NEIGHBORS
-        </div>
-        <div class="sub-menu-item" data-anchor="associations-clubs-section">
+        </article>
+        <article class="sub-menu-item" data-anchor="associations-clubs-section">
           ASSOCIATIONS & BLOCK CLUBS
-        </div>
-        <div class="sub-menu-item" data-anchor="event-container">
+        </article>
+        <article class="sub-menu-item" data-anchor="event-container">
           EVENTS
-        </div>
-      </div>
+        </article>
+      </nav>
     </section>
     <section id="content">
-      <div class="content-row">
+      <section class="content-row">
         <h2>BAGLEY</h2>
-      </div>
-      <div class="content-row">
-        <div class="description-section margin-right-1">
-          <img src="../assets/img/bagley_elementary.png" alt="bagley elementary"></img>
-          <div class="description-text">The Bagley Community is bounded by West Outer Drive (north), McNichols (south), Livernois (east), and Wyoming (west). Providing information, support to block clubs is just one way we help sustain & improve the quality of life for our residents. With over 5,000 homes, we are a “bedroom” community in the City of Detroit with good schools, retail, recreation, transportation and diversity in houses of worship.</div>
-
-          <div class="near-neighborhoods">
+      </section>
+      <section class="content-row">
+        <section class="description-section left-content">
+          <section class="description-images">
+            <img src="../assets/img/bagley_elementary.png" alt="bagley elementary"></img>
+            <img src="../assets/img/bailey_church.jpg" alt="bailey church"></img>
+            <img src="../assets/img/historic.png" alt="historic picture"></img>
+          </section>
+          <article class="description-text">The Bagley Community is bounded by West Outer Drive (north), McNichols (south), Livernois (east), and Wyoming (west). Providing information, support to block clubs is just one way we help sustain & improve the quality of life for our residents. With over 5,000 homes, we are a “bedroom” community in the City of Detroit with good schools, retail, recreation, transportation and diversity in houses of worship.</article>
+          <article class="near-neighborhoods">
             <span><b>Nearby Neighborhoods:</b></span>
             <span class="near-neighborhoods-list">
               <a href="#">Blackstone Park</a>, <a href="#">Fitzgerald</a>, <a href="#">Greenwich</a>, <a href="#">Harmony Village</a>, <a href="#">Pembroke</a>.
             </span>
-          </div>
-        </div>
-        <div class='four-squares-section'>
-          <div class="pair first-pair">
-            <div class='square-item'>
-              <img src="../assets/img/walk.png" alt="walk score"/>
-              <h5>WALK SCORE</h5>
-              <span id="walk-score">63</span>
-            </div>
-            <div class='square-item'>
-              <img src="../assets/img/bus.png" alt="transit score"/>
-              <h5>TRANSIT SCORE</h5>
-              <span id="transit-score">41</span>
-            </div>
-          </div>
-          <div class="pair second-pair">
-            <div class='square-item'>
-              <img src="../assets/img/bicycle.png" alt="bike score"/>
-              <h5>BIKE SCORE</h5>
-              <span id="bike-score">54</span>
-            </div>
-            <div class='square-item'>
+          </article>
+        </section>
+        <section class='four-squares-section'>
+          <section class="pair first-pair">
+            <article class='square-item'>
+              <img src="../assets/img/money.png" alt="household income"/>
+              <h5>HOUSEHOLD INCOME</h5>
+              <span id="household-income">$65k</span>
+            </article>
+            <article class='square-item'>
+              <img src="../assets/img/garbage.png" alt="garbage pick up day"/>
+              <h5>PICK UP DAY</h5>
+              <span id="garbage-pickup-day">FRIDAY</span>
+            </article>
+          </section>
+          <section class="pair second-pair">
+            <article class='square-item'>
+              <img src="../assets/img/club.png" alt="block clubs"/>
+              <h5>BLOCK CLUBS</h5>
+              <span id="block-clubs">54</span>
+            </article>
+            <article class='square-item'>
               <img src="../assets/img/population.png" alt="walk score"/>
               <h5>RESIDENTS</h5>
               <span id="residents">16,866</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-row">
-        <div class="profiles-section  margin-right-1">
-          <h4>MEET YOUR NEIGHBORS</h4>
-          <hr>
-          <div class="profile-container">
-            <div class="profile-item">
-              <div class="person-info">
+            </article>
+          </section>
+        </section>
+      </section>
+      <section class="content-row">
+        <section class="profiles-section  left-content">
+          <h4 class="section-headers">MEET YOUR NEIGHBORS</h4>
+          <section class="profile-container">
+            <section class="profile-item">
+              <article class="person-info">
                 <img src="../assets/img/profile1.jpg"></img>
                 <p>Karl
                 <br><sub class="person-neighborhood">Bagley</sub></p>
-              </div>
-              <div class="person-story">
+              </article>
+              <article class="person-story">
                 <ul>
                   <li>personal fun fact</li>
                   <li>personal fun fact</li>
                   <li>personal fun fact</li>
                 </ul>
                 <p><b>Why did you move here?</b></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra mattis posuere. Morbi at nisi libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas at ex eros.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra mattis posuere. Morbi at nisi libero.</p>
                 <p><b>What do you love about your neighborhood?</b></p>
-                <p>Aliquam maximus imperdiet posuere. Etiam convallis, risus eu tristique venenatis, odio massa tincidunt odio, quis accumsan mauris risus vitae libero. Vivamus et porttitor ipsum, ut rhoncus nunc. Mauris tempor tortor eros, in ultrices ligula dignissim vel.</p>
+                <p>Aliquam maximus imperdiet posuere. Etiam convallis, risus eu tristique venenatis, odio massa tincidunt odio, quis accumsan mauris risus vitae libero.</p>
                 <p><b>What is something interesting about your neighborhood?</b></p>
                 <p>t iaculis non sapien ut aliquam. Morbi semper quam velit, a consequat odio porta nec. Donec ac urna nec ante feugiat consectetur elementum ut ex.</p>
-              </div>
-            </div>
-            <div class="profile-item">
-              <div class="person-info">
+              </article>
+            </section>
+            <section class="profile-item">
+              <article class="person-info">
                 <img src="../assets/img/profile2.jpg"></img>
                 <p class="person-info-text">Goran
                 <br><sub class="person-neighborhood">Bagley</sub></p>
-              </div>
-              <div class="person-story">
+              </article>
+              <article class="person-story">
                 <ul>
                   <li>personal fun fact</li>
                   <li>personal fun fact</li>
@@ -146,146 +156,144 @@
                 <p>Aliquam maximus imperdiet posuere. Etiam convallis, risus eu tristique venenatis, odio massa tincidunt odio, quis accumsan mauris risus vitae libero. Vivamus et porttitor ipsum, ut rhoncus nunc. Mauris tempor tortor eros, in ultrices ligula dignissim vel.</p>
                 <p><b>What is something interesting about your neighborhood?</b></p>
                 <p>t iaculis non sapien ut aliquam. Morbi semper quam velit, a consequat odio porta nec. Donec ac urna nec ante feugiat consectetur elementum ut ex.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='four-squares-section'>
-          <div class="single-block">
-            <div class='square-item'>
+              </article>
+            </section>
+          </section>
+        </section>
+        <section class='four-squares-section'>
+          <section class="single-block">
+            <article class='square-item'>
               <canvas id="myChart" width="800" height="500"></canvas>
-            </div>
-          </div>
-          <div class="pair second-pair">
-            <div class='square-item'>
+            </article>
+          </section>
+          <section class="pair second-pair">
+            <article class='square-item'>
               <img src="../assets/img/house.png" alt="number of homes"/>
               <h5>HOMES</h5>
               <span id="number-of-homes">11,235</span>
-            </div>
-            <div class='square-item'>
+            </article>
+            <article class='square-item'>
               <img src="../assets/img/exam.png" alt="home renovation permits"/>
               <h5>HOME RENOVATION PERMITS</h5>
               <span id="residents">356</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-row">
-        <div class="associations-clubs-section">
-          <h4>NEIGHBORHOOD ASSOCIATIONS & BLOCK CLUBS</h4>
-          <hr>
-          <div class="associations-clubs-container">
-            <div class="association-club-item">
+            </article>
+          </section>
+        </section>
+      </section>
+      <section class="content-row">
+        <section class="associations-clubs-section left-content">
+          <h4 class="section-headers">NEIGHBORHOOD ASSOCIATIONS & BLOCK CLUBS</h4>
+          <section class="associations-clubs-container">
+            <article class="association-club-item">
               <p>CLUB NAME 1</p>
               <p><b>John Doe</b> - President
               <br>email@email.com
               <br>313.333.3333</p>
-              <div class="association-club-item-social-media">
+              <article class="association-club-item-social-media">
                 <a href="#"><img src="../assets/img/laptop.png" alt="website"></a>
                 <a href="#"><img src="../assets/img/twitter.png" alt="twitter"></a>
                 <a href="#"><img src="../assets/img/facebook.png" alt="facebook"></a>
-              </div>
-            </div>
-            <div class="association-club-item">
+              </article>
+            </article>
+            <article class="association-club-item">
               <p>CLUB NAME 1</p>
               <p><b>John Doe</b> - President
               <br>email@email.com
               <br>313.333.3333</p>
-              <div class="association-club-item-social-media">
+              <article class="association-club-item-social-media">
                 <a href="#"><img src="../assets/img/laptop.png" alt="website"></a>
                 <a href="#"><img src="../assets/img/twitter.png" alt="twitter"></a>
                 <a href="#"><img src="../assets/img/facebook.png" alt="facebook"></a>
-              </div>
-            </div>
-            <div class="association-club-item">
+              </article>
+            </article>
+            <article class="association-club-item">
               <p>CLUB NAME 1</p>
               <p><b>John Doe</b> - President
               <br>email@email.com
               <br>313.333.3333</p>
-              <div class="association-club-item-social-media">
+              <article class="association-club-item-social-media">
                 <a href="#"><img src="../assets/img/laptop.png" alt="website"></a>
                 <a href="#"><img src="../assets/img/twitter.png" alt="twitter"></a>
                 <a href="#"><img src="../assets/img/facebook.png" alt="facebook"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='four-squares-section'>
-          <div class="single-block">
-            <div class='square-item'>
+              </article>
+            </article>
+          </section>
+        </section>
+        <section class='four-squares-section'>
+          <section class="single-block">
+            <article class='square-item'>
               <canvas id="myChart2" width="800" height="500"></canvas>
-            </div>
-          </div>
-          <div class="pair second-pair">
-            <div class='square-item'>
+            </article>
+          </section>
+          <section class="pair second-pair">
+            <article class='square-item'>
               <img src="../assets/img/cutlery.png" alt="number of restaurants"/>
               <h5>RESTAURANTS</h5>
               <span id="number-of-restaurants">35</span>
-            </div>
-            <div class='square-item'>
+            </article>
+            <article class='square-item'>
               <img src="../assets/img/exam.png" alt="business renovation permits"/>
               <h5>BUSINESS RENOVATION PERMITS</h5>
               <span id="business-renovations">135</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-row">
-        <div class="event-container">
-          <h4>EVENTS</h4>
-          <hr>
-          <div class="event-list">
-            <div class="event-item">
-              <div class="event-banner">
+            </article>
+          </section>
+        </section>
+      </section>
+      <section class="content-row">
+        <section class="event-container">
+          <h4 class="section-headers">EVENTS</h4>
+          <section class="event-list">
+            <section class="event-item">
+              <article class="event-banner">
                 <img src="../assets/img/car_show.jpg" alt="auto show"></img>
-              </div>
-              <div class="event-details">
-                <div class="event-date">
+              </article>
+              <section class="event-details">
+                <article class="event-date">
                   <span class="event-day">12</span>
                   <br><span class="event-month">JAN</span>
                   <br><span class="event-year">2017</span>
-                </div>
-                <div class="event-description">
+                </article>
+                <article class="event-description">
                   <span class="event-name">AUTO SHOW</span>
                   <br><span class="event-text">Something nice about the Auto Show like, they have shinny stuff</span>
-                </div>
-              </div>
-            </div>
-            <div class="event-item">
-              <div class="event-banner">
+                </article>
+              </section>
+            </section>
+            <section class="event-item">
+              <article class="event-banner">
                 <img src="../assets/img/winter_blast.jpg" alt="winter blast"></img>
-              </div>
-              <div class="event-details">
-                <div class="event-date">
+              </article>
+              <section class="event-details">
+                <article class="event-date">
                   <span class="event-day">20</span>
                   <br><span class="event-month">JAN</span>
                   <br><span class="event-year">2017</span>
-                </div>
-                <div class="event-description">
+                </article>
+                <article class="event-description">
                   <span class="event-name">WINTER BLAST</span>
                   <br><span class="event-text">Something nice about the Winter Blast like, they have shinny stuff</span>
-                </div>
-              </div>
-            </div>
-            <div class="event-item">
-              <div class="event-banner">
+                </article>
+              </section>
+            </section>
+            <section class="event-item">
+              <article class="event-banner">
                 <img src="../assets/img/st_patrik_parade.jpeg" alt="st. patrik's parade"></img>
-              </div>
-              <div class="event-details">
-                <div class="event-date">
+              </article>
+              <section class="event-details">
+                <article class="event-date">
                   <span class="event-day">20</span>
                   <br><span class="event-month">FEB</span>
                   <br><span class="event-year">2017</span>
-                </div>
-                <div class="event-description">
+                </article>
+                <article class="event-description">
                   <span class="event-name">ST. PATRIK'S PARADE</span>
                   <br><span class="event-text">Something nice about the St. Patrik's Parade like, they have shinny stuff</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                </article>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
     </section>
   </main>
   <script src='../assets/js/menu_functionality.js'></script>
@@ -295,12 +303,8 @@
         datasets: [
             {
                 label: "Avg. Home Prices",
-                fillColor: "#23a696",
-                strokeColor: "#23a696",
-                pointColor: "#23a696",
-                pointStrokeColor: "#23a696",
-                pointHighlightFill: "#23a696",
-                pointHighlightStroke: "#23a696",
+                borderColor: "#000",
+                pointBackgroundColor: "#fff",
                 data: [500, 1000, 3000, 8000, 14000, 24000, 45000]
             }
         ]
@@ -311,22 +315,40 @@
         datasets: [
             {
                 label: "Avg. Price Per sq/ft",
-                fillColor: "#23a696",
-                strokeColor: "#23a696",
-                pointColor: "#23a696",
-                pointStrokeColor: "#23a696",
-                pointHighlightFill: "#23a696",
-                pointHighlightStroke: "#23a696",
+                borderColor: "#000",
+                pointBackgroundColor: "#fff",
                 data: [35, 55, 75, 130, 230, 500, 1000]
             }
         ]
     };
 
-    var options = {
+    var options1 = {
         animation: false,
         scaleLabel:
-        function(label){return  ' $' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
-
+        function(label){return  ' $' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");},
+        title:{
+          display: true,
+          text: 'Avg. Home Prices',
+          fontSize: 20,
+          fontColor: "#000"
+        },
+        legend:{
+          display: false
+        }
+    };
+    var options2 = {
+        animation: false,
+        scaleLabel:
+        function(label){return  ' $' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");},
+        title:{
+          display: true,
+          text: 'Avg. Price Per sq/ft',
+          fontSize: 20,
+          fontColor: "#000"
+        },
+        legend:{
+          display: false
+        }
     };
 
     //Get the context of the canvas element we want to select
@@ -336,12 +358,12 @@
     var myLineChart = new Chart(ctx, {
         type: 'line',
         data: data,
-        options: options
+        options: options1
     });
     var myLineChart2 = new Chart(ctx2, {
         type: 'line',
         data: data2,
-        options: options
+        options: options2
     });
   </script>
 </body>

@@ -1,11 +1,15 @@
 var informationCardModule = (function(){
   var informationCard = {
-    name          : '',
-    type          : '',
-    active        : '',
-    info          : '',
-    summary       : '',
-    neighborhoods : '',
+    name                : '',
+    type                : '',
+    active              : '',
+    info                : '',
+    summary             : '',
+    neighborhoods       : '',
+    avgHouseholdIncome  : '',
+    garbagePickupDay    : '',
+    blockClubs          : '',
+    residents           : '',
     openNewPage: function() {
       console.log(this.name);
       var win;
@@ -44,6 +48,10 @@ var informationCardModule = (function(){
         this.url = infoObj.properties.url;
         this.summary = infoObj.properties.summary;
         this.neighborhoods = infoObj.properties.neighborhoods;
+        this.avgHouseholdIncome = infoObj.properties.avgHouseholdIncome;
+        this.garbagePickupDay = infoObj.properties.garbagePickupDay;
+        this.blockClubs = infoObj.properties.blockClubs;
+        this.residents = infoObj.properties.residents;
       }
     },
     loadCardData: function() {
@@ -52,6 +60,7 @@ var informationCardModule = (function(){
       document.querySelector('.info-card-row > .neighborhood-summary').innerHTML = this.summary;
       (this.type === 'district') ? document.getElementById('card-type').innerHTML = 'District' : document.getElementById('card-type').innerHTML = 'Nerby';
       this.createNeighborhoodsList();
+      this.createFourSquareData();
     },
     createNeighborhoodsList: function () {
       let tempHtml = '';
@@ -66,6 +75,12 @@ var informationCardModule = (function(){
     createDistrictNeighborhoodsMoreBtn: function (tempHtml) {
       tempHtml += '<a class="more-neighborhoods-btn" href="#">MORE</a>';
       document.querySelector('.near-neighborhoods-list').innerHTML = tempHtml;
+    },
+    createFourSquareData: function () {
+      document.getElementById('household-income').innerHTML = '$' + this.avgHouseholdIncome + 'k';
+      document.getElementById('garbage-pickup-day').innerHTML = this.garbagePickupDay.toUpperCase();
+      document.getElementById('block-clubs').innerHTML = this.blockClubs;
+      document.getElementById('residents').innerHTML = this.residents;
     }
   };
   return informationCard;

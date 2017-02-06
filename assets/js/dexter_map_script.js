@@ -178,7 +178,7 @@ map.on("mousemove", function(e) {
     // based on the feature found.
     console.log(feature);
     districtPopup.setLngLat(map.unproject(e.point))
-        .setHTML(feature.properties.name)
+        .setHTML('<h5>' + feature.properties.name + ' <span id="district-popup-img"><img src="assets/img/new.png" alt="badge"></img></span></h5>')
         .addTo(map);
   } else {
     features = map.queryRenderedFeatures(e.point, {
@@ -206,22 +206,6 @@ function flyToStore(currentFeature) {
         center: currentFeature.geometry.coordinates,
         zoom: 16
     });
-}
-
-function createPopUp(currentFeature) {
-    var popUps = document.getElementsByClassName('mapboxgl-popup');
-    // Check if there is already a popup on the map and if so, remove it
-    if (popUps[0]) popUps[0].remove();
-
-    var popup = new mapboxgl.Popup({
-            closeOnClick: false
-        })
-        .setLngLat(currentFeature.geometry.coordinates)
-        .setHTML('<h3>' + currentFeature.properties.School_Nam +'</h3>' +
-            '<h4>' + currentFeature.properties.Address + '</h4>' +
-            '<h4>' + currentFeature.properties.Type + '</h4>' +
-            '<h4>' + currentFeature.properties.Governance + '</h4>')
-        .addTo(map);
 }
 // Add an event listener for when a user clicks on the map
 map.on('click', function(e) {

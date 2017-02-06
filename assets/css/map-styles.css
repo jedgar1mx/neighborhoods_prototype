@@ -136,7 +136,7 @@ a:hover {
 .mapboxgl-popup-content{
   background: #fff;
   color: #000;
-  padding: 1em;
+  padding: .5em;
 }
 .mapboxgl-popup-content > h1, .mapboxgl-popup-content > h2, .mapboxgl-popup-content > h3, .mapboxgl-popup-content > h4, .mapboxgl-popup-content > h5{
   color: rgb(231, 21, 40);
