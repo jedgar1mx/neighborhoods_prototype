@@ -5,6 +5,7 @@
       switch (subMenuDisplaySelection) {
         case "display-schools-btn":
           map.removeLayer('school-marker');
+          map.removeLayer('library-marker');
           break;
 
         case "display-bike-routes-btn":
@@ -34,7 +35,16 @@
               'layout': {
                 'icon-image': 'college-15'
               },
-
+              'filter': ['==', 'amenity', 'school']
+          });
+          map.addLayer({
+              'id': 'library-marker',
+              'type': 'symbol',
+              'source': 'schools',
+              'layout': {
+                'icon-image': 'library-15'
+              },
+              'filter': ['==', 'amenity', 'library']
           });
           break;
 

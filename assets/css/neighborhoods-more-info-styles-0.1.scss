@@ -11,9 +11,10 @@ $top-bar-height: 8vh;
 $top-bar-top-spacing: 1em;
 $content-height: 100vh;
 $neighborhood-info-height: 80vh;
-$width-break-point-1: 799;
+$width-break-point-1: 800;
 $width-break-point-2: 1024px;
-$width-break-point-3: 1680px;
+$width-break-point-3: 1224px;
+$width-break-point-4: 1680px;
 // ==================== tags ====================
 main{
 	overflow-y: scroll;
@@ -83,20 +84,38 @@ main{
 .content-row{
 	@extend .full-width-flex-container;
 	@extend .flex-stretch-content;
-}
-.left-content{
-	flex: 1;
-	padding-right: 1em;
+	@extend .flex-conteiner-wrap;
+	margin-bottom: 0;
 }
 .section-headers{
 	background: $detroit-color-1;
 	color: $top-bar-font-color;
 	padding: 1em .5em;
 }
-.description-section{
-	flex: 1;
-	padding-right: 1em;
+.content-row > .four-squares-section{
+	background: $detroit-color-1;
+	color: $top-bar-font-color;
 }
+@media all and (max-width: 799px) {
+	.content-row > .left-content{
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	.content-row > .four-squares-section{
+		width: 100%;
+		margin-bottom: 1em;
+	}
+}
+@media all and (min-width: 800px) {
+	.content-row > .left-content{
+		width: calc(100% - 35em);
+		padding-right: 1em;
+	}
+	.content-row > .four-squares-section{
+		width: 35em;
+	}
+}
+// ====================== description ============================
 .description-section > .description-images{
 	margin-bottom: 1em;
 }
@@ -112,7 +131,7 @@ main{
 		display: inline;
 	}
 }
-@media all and (min-width: $width-break-point-3) {
+@media all and (min-width: $width-break-point-4) {
 	.description-section > .description-images > img:first-child, .description-section > .description-images > img:nth-child(2), .description-section > .description-images > img:nth-child(3){
 		width: 33%;
 		display: inline;
@@ -126,9 +145,6 @@ main{
 .near-neighborhoods{
 	font-size: 1.25em;
 	margin-top: 1em;
-}
-.four-squares-section{
-	width: 35em;
 }
 .four-squares-section > .single-block, .four-squares-section > .pair{
 	@extend .flex-container;
@@ -154,7 +170,6 @@ main{
 	padding: 2em;
 	margin: auto;
 	text-align: center;
-	color: $detroit-color-1;
 	width: 50%;
 }
 .four-squares-section > .pair > .square-item > img{
@@ -168,19 +183,33 @@ main{
 .four-squares-section > .pair > .square-item > span{
 	font-size: 2.5em;
 }
+// ================== profiles ==============================
 .profile-container{
 	@extend .flex-container;
-	width: 100%;
-	overflow-x: hidden;
-}
-.profile-container > .profile-item:first-child{
+	@extend .flex-conteiner-wrap;
 	width: 100%;
 }
-.profile-container > .profile-item:not(:first-child){
-	display: none;
+.profile-container > .profile-item{
+	width: 100%;
+}
+@media all and (min-width: $width-break-point-2){
+	.profile-container > .profile-item{
+		width: calc((100% - 4em)/2);
+	}
+}
+@media all and (min-width: $width-break-point-3) {
+	.profile-container > .profile-item{
+		width: calc((100% - 6em)/3);
+	}
+}
+@media all and (min-width: $width-break-point-4) {
+	.profile-container > .profile-item{
+		width: calc((100% - 8em)/4);
+	}
 }
 .profile-item{
 	margin-right: 2em;
+	margin-bottom: 2em;
 }
 .profile-item > .person-info{
 	position: relative;
@@ -189,12 +218,27 @@ main{
 	width: 8em;
 	border-radius: 50%;
 	float: none;
+	border: 4px solid $detroit-color-1;
 }
 .profile-item > .person-info > p{
 	font-size: 2em;
 	position: absolute;
 	top: 0;
 	left: 5em;
+	background: $detroit-color-1;
+	color: $top-bar-font-color;
+	margin: 0 !important;
+	padding: .2em .5em;
+}
+.profile-item > .person-info > .triangle{
+	position: absolute;
+	top: 1.25em;
+	left: 8em;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 2em 2em 2em 0;
+	border-color: transparent $detroit-color-1 transparent transparent;
 }
 .profile-item > .person-info > p > .person-neighborhood{
 	@extend .font-minus-40-percent;
@@ -205,10 +249,7 @@ main{
 	margin-top: .5em;
 	font-size: 1.5em;
 }
-.associations-clubs-section{
-	flex: 1;
-	margin-right: 1em;
-}
+// ================= associations ===========================
 .associations-clubs-container{
 	@extend .flex-container;
 	@extend .flex-conteiner-wrap;
@@ -224,6 +265,7 @@ main{
 .association-club-item-social-media > a > img{
 	width: 3em;
 }
+// ======================= events =====================
 .event-container{
 	width: 100%;
 }
@@ -275,6 +317,14 @@ main{
 .event-description > .event-text{
 	font-size: 1.5em;
 }
+@media all and (max-width: 799px) {
+	.event-list > .event-item{
+		width: 100%;
+	}
+	.event-container > .event-list{
+		flex-wrap: wrap;
+	}
+}
 /*=================== modules ===================*/
 .full-width-flex-container{
 	width: 100%;
@@ -308,6 +358,24 @@ main{
 	position: relative;
 }
 /*=================== surgical ==================*/
+.order1{
+	order: 1;
+}
+.order2{
+	order: 2;
+}
+.order3{
+	order: 3;
+}
+.order4{
+	order: 4;
+}
+.order5{
+	order: 5;
+}
+.order6{
+	order: 6;
+}
 .center-center-innercontent{
 	margin: auto;
 }

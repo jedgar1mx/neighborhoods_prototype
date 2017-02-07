@@ -17,6 +17,8 @@ var mapSectionClickModule = (function(informationCard){
     }else {
       features = map.queryRenderedFeatures(e.point, { layers: ['school-marker'] });
       if (!features.length) {
+        features = map.queryRenderedFeatures(e.point, { layers: ['library-marker'] });
+        if (!features.length) {
           features = map.queryRenderedFeatures(e.point, { layers: ['bike-lanes'] });
           if (!features.length) {
             features = map.queryRenderedFeatures(e.point, { layers: ['parks-marker'] });
@@ -34,16 +36,26 @@ var mapSectionClickModule = (function(informationCard){
               }
             }
           }
+        }
       }
       console.log(features);
       var feature = features[0];
-
-      var popup = new mapboxgl.Popup()
-          .setLngLat(map.unproject(e.point))
-          .setHTML(
-            '<h5>' + feature.properties.name + '</h5>'
-          )
-          .addTo(map);
+      var popup = null;
+      if(feature.layer.id = 'school-marker'){
+        popup = new mapboxgl.Popup()
+            .setLngLat(map.unproject(e.point))
+            .setHTML(
+              '<h5>' + feature.properties.name + '</h5><p>' + feature.properties.type + '</p>'
+            )
+            .addTo(map);
+      }else{
+        popup = new mapboxgl.Popup()
+            .setLngLat(map.unproject(e.point))
+            .setHTML(
+              '<h5>' + feature.properties.name + '</h5>'
+            )
+            .addTo(map);
+      }
     }
   });
 })(informationCardModule);
