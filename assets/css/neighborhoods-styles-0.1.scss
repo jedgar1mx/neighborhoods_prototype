@@ -57,6 +57,13 @@ h1,h2,h3,h4,h5{
 	max-height: $top-bar-height;
 	max-width: 100%;
 }
+#logo-2{
+	max-width: 18em;
+}
+#logo-2 > img{
+	max-height: $top-bar-height;
+	width: 18em;
+}
 #site-title{
 	background: $detroit-color-1;
 	@extend .flex-container;

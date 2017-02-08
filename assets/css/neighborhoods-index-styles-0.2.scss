@@ -118,6 +118,7 @@ video#bgvid {
   width: 100%;
 }
 footer{
+  padding: 2em;
   font-size: 1.25em;
   color: $top-bar-font-color;
   background: $detroit-color-1;
@@ -138,9 +139,15 @@ footer{
   padding-top: 1em;
   padding-left: 0;
 }
-#footer-container > .footer-section-item.logo{
-  width: 5em;
+.footer-section-item > ul > li{
+  margin-bottom: .5em;
 }
-#footer-container > .footer-section-item.logo > img{
+.footer-section-item > ul > li > a, .footer-section-item > ul > li > a:hover, .footer-section-item > ul > li > a:visited{
+  color: $top-bar-font-color;
+}
+#footer-container > a > .logo{
+  max-width: 10em;
+}
+#footer-container > a >.logo > img{
   max-width: 100%;
 }

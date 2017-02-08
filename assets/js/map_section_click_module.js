@@ -41,7 +41,7 @@ var mapSectionClickModule = (function(informationCard){
       console.log(features);
       var feature = features[0];
       var popup = null;
-      if(feature.layer.id = 'school-marker'){
+      if(feature.layer.id === 'school-marker'){
         popup = new mapboxgl.Popup()
             .setLngLat(map.unproject(e.point))
             .setHTML(

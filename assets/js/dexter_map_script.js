@@ -36,6 +36,10 @@ var councils = 'https://gis.detroitmi.gov/arcgis/rest/services/WebDev/Council_Di
 
 var historic = 'https://gis.detroitmi.gov/arcgis/rest/services/WebDev/local_historic_districts/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson';
 
+var flatColorMap = '#55899e';
+// var popColorMap = '#269AEF';
+//var flatColorMap = '#00C1ED';
+var popColorMap = '#55b74c';
 // load schools
 map.on('load', function (e) {
     map.addSource('schools', {
@@ -71,8 +75,8 @@ map.on('load', function (e) {
       "source": "council", maxzoom: 12,
       "layout": {},
       "paint": {
-        "fill-color": "#55899e",
-        "fill-opacity": 0.9,
+        "fill-color": flatColorMap,
+        "fill-opacity": 1,
       }
     });
 
@@ -82,7 +86,7 @@ map.on('load', function (e) {
       "source": "council", maxzoom: 12,
       "layout": {},
       "paint": {
-        "fill-color": "#269AEF",
+        "fill-color": popColorMap,
         "fill-opacity": 1
       },
       "filter": ["==", "name", ""]
@@ -100,7 +104,7 @@ map.on('load', function (e) {
       "source": "neighborhoods", minzoom: 12,
       "layout": {},
       "paint": {
-        "fill-color": "#55899e",
+        "fill-color": flatColorMap,
         "fill-opacity": 0.9,
       }
     });
@@ -122,7 +126,7 @@ map.on('load', function (e) {
       "source": "neighborhoods",  minzoom: 12,
       "layout": {},
       "paint": {
-        "fill-color": "#269AEF",
+        "fill-color": popColorMap,
         "fill-opacity": 1
       },
       "filter": ["==", "name", ""]
@@ -177,9 +181,15 @@ map.on("mousemove", function(e) {
     // Populate the popup and set its coordinates
     // based on the feature found.
     console.log(feature);
-    districtPopup.setLngLat(map.unproject(e.point))
-        .setHTML('<h5>' + feature.properties.name + ' <span id="district-popup-img"><img src="assets/img/new.png" alt="badge"></img></span></h5>')
-        .addTo(map);
+    if(feature.properties.name === 'District 2'){
+      districtPopup.setLngLat(map.unproject(e.point))
+          .setHTML('<h5>' + feature.properties.name + ' <span id="district-popup-img"><img src="assets/img/marygrove-logo-badge.png" alt="Marygrove"></img></span></h5>')
+          .addTo(map);
+    }else{
+      districtPopup.setLngLat(map.unproject(e.point))
+          .setHTML('<h5>' + feature.properties.name + ' <span id="district-popup-img"><img src="assets/img/new.png" alt="badge"></img></span></h5>')
+          .addTo(map);
+    }
   } else {
     features = map.queryRenderedFeatures(e.point, {
       layers: ["neighborhoods-fill"]

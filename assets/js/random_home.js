@@ -1,7 +1,7 @@
 var homeRandomFind = (function(){
   var randomList = [
     {
-      'title' : 'DISCOVER JAZZ',
+      'title' : 'JAZZ IT UP',
       'text'  : 'Immerse yourself in the world of Jazz at the "Oldest Running Jazz Club" in the world, here in Detroit.',
       'img'   : 'assets/img/DD_Web/Bakers1.jpg',
       'link'  : 'bagley.html'

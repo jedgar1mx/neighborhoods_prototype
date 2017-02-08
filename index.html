@@ -7,7 +7,7 @@
   <title>Find Your Detroit</title>
   <meta name="description" content="Find Your Detroit is an initiative to increase awareness in citizens about their own neighborhoods, as well as to share the beauty that each neighborhood has to offer to visitors.">
   <meta name="author" content="Edgar Montes">
-
+  <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/bootstrap-3.3.7/dist/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/menu-styles.css" />
   <link rel="stylesheet" href="assets/css/neighborhoods-index-styles-0.2.css">
@@ -21,12 +21,19 @@
     <article id="back-top-btn" style="position: fixed; right:2em; bottom:2em;cursor:pointer;background: rgba(255,255,255,.5); padding: 1em;font-size:1.25em;"><span class="glyphicon glyphicon-triangle-top"></span> TOP</article>
     <section id="top">
       <section id="top-container">
-        <a href="#"><article id="logo">
-          <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit">
-        </article></a>
-        <a href="#"><article id="site-title">
-          <h1><span>FIND YOUR</span> DETROIT</h1>
-        </article></a>
+        <a href="index.html">
+          <article id="logo">
+            <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit">
+          </article>
+        </a>
+        <a href="index.html">
+          <article id="site-title">
+            <h1><span>FIND YOUR</span> DETROIT</h1>
+          </article>
+        </a>
+        <!-- <a href="#"><article id="logo-2">
+          <img src="assets/img/DD_logo1.png" alt="Find your Detroit">
+        </article></a> -->
         <div id="spacing-title-search"></div>
         <article id="search">
           <input id="address-search" type="text" placeholder="Find more information">
@@ -52,7 +59,7 @@
           COMMUNITY
         </article>
         <article class="sub-menu-item" data-anchor="night-out">
-          NIGHT LIFE
+          NIGHT OUT
         </article>
         <article class="sub-menu-item" data-anchor="shopping">
           SHOPPING
@@ -126,52 +133,54 @@
   </section>
   <footer>
     <section id="footer-container">
-      <div class="footer-section-item">
+      <article class="footer-section-item">
         <span class="section-title">
           Mayor's Office
         </span>
         <ul>
-          <li>Administration</li>
-          <li>Correspondence</li>
-          <li>Office of Immigrant Affairs</li>
+          <li><a href="#">Administration</a></li>
+          <li><a href="#">Correspondence</a></li>
+          <li><a href="#">Office of Immigrant Affairs</a></li>
         </ul>
-      </div>
-      <div class="footer-section-item">
+      </article>
+      <article class="footer-section-item">
         <span class="section-title">
           City Council
         </span>
         <ul>
-          <li>Brenda Jones</li>
-          <li>Jane&eacute; L Ayers</li>
-          <li>George Cushinberry</li>
-          <li>James Tate</li>
-          <li>Scott Benson</li>
-          <li>Andre Spivey</li>
-          <li>Mary Sheffield</li>
-          <li>Raquel Castañeda-López</li>
-          <li>Gabe Leland</li>
+          <li><a href="#">Brenda Jones</a></li>
+          <li><a href="#">Jane&eacute; L Ayers</a></li>
+          <li><a href="#">George Cushinberry</a></li>
+          <li><a href="#">James Tate</a></li>
+          <li><a href="#">Scott Benson</a></li>
+          <li><a href="#">Andre Spivey</a></li>
+          <li><a href="#">Mary Sheffield</a></li>
+          <li><a href="#">Raquel Castañeda-López</a></li>
+          <li><a href="#">Gabe Leland</a></li>
         </ul>
-      </div>
-      <div class="footer-section-item">
+      </article>
+      <article class="footer-section-item">
         <span class="section-title">
           Departments
         </span>
         <ul>
-          <li>Administrative Hearings</li>
-          <li>Airport</li>
-          <li>Buildings, Safety Engineering and Environmental</li>
-          <li>Civil Rights, Inclusion & Opportunity</li>
-          <li>Elections</li>
-          <li>Film Office</li>
-          <li>Fire</li>
-          <li>General Service</li>
-          <li>Health</li>
-          <li>Homeland Security & Emergency Management</li>
+          <li><a href="#">Administrative Hearings</a></li>
+          <li><a href="#">Airport</a></li>
+          <li><a href="#">Buildings, Safety Engineering and Environmental</a></li>
+          <li><a href="#">Civil Rights, Inclusion & Opportunity</a></li>
+          <li><a href="#">Elections</a></li>
+          <li><a href="#">Film Office</a></li>
+          <li><a href="#">Fire</a></li>
+          <li><a href="#">General Service</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Homeland Security & Emergency Management</a></li>
         </ul>
-      </div>
-      <div class="footer-section-item logo">
-        <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit"></img>
-      </div>
+      </article>
+      <a href="http://detroitmi.gov" target="_blank">
+        <article class="logo">
+          <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit"></img>
+        </article>
+      </a>
     </section>
   </footer>
   <script src='assets/js/menu_functionality.js'></script>

@@ -43,6 +43,13 @@ h1, h2, h3, h4, h5 {
   max-height: 8vh;
   max-width: 100%; }
 
+#logo-2 {
+  max-width: 18em; }
+
+#logo-2 > img {
+  max-height: 8vh;
+  width: 18em; }
+
 #site-title {
   background: #000;
   height: 8vh;
@@ -454,6 +461,7 @@ video#bgvid {
   width: 100%; }
 
 footer {
+  padding: 2em;
   font-size: 1.25em;
   color: #fff;
   background: #000;
@@ -471,10 +479,16 @@ footer {
   padding-top: 1em;
   padding-left: 0; }
 
-#footer-container > .footer-section-item.logo {
-  width: 5em; }
+.footer-section-item > ul > li {
+  margin-bottom: .5em; }
 
-#footer-container > .footer-section-item.logo > img {
+.footer-section-item > ul > li > a, .footer-section-item > ul > li > a:hover, .footer-section-item > ul > li > a:visited {
+  color: #fff; }
+
+#footer-container > a > .logo {
+  max-width: 10em; }
+
+#footer-container > a > .logo > img {
   max-width: 100%; }
 
 /*# sourceMappingURL=neighborhoods-index-styles-0.2.css.map */

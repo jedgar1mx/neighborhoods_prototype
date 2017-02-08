@@ -42,6 +42,13 @@ h1, h2, h3, h4, h5 {
   max-height: 8vh;
   max-width: 100%; }
 
+#logo-2 {
+  max-width: 18em; }
+
+#logo-2 > img {
+  max-height: 8vh;
+  width: 18em; }
+
 #site-title {
   background: #000;
   height: 8vh;
@@ -292,7 +299,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   margin-bottom: 3em; }
 
-.flex-container, #logo, #site-title, #search-btn, .sub-menu-row, .sub-menu-row.active, #neighborhood-info-container, .info-card-row, .top-nav-item, .four-squares-section > .single-block, .four-squares-section > .pair, .profile-container, .associations-clubs-container, .association-club-item-social-media, .event-container > .event-list, .event-item > .event-details {
+.flex-container, #logo, #site-title, #search-btn, .sub-menu-row, .sub-menu-row.active, #neighborhood-info-container, .info-card-row, .top-nav-item, .four-squares-section > .single-block, .four-squares-section > .pair, .profile-container, .profile-item, .associations-clubs-container, .association-club-item-social-media, .event-container > .event-list, .event-item > .event-details, #footer-container {
   display: flex; }
 
 .flex-stretch-content, #top-container, .info-card-row.four-squares, .content-row {
@@ -310,7 +317,7 @@ h1, h2, h3, h4, h5 {
 .flex-space-between-justify-items {
   justify-content: space-between; }
 
-.flex-conteiner-wrap, .info-card-row.four-squares, .content-row, .four-squares-section > .single-block, .four-squares-section > .pair, .profile-container, .associations-clubs-container {
+.flex-conteiner-wrap, .info-card-row.four-squares, .content-row, .four-squares-section > .single-block, .four-squares-section > .pair, .profile-container, .profile-item, .associations-clubs-container {
   flex-wrap: wrap; }
 
 /*=================== surgical ==================*/
@@ -454,8 +461,8 @@ main {
   display: block;
   font-size: 1.5em; }
 
-.near-neighborhoods {
-  font-size: 1.25em;
+.near-neighborhoods, .neighborhood-districts {
+  font-size: 1.5em;
   margin-top: 1em; }
 
 .four-squares-section > .single-block, .four-squares-section > .pair {
@@ -501,19 +508,42 @@ main {
 
 @media all and (min-width: 1024px) {
   .profile-container > .profile-item {
-    width: calc((100% - 4em)/2); } }
-@media all and (min-width: 1224px) {
-  .profile-container > .profile-item {
-    width: calc((100% - 6em)/3); } }
-@media all and (min-width: 1680px) {
-  .profile-container > .profile-item {
-    width: calc((100% - 8em)/4); } }
+    width: calc((100% - 2em)/2); }
+
+  .profile-item:first-child {
+    margin-right: 2em; } }
 .profile-item {
-  margin-right: 2em;
   margin-bottom: 2em; }
 
+.profile-item > .district-neighborhoods-list {
+  width: 100%;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 0; }
+
+.profile-item > .district-neighborhoods-list > li {
+  padding: .5em 1em;
+  border: 1px solid #000; }
+
+.profile-item > .district-neighborhoods-list > li > a:hover {
+  font-weight: bold; }
+
+.profile-item > .district-neighborhoods-list > li:not(:last-child) {
+  border-bottom: none; }
+
+.profile-item > .district-neighborhoods-list > li > a, .profile-item > ul > li > a:hover, .profile-item > ul > li > a:visited {
+  text-decoration: none;
+  color: #000; }
+
+.profile-item > .district-neighborhoods-list > li > a > img {
+  width: 3em; }
+
+.profile-item > .personal-facts {
+  font-size: 1.25em; }
+
 .profile-item > .person-info {
-  position: relative; }
+  position: relative;
+  width: 17em; }
 
 .profile-item > .person-info > img {
   width: 8em;
@@ -547,7 +577,8 @@ main {
 
 .profile-item > .person-story {
   margin-top: .5em;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  width: 100%; }
 
 .associations-clubs-container > .association-club-item {
   font-size: 1.5em;
@@ -605,6 +636,38 @@ main {
 
   .event-container > .event-list {
     flex-wrap: wrap; } }
+footer {
+  padding: 2em;
+  font-size: 1.25em;
+  color: #fff;
+  background: #000;
+  width: calc(100% + 4em);
+  margin-left: -2em; }
+
+.footer-section-item {
+  flex: 1;
+  padding: 1em; }
+
+.footer-section-item > .section-title {
+  font-weight: bold; }
+
+.footer-section-item > ul {
+  list-style-type: none;
+  padding-top: 1em;
+  padding-left: 0; }
+
+.footer-section-item > ul > li {
+  margin-bottom: .5em; }
+
+.footer-section-item > ul > li > a, .footer-section-item > ul > li > a:hover, .footer-section-item > ul > li > a:visited {
+  color: #fff; }
+
+#footer-container > a > .logo {
+  max-width: 10em; }
+
+#footer-container > a > .logo > img {
+  max-width: 100%; }
+
 /*=================== modules ===================*/
 .full-width-flex-container, #top-container, .content-row {
   width: 100%; }

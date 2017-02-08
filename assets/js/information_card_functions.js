@@ -2,6 +2,7 @@ var informationCardModule = (function(){
   var informationCard = {
     name                : '',
     type                : '',
+    url                 : '',
     active              : '',
     info                : '',
     summary             : '',
@@ -14,9 +15,9 @@ var informationCardModule = (function(){
       console.log(this.name);
       var win;
       if(this.type === 'neighborhood'){
-         win = window.open('neighborhoods/' + this.name + '.html', '_blank');
+         win = window.open('neighborhoods/' + this.url, '_blank');
       }else{
-        win = window.open('districts/' + this.name + '.html', '_blank');
+        win = window.open('districts/' + this.url, '_blank');
       }
       if (win) {
           //Browser has allowed it to be opened
@@ -73,7 +74,7 @@ var informationCardModule = (function(){
       (this.type === 'district') ? this.createDistrictNeighborhoodsMoreBtn(tempHtml): document.querySelector('.near-neighborhoods-list').innerHTML = tempHtml;
     },
     createDistrictNeighborhoodsMoreBtn: function (tempHtml) {
-      tempHtml += '<a class="more-neighborhoods-btn" href="#">MORE</a>';
+      tempHtml += '<a class="more-neighborhoods-btn" href="districts/' + this.url + '" target="_new">MORE</a>';
       document.querySelector('.near-neighborhoods-list').innerHTML = tempHtml;
     },
     createFourSquareData: function () {

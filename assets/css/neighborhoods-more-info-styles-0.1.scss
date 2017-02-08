@@ -142,8 +142,8 @@ main{
 	display: block;
 	font-size: 1.5em;
 }
-.near-neighborhoods{
-	font-size: 1.25em;
+.near-neighborhoods, .neighborhood-districts{
+	font-size: 1.5em;
 	margin-top: 1em;
 }
 .four-squares-section > .single-block, .four-squares-section > .pair{
@@ -194,25 +194,56 @@ main{
 }
 @media all and (min-width: $width-break-point-2){
 	.profile-container > .profile-item{
-		width: calc((100% - 4em)/2);
+		width: calc((100% - 2em)/2);
+	}
+	.profile-item:first-child{
+		margin-right: 2em;
 	}
 }
-@media all and (min-width: $width-break-point-3) {
-	.profile-container > .profile-item{
-		width: calc((100% - 6em)/3);
-	}
-}
-@media all and (min-width: $width-break-point-4) {
-	.profile-container > .profile-item{
-		width: calc((100% - 8em)/4);
-	}
-}
+// @media all and (min-width: $width-break-point-3) {
+// 	.profile-container > .profile-item{
+// 		width: calc((100% - 6em)/3);
+// 	}
+// }
+// @media all and (min-width: $width-break-point-4) {
+// 	.profile-container > .profile-item{
+// 		width: calc((100% - 8em)/4);
+// 	}
+// }
 .profile-item{
-	margin-right: 2em;
 	margin-bottom: 2em;
+	@extend .flex-container;
+	@extend .flex-conteiner-wrap;
+}
+.profile-item > .district-neighborhoods-list{
+	width: 100%;
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 0;
+}
+.profile-item > .district-neighborhoods-list > li{
+	padding: .5em 1em;
+	border: 1px solid $detroit-color-1;
+}
+.profile-item > .district-neighborhoods-list > li > a:hover{
+	font-weight: bold;
+}
+.profile-item > .district-neighborhoods-list > li:not(:last-child){
+	border-bottom: none;
+}
+.profile-item > .district-neighborhoods-list > li > a, .profile-item > ul > li > a:hover, .profile-item > ul > li > a:visited{
+	text-decoration: none;
+	color: $detroit-color-1;
+}
+.profile-item > .district-neighborhoods-list > li > a > img{
+	width: 3em;
+}
+.profile-item > .personal-facts{
+	font-size: 1.25em;
 }
 .profile-item > .person-info{
 	position: relative;
+	width: 17em;
 }
 .profile-item > .person-info > img{
 	width: 8em;
@@ -248,6 +279,7 @@ main{
 .profile-item > .person-story{
 	margin-top: .5em;
 	font-size: 1.5em;
+	width: 100%;
 }
 // ================= associations ===========================
 .associations-clubs-container{
@@ -324,6 +356,42 @@ main{
 	.event-container > .event-list{
 		flex-wrap: wrap;
 	}
+}
+// ================ footer =======================
+footer{
+  padding: 2em;
+  font-size: 1.25em;
+  color: $top-bar-font-color;
+  background: $detroit-color-1;
+  width: calc(100% + 4em);
+	margin-left: -2em;
+}
+#footer-container{
+  @extend .flex-container;
+}
+.footer-section-item{
+  flex: 1;
+  padding: 1em;
+}
+.footer-section-item > .section-title{
+  font-weight: bold;
+}
+.footer-section-item > ul{
+  list-style-type: none;
+  padding-top: 1em;
+  padding-left: 0;
+}
+.footer-section-item > ul > li{
+  margin-bottom: .5em;
+}
+.footer-section-item > ul > li > a, .footer-section-item > ul > li > a:hover, .footer-section-item > ul > li > a:visited{
+  color: $top-bar-font-color;
+}
+#footer-container > a > .logo{
+  max-width: 10em;
+}
+#footer-container > a >.logo > img{
+  max-width: 100%;
 }
 /*=================== modules ===================*/
 .full-width-flex-container{
