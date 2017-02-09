@@ -8,7 +8,7 @@ var homeRandomFind = (function(){
     },
     {
       'title' : 'KNOW YOUR FUTURE',
-      'text'  : 'Find what the furete might bring over a nice cup of tea.',
+      'text'  : 'Find what the future might bring over a nice cup of tea.',
       'img'   : 'assets/img/DD_Web/tarottea4.jpg',
       'link'  : 'bagley.html'
     }

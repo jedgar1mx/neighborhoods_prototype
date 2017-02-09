@@ -8,8 +8,12 @@
           map.removeLayer('library-marker');
           break;
 
-        case "display-bike-routes-btn":
-          map.removeLayer('bike-lanes');
+        // case "display-bike-routes-btn":
+        //   map.removeLayer('bike-lanes');
+        //   break;
+
+        case "display-restaurants-btn":
+          map.removeLayer('restaurants-marker');
           break;
 
         case "display-parks-btn":
@@ -56,6 +60,19 @@
               'source': 'parks',
               'layout': {
                 'icon-image': 'park-15'
+              },
+
+          });
+          break;
+
+        case "display-restaurants-btn":
+          removeMapLayer();
+          map.addLayer({
+              'id': 'restaurants-marker',
+              'type': 'symbol',
+              'source': 'restaurantsBars',
+              'layout': {
+                'icon-image': 'restaurant-15'
               },
 
           });

@@ -74,7 +74,7 @@ var informationCardModule = (function(){
       (this.type === 'district') ? this.createDistrictNeighborhoodsMoreBtn(tempHtml): document.querySelector('.near-neighborhoods-list').innerHTML = tempHtml;
     },
     createDistrictNeighborhoodsMoreBtn: function (tempHtml) {
-      tempHtml += '<a class="more-neighborhoods-btn" href="districts/' + this.url + '" target="_new">MORE</a>';
+      tempHtml += '<a href="#" onclick="bagleyMoveThere()">Bagley</a>, <a class="more-neighborhoods-btn" href="districts/' + this.url + '#neighborhoods-list" target="_new">MORE</a>';
       document.querySelector('.near-neighborhoods-list').innerHTML = tempHtml;
     },
     createFourSquareData: function () {

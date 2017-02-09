@@ -36,12 +36,66 @@ var councils = 'https://gis.detroitmi.gov/arcgis/rest/services/WebDev/Council_Di
 
 var historic = 'https://gis.detroitmi.gov/arcgis/rest/services/WebDev/local_historic_districts/FeatureServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=5&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=geojson';
 
+var restaurantsBars =
+'https://api.foursquare.com/v2/venues/search?v=20161016&query=cafe%2Crestaurant%2Cbar&intent=checkin&client_id=BSLR5UVUCA5M0JG1VDBCIT3OHAZJNJ3ZLIE4Q51ENVHPU4JG&client_secret=Z22OJZRKVVIBY1DDHL0GDHK2MX4ZNKDEIZKDPDVITE5BWAXR&near=detroit';
+
 var flatColorMap = '#55899e';
 // var popColorMap = '#269AEF';
 //var flatColorMap = '#00C1ED';
 var popColorMap = '#55b74c';
 // load schools
+var loadFoursquareAPI = function loadFoursquareAPI(foursquare_url) {
+  // make the call to the foursquare api, add the results to the map
+  function status(response) {
+    if (response.status >= 200 && response.status < 300) {
+      return Promise.resolve(response);
+    } else {
+      return Promise.reject(new Error(response.statusText));
+    }
+  }
+
+  function json(response) {
+    return response.json();
+  }
+
+  fetch(foursquare_url)
+    .then(status)
+    .then(json)
+    .then(function(data) {
+    console.log(data);
+    // add the results to the map
+    var barSites = data.response.venues;
+    var barGeojson = [];
+    for (var i = 0; i < barSites.length; i++) {
+      var barFeature = {
+        type: 'Feature',
+        properties: {
+          name: barSites[i].name,
+          address: barSites[i].location.address + ', ' + barSites[i].location.city + ' ' + barSites[i].location.state + ' ' + barSites[i].location.postalCode,
+          url: barSites[i].url
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [
+            barSites[i].location.lng,
+            barSites[i].location.lat
+          ]
+        }
+      };
+      barGeojson.push(barFeature);
+    }
+    map.addSource('restaurantsBars', {
+        type: 'geojson',
+        "data": {
+          "type": "FeatureCollection",
+          "features": barGeojson
+        }
+    });
+  });
+};
 map.on('load', function (e) {
+    loadFoursquareAPI(restaurantsBars);
+
     map.addSource('schools', {
         type: 'geojson',
         data:schools

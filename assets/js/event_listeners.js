@@ -17,7 +17,7 @@ var district2Obj = {
     type                : 'district',
     url                 : 'district_2.html',
     summary             : 'Sample summary text for this specific "District", good stuff. Some other news and highlights.',
-    neighborhoods       : ['Blackstone Park', 'Fitzgerald', 'Greenwich', 'Harmony Village'],
+    neighborhoods       : ['Blackstone Park', 'Fitzgerald', 'Greenwich'],
     avgHouseholdIncome  : '75',
     garbagePickupDay    : 'mon/fri',
     blockClubs          : '139',
@@ -25,6 +25,11 @@ var district2Obj = {
   }
 };
 var card1 = Object.create(informationCardModule);
+var bagleyMoveThere = function bagleyMoveThere() {
+  card1.setCard(bagleObj);
+  console.log(card1);
+  card1.changeDisplay(card1);
+};
 window.onload = function(){
   document.getElementById('click').checked = false;
 };

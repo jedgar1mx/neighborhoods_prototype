@@ -11,18 +11,41 @@
 }
 #center-content > .content-box{
   position: relative;
-  padding: 2em;
-  background: rgba(255, 255, 255, .8);
-  font-size: 1.5em;
-  max-width: 30em;
+  @extend .flex-container;
   margin: auto;
 }
-#center-content > .content-box > h3{
-  margin: 0;
+.content-box > .feature-neighborhood-content{
+  color: $top-bar-font-color;
+  padding: 2em;
+  background: rgba(0,0,0,.5);
+  font-size: 2em;
+}
+.content-box > .feature-neighborhood-content > h3{
+  font-size: 2em;
+}
+.content-box > .feature-neighborhood-content, .content-box > a{
+  width: 20em;
+  height: 20em;
+}
+#feature-neighborhood-link > button{
+  font-size: 1.25em;
+  padding: .5em;
+  border-radius: 0;
+}
+.center-circle{
+  width: 4em;
+  height: 4em;
+  font-size: 3em;
+  background: $top-bar-font-color;
+  padding: .75em;
+  border-radius: 50%;
+  border: .5em solid #c9302c;
+  position: absolute;
+  bottom: -2.5em;
+  right: calc((100% - 11em)/2);
 }
 #go-to-map{
   cursor: pointer;
-  position: absolute;
   bottom: -16em;
   left: 15em;
   width: 25em;
@@ -31,20 +54,28 @@
 #go-to-map:hover > img{
   transform: rotate(5deg);
   transition: all 0.2s ease-in-out;
-  width: 105%;
+  width: 52em;
 }
 #go-to-map > img{
+  position: relative;
+  top: 2em;
+  left: -4em;
+  transform: rotate(1.5deg);
   transition: all 0.2s ease-in-out;
-  width: 100%;
+  width: 50em;
 }
 #go-to-map > .message{
   position: relative;
-  left: 2em;
-  top: -10em;
+  left: 2.5em;
+  bottom: 5em;
+  font-size: 2.5em;
   padding: .5em;
+  border-radius: 0;
 }
 #content{
-  background: url(../img/cover.jpg) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 video#bgvid {

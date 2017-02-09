@@ -25,14 +25,17 @@ var mapSectionClickModule = (function(informationCard){
             if (!features.length) {
               features = map.queryRenderedFeatures(e.point, { layers: ['historic-fill'] });
               if (!features.length) {
-                features = map.queryRenderedFeatures(e.point, { layers: ['neighborhoods-fill'] });
-                let feature = features[0];
-                if(feature.properties.name === 'Bagley'){
-                  card1.setCard(bagleObj);
-                  console.log(card1);
-                  card1.changeDisplay(card1);
+                features = map.queryRenderedFeatures(e.point, { layers: ['restaurants-marker'] });
+                if (!features.length) {
+                  features = map.queryRenderedFeatures(e.point, { layers: ['neighborhoods-fill'] });
+                  let feature = features[0];
+                  if(feature.properties.name === 'Bagley'){
+                    card1.setCard(bagleObj);
+                    console.log(card1);
+                    card1.changeDisplay(card1);
+                  }
+                  return;
                 }
-                return;
               }
             }
           }

@@ -23,7 +23,7 @@
   <main>
     <section id="top">
       <section id="top-container">
-        <a href="index.html">
+        <!-- <a href="index.html">
           <article id="logo">
             <img src="assets/img/Logo-Transparent-White.png" alt="City of Detroit">
           </article>
@@ -32,10 +32,10 @@
           <article id="site-title">
             <h1><span>FIND YOUR</span> DETROIT</h1>
           </article>
-        </a>
-        <!-- <a href="#"><article id="logo-2">
+        </a> -->
+        <a href="index.html"><article id="logo-2">
           <img src="assets/img/DD_logo1.png" alt="Find your Detroit">
-        </article></a> -->
+        </article></a>
         <div id="spacing-title-search"></div>
         <article id="search">
           <input id="address-search" type="text" placeholder="Find your neighborhood">
@@ -58,10 +58,13 @@
     <section class="sub-menu-row">
       <nav class="sub-menu-container">
         <article id="display-schools-btn" class="sub-menu-item">
-          <span class="glyphicon glyphicon-education"></span> SCHOOLS & LIBRARIES
+          <span class="glyphicon glyphicon-education"></span> SCHOOLS/LIBRARIES
         </article>
-        <article id="display-bike-routes-btn" class="sub-menu-item">
+        <!-- <article id="display-bike-routes-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-road"></span> BYCICLE LANES
+        </article> -->
+        <article id="display-restaurants-btn" class="sub-menu-item">
+          <span class="glyphicon glyphicon-cutlery"></span> RESTAURANS/BARS
         </article>
         <article id="display-parks-btn" class="sub-menu-item">
           <span class="glyphicon glyphicon-tree-deciduous"></span> PARKS
@@ -79,16 +82,16 @@
         <article id="info-card-hide-btn" onclick="card1.changeDisplay(card1)">
           <span class="glyphicon glyphicon-remove"></span>
         </article>
-        <article class="info-card-row">
-          <h4 id="neighborhood-name">BAGLEY</h4>
-        </article>
-        <article class="info-card-row">
+        <article class="info-card-row video">
           <div class="video-wrap">
-            <video width="100%" height="150" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
+            <video width="100%" height="100%" controls="true" loop="true" poster="http://www.detroitmi.gov/Portals/0/Images/Police/recruitment-video-2.jpg">
               <source src="http://www.detroitmi.gov/portals/0/Media/Police/Detroit-Police-Recruiting.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
+        </article>
+        <article class="info-card-row">
+          <h4 id="neighborhood-name">BAGLEY</h4>
         </article>
         <article class="info-card-row">
           <span class="neighborhood-summary"></span>
