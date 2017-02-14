@@ -3,6 +3,7 @@ var informationCardModule = (function(){
     name                : '',
     type                : '',
     url                 : '',
+    video               : '',
     active              : '',
     info                : '',
     summary             : '',
@@ -33,12 +34,12 @@ var informationCardModule = (function(){
     displayCard: function() {
       this.loadCardData();
       console.log('will display card');
-      document.getElementById('neighborhood-info-container').className = '';
+      document.getElementById('neighborhood-info-container').className = 'active';
       this.active = true;
     },
     hideCard: function() {
       console.log('will hide card');
-      document.getElementById('neighborhood-info-container').className = 'hidden';
+      document.getElementById('neighborhood-info-container').className = '';
       this.active = false;
     },
     setCard: function(infoObj){
@@ -47,6 +48,7 @@ var informationCardModule = (function(){
         this.type = infoObj.properties.type;
         this.active = false;
         this.url = infoObj.properties.url;
+        this.video = infoObj.properties.video;
         this.summary = infoObj.properties.summary;
         this.neighborhoods = infoObj.properties.neighborhoods;
         this.avgHouseholdIncome = infoObj.properties.avgHouseholdIncome;
@@ -59,6 +61,7 @@ var informationCardModule = (function(){
       console.log('will load data to card');
       document.getElementById('neighborhood-name').innerHTML = this.name;
       document.querySelector('.info-card-row > .neighborhood-summary').innerHTML = this.summary;
+      document.querySelector('.video-wrap').innerHTML = this.video;
       (this.type === 'district') ? document.getElementById('card-type').innerHTML = 'District' : document.getElementById('card-type').innerHTML = 'Nerby';
       this.createNeighborhoodsList();
       this.createFourSquareData();
